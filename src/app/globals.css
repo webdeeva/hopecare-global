@@ -1,26 +1,218 @@
 @import "tailwindcss";
 
+/* ─────────────────────────────────────────────────────────────
+   HopeCare Global Inc — Brand System
+   Ovarian Cancer Awareness · Global Outreach
+   ───────────────────────────────────────────────────────────── */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand palette */
+  --teal: #0f8b9e;
+  --teal-deep: #086b7d;
+  --teal-bright: #14b5cc;
+  --teal-soft: #d4ecf0;
+
+  --navy: #0a2540;
+  --navy-deep: #061b30;
+  --navy-soft: #e2e8f0;
+
+  --green: #7cb342;
+  --green-bright: #a4d65e;
+  --green-soft: #e8f3d6;
+
+  --cream: #fafaf7;
+  --mist: #f0f7f9;
+  --ink: #0a1929;
+  --ink-soft: #3a4a5a;
+  --ink-mute: #6b7a8a;
+
+  /* Effects */
+  --shadow-soft: 0 10px 40px -10px rgba(10, 37, 64, 0.12);
+  --shadow-glow: 0 0 60px -10px rgba(15, 139, 158, 0.35);
+  --shadow-lift: 0 30px 60px -20px rgba(10, 37, 64, 0.25);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--cream);
+  --color-foreground: var(--ink);
+  --color-teal: var(--teal);
+  --color-teal-deep: var(--teal-deep);
+  --color-teal-bright: var(--teal-bright);
+  --color-teal-soft: var(--teal-soft);
+  --color-navy: var(--navy);
+  --color-navy-deep: var(--navy-deep);
+  --color-green: var(--green);
+  --color-green-bright: var(--green-bright);
+  --color-green-soft: var(--green-soft);
+  --color-cream: var(--cream);
+  --color-mist: var(--mist);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-mute: var(--ink-mute);
+
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-display);
+  --font-script: var(--font-script);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+html,
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: var(--teal); color: white; }
+html { scroll-behavior: smooth; }
+
+/* Type utilities */
+.font-display {
+  font-family: var(--font-display), Georgia, serif;
+  letter-spacing: -0.025em;
+}
+.font-script {
+  font-family: var(--font-script), cursive;
+  letter-spacing: -0.005em;
+}
+
+/* Painted backgrounds */
+.bg-aurora {
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(20, 181, 204, 0.22), transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(124, 179, 66, 0.16), transparent 55%),
+    radial-gradient(ellipse at 50% 100%, rgba(15, 139, 158, 0.18), transparent 55%),
+    linear-gradient(180deg, #fafaf7 0%, #f0f7f9 100%);
+}
+.bg-deep-ocean {
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(20, 181, 204, 0.32), transparent 50%),
+    radial-gradient(ellipse at 100% 100%, rgba(124, 179, 66, 0.22), transparent 55%),
+    linear-gradient(135deg, #0a2540 0%, #061b30 100%);
+}
+
+/* Text gradients */
+.text-gradient-brand {
+  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 50%, var(--green) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-warm {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--teal-deep) 60%, var(--teal) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.text-gradient-light {
+  background: linear-gradient(135deg, #ffffff 0%, #d4ecf0 60%, #a4d65e 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Decorative grid */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(15, 139, 158, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 139, 158, 0.07) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: radial-gradient(ellipse 80% 70% at 50% 0%, black 30%, transparent 80%);
+}
+
+.bg-dots {
+  background-image: radial-gradient(rgba(10, 37, 64, 0.13) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Animations */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 40s linear infinite; }
+
+@keyframes slow-ping {
+  0%, 100% { transform: scale(1); opacity: 0.55; }
+  50% { transform: scale(1.12); opacity: 1; }
+}
+.animate-slow-ping { animation: slow-ping 3.6s ease-in-out infinite; }
+
+@keyframes globe-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.animate-globe { animation: globe-spin 80s linear infinite; }
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+.animate-float { animation: float-y 7s ease-in-out infinite; }
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2.4s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.65; }
+}
+.animate-pulse-soft { animation: pulse-soft 4s ease-in-out infinite; }
+
+/* Heading rhythm */
+h1, h2, h3, h4 { letter-spacing: -0.025em; }
+.kicker {
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-lift {
+  transition: transform 0.45s cubic-bezier(.2,.8,.2,1), box-shadow 0.45s, background 0.3s, color 0.3s;
+}
+.btn-lift:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-lift);
+}
+
+/* Card lift */
+.card-lift {
+  transition: transform 0.5s cubic-bezier(.2,.8,.2,1), box-shadow 0.5s, border-color 0.4s;
+}
+.card-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 22px 50px -18px rgba(10, 37, 64, 0.18);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--mist); }
+::-webkit-scrollbar-thumb { background: var(--teal); border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: var(--teal-deep); }
+
+*:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Container helper */
+:root { --container-max: 1480px; }
+.container-wide { max-width: var(--container-max); margin-inline: auto; padding-inline: 1.5rem; }
+@media (min-width: 768px) { .container-wide { padding-inline: 2.5rem; } }
+
+/* Hide on motion-reduce */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
