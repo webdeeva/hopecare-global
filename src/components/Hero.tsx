@@ -127,7 +127,7 @@ export function Hero() {
               Founded by Dr. Petrina Harrison, DNP
             </span>
             <span className="opacity-30">/</span>
-            <span>Atlanta, GA · Worldwide</span>
+            <span>New York · Worldwide</span>
           </motion.div>
         </div>
 
