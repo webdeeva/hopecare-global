@@ -19,7 +19,7 @@ const actions: Action[] = [
     title: "Donate",
     body: "Fuel screening events, education programs, and patient navigation. Every dollar widens our reach.",
     cta: "Make a Gift",
-    href: "#donate",
+    href: "/donate",
     tone: "primary",
   },
   {
