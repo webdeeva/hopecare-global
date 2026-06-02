@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head><title>HopeCare Global · Forms</title></head>
+  <body>
+    <!--
+      This file exists so Netlify's form post-processing detects our forms
+      during the build. The actual UI form is rendered by Next.js (App Router)
+      at /contact and posts to "/" with the same form `name` and field names.
+      Keep field names in sync between this file and src/app/contact/page.tsx.
+    -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="topic" />
+      <textarea name="message"></textarea>
+    </form>
+  </body>
+</html>

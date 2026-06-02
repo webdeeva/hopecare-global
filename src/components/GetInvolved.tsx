@@ -27,7 +27,7 @@ const actions: Action[] = [
     title: "Volunteer",
     body: "Lend your clinical expertise, communications skills, or community connections to the movement.",
     cta: "Join the Team",
-    href: "mailto:support@hopecareglobal.org?subject=I want to volunteer",
+    href: "/contact?topic=Volunteer",
     tone: "accent",
   },
   {
@@ -142,7 +142,7 @@ export function GetInvolved() {
             </div>
             <div className="flex flex-col gap-3">
               <a
-                href="mailto:support@hopecareglobal.org?subject=Partnership inquiry"
+                href="/contact?topic=Partnership"
                 className="inline-flex items-center justify-between gap-2 bg-cream text-navy px-6 py-4 rounded-full font-semibold btn-lift"
               >
                 Start a Partnership

@@ -43,8 +43,8 @@ const navGroups = [
     title: "Take Action",
     links: [
       { href: "/donate", label: "Donate" },
-      { href: "mailto:support@hopecareglobal.org?subject=Volunteer", label: "Volunteer" },
-      { href: "mailto:support@hopecareglobal.org?subject=Partner", label: "Partner With Us" },
+      { href: "/contact?topic=Volunteer", label: "Volunteer" },
+      { href: "/contact?topic=Partnership", label: "Partner With Us" },
       { href: "#newsletter", label: "Newsletter" },
     ],
   },

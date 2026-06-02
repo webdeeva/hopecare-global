@@ -59,10 +59,10 @@ export function DonateFAQ() {
           <p className="mt-5 text-base text-ink-soft leading-relaxed max-w-md">
             Couldn&apos;t find what you&apos;re looking for?{" "}
             <a
-              href="mailto:support@hopecareglobal.org"
+              href="/contact"
               className="text-teal-deep font-semibold underline-offset-4 hover:underline"
             >
-              Email us
+              Reach out
             </a>{" "}
             — we respond within two business days.
           </p>

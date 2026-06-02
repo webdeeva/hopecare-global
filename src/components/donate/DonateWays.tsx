@@ -13,7 +13,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 
 const PAYPAL_URL = "https://www.paypal.com/ncp/payment/88ZQAFSLWAJJY";
-const CONTACT = "support@hopecareglobal.org";
+const CONTACT = (topic: string) => `/contact?topic=${encodeURIComponent(topic)}`;
 
 type Way = {
   icon: LucideIcon;
@@ -50,7 +50,7 @@ const ways: Way[] = [
     title: "In Honor / In Memory",
     body: "Give in honor of a survivor or in memory of someone you've lost. We will acknowledge them in our annual report.",
     cta: "Make a tribute gift",
-    href: `mailto:${CONTACT}?subject=Tribute gift`,
+    href: CONTACT("Tribute gift (in honor / in memory)"),
   },
   {
     icon: Building2,
@@ -58,7 +58,7 @@ const ways: Way[] = [
     title: "Corporate Partnership",
     body: "Align your brand with women's health equity. Sponsorship, employee matching, and cause-marketing options available.",
     cta: "Start a conversation",
-    href: `mailto:${CONTACT}?subject=Corporate partnership`,
+    href: CONTACT("Corporate sponsorship"),
   },
   {
     icon: Users,
@@ -66,7 +66,7 @@ const ways: Way[] = [
     title: "Planned Giving",
     body: "Include HopeCare Global in your will, trust, or beneficiary designations and help fund the long fight.",
     cta: "Learn about legacy giving",
-    href: `mailto:${CONTACT}?subject=Planned giving`,
+    href: CONTACT("Planned giving"),
   },
   {
     icon: Mail,
@@ -74,7 +74,7 @@ const ways: Way[] = [
     title: "Mail a Check",
     body: "Prefer to send a check? Reach out and we'll share our mailing address and acknowledgement details.",
     cta: "Get our mailing address",
-    href: `mailto:${CONTACT}?subject=Mail a check`,
+    href: CONTACT("Mail-in donation address"),
   },
 ];
 

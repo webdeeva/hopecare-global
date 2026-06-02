@@ -63,7 +63,7 @@ export function DonateCTA() {
               <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </a>
             <a
-              href="mailto:support@hopecareglobal.org"
+              href="/contact"
               className="group inline-flex items-center gap-2 bg-white/10 backdrop-blur border border-white/25 text-white px-7 py-4 rounded-full font-semibold hover:bg-white/15 transition-colors"
             >
               Talk to our team
