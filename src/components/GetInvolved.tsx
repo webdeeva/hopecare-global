@@ -149,10 +149,10 @@ export function GetInvolved() {
                 <ArrowRight className="w-4 h-4" />
               </a>
               <a
-                href="tel:+13478686842"
+                href="/contact"
                 className="inline-flex items-center justify-between gap-2 border border-white/25 text-white px-6 py-4 rounded-full font-semibold hover:bg-white/10 transition-colors"
               >
-                (347) 868-6842
+                Send us a note
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>

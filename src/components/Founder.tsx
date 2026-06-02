@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "motion/react";
-import { Phone, Mail, Quote, BadgeCheck, Stethoscope, GraduationCap } from "lucide-react";
+import { Mail, Quote, BadgeCheck, Stethoscope, GraduationCap } from "lucide-react";
 
 const credentials = [
   { label: "DNP", desc: "Doctor of Nursing Practice" },
@@ -134,15 +134,6 @@ export function Founder() {
           {/* Contact */}
           <div className="mt-10 flex flex-wrap gap-3">
             <a
-              href="tel:+13478686842"
-              className="group inline-flex items-center gap-3 btn-lift bg-white text-navy px-5 py-3 rounded-full border border-navy/10 font-medium"
-            >
-              <span className="w-9 h-9 rounded-full bg-teal/10 grid place-items-center text-teal-deep">
-                <Phone className="w-4 h-4" strokeWidth={2.5} />
-              </span>
-              (347) 868-6842
-            </a>
-            <a
               href="mailto:support@hopecareglobal.org"
               className="group inline-flex items-center gap-3 btn-lift bg-white text-navy px-5 py-3 rounded-full border border-navy/10 font-medium"
             >
@@ -150,6 +141,12 @@ export function Founder() {
                 <Mail className="w-4 h-4" strokeWidth={2.5} />
               </span>
               support@hopecareglobal.org
+            </a>
+            <a
+              href="/contact"
+              className="group inline-flex items-center gap-3 btn-lift bg-navy text-cream px-5 py-3 rounded-full font-medium"
+            >
+              Send a message
             </a>
           </div>
 

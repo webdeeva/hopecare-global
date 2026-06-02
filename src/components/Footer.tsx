@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Mail, Globe, Heart } from "lucide-react";
+import { Mail, Globe, Heart } from "lucide-react";
 import { Logo } from "./Logo";
 
 function InstagramIcon({ className = "" }: { className?: string }) {
@@ -97,14 +97,6 @@ export function Footer() {
           <div>
             <div className="kicker text-teal-soft">Contact</div>
             <ul className="mt-5 space-y-4">
-              <li>
-                <a href="tel:+13478686842" className="group flex items-center gap-3 text-cream/85 hover:text-teal-soft">
-                  <span className="w-9 h-9 rounded-full bg-white/8 grid place-items-center group-hover:bg-teal/20 transition-colors">
-                    <Phone className="w-4 h-4" />
-                  </span>
-                  (347) 868-6842
-                </a>
-              </li>
               <li>
                 <a
                   href="mailto:support@hopecareglobal.org"

@@ -80,8 +80,8 @@ export function DonateCTA() {
               support@hopecareglobal.org
             </a>
             <span className="opacity-30">/</span>
-            <a href="tel:+13478686842" className="hover:text-teal-soft transition-colors">
-              (347) 868·6842
+            <a href="/contact" className="hover:text-teal-soft transition-colors">
+              Send a message
             </a>
           </div>
         </motion.div>

@@ -221,7 +221,7 @@ function TopRail() {
       <div className="flex-1 h-px bg-navy/12" />
       <span className="hidden sm:inline">A 501(c)(3) Nonprofit Organization</span>
       <div className="hidden md:block flex-1 h-px bg-navy/12" />
-      <span className="hidden md:inline">Atlanta · Worldwide</span>
+      <span className="hidden md:inline">New York · Worldwide</span>
     </motion.div>
   );
 }

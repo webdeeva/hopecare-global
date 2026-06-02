@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { Mail, MapPin, Clock } from "lucide-react";
 
 const ROWS = [
   {
@@ -11,15 +11,9 @@ const ROWS = [
     href: "mailto:support@hopecareglobal.org",
   },
   {
-    icon: Phone,
-    label: "Phone",
-    primary: "(347) 868-6842",
-    href: "tel:+13478686842",
-  },
-  {
     icon: MapPin,
     label: "Where we are",
-    primary: "Atlanta, GA · United States",
+    primary: "New York · United States",
     secondary: "Programs supported worldwide",
   },
   {

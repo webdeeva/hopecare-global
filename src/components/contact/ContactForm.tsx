@@ -109,13 +109,13 @@ export function ContactForm() {
         </h2>
         <p className="mt-4 text-lg text-ink-soft leading-relaxed max-w-xl">
           We&apos;ve received your note and one of us will respond within two
-          business days. If your inquiry is time-sensitive, you can also reach
+          business days. If your inquiry is time-sensitive, you can also email
           us at{" "}
           <a
-            href="tel:+13478686842"
+            href="mailto:support@hopecareglobal.org"
             className="text-teal-deep font-semibold underline-offset-4 hover:underline"
           >
-            (347) 868-6842
+            support@hopecareglobal.org
           </a>
           .
         </p>
