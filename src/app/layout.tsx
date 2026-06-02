@@ -50,7 +50,6 @@ export const metadata: Metadata = {
     title: "HopeCare Global Inc",
     description: "Ovarian cancer awareness · global outreach · changing lives.",
   },
-  icons: { icon: "/favicon.ico" },
 };
 
 export default function RootLayout({
