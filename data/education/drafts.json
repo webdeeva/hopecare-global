@@ -349,7 +349,7 @@
       },
       {
         "claim": "Black women experience worse ovarian cancer survival and higher mortality, driven by disparities in stage at diagnosis, access to specialists/surgery/chemotherapy, and timely guideline-concordant care.",
-        "organization": "Peer-reviewed literature (NCBI/PMC) — Race, Socioeconomic Status, and Health-Care Access Disparities in Ovarian Cancer (systematic review and meta-analysis)",
+        "organization": "Peer-reviewed literature (NCBI/PMC), Race, Socioeconomic Status, and Health-Care Access Disparities in Ovarian Cancer (systematic review and meta-analysis)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6899434/",
         "verified": true
       }
@@ -1091,19 +1091,19 @@
     "sources": [
       {
         "claim": "A woman's lifetime risk of developing ovarian cancer is about 1 in 91; it is one of the leading causes of cancer death in women and is more common in White women than Black women.",
-        "organization": "American Cancer Society — Key Statistics for Ovarian Cancer",
+        "organization": "American Cancer Society, Key Statistics for Ovarian Cancer",
         "url": "https://www.cancer.org/cancer/types/ovarian-cancer/key-statistics.html",
         "verified": true
       },
       {
         "claim": "About 54% of ovarian cancer cases are diagnosed at a distant stage; 5-year relative survival is ~92% (91.9%) when localized and ~32% (31.5%) when distant; overall 5-year relative survival ~52%.",
-        "organization": "National Cancer Institute — SEER Cancer Stat Facts: Ovarian Cancer",
+        "organization": "National Cancer Institute, SEER Cancer Stat Facts: Ovarian Cancer",
         "url": "https://seer.cancer.gov/statfacts/html/ovary.html",
         "verified": true
       },
       {
         "claim": "There is no recommended routine screening test for ovarian cancer in average-risk women; randomized trials (PLCO, UKCTOCS) found screening did not reduce mortality, and the FDA recommends against current screening tests. Symptoms are vague (bloating, pelvic/abdominal pain, early satiety, urinary changes).",
-        "organization": "National Cancer Institute — Ovarian, Fallopian Tube, and Primary Peritoneal Cancers Screening (PDQ)",
+        "organization": "National Cancer Institute, Ovarian, Fallopian Tube, and Primary Peritoneal Cancers Screening (PDQ)",
         "url": "https://www.cancer.gov/types/ovarian/hp/ovarian-screening-pdq",
         "verified": true
       },
@@ -1115,7 +1115,7 @@
       },
       {
         "claim": "Black women are roughly 30% more likely to die of ovarian cancer than White women (HR ~1.30); contributing factors include access barriers, comorbidities, and treatment delays. Recent 5-year relative survival ~41% (Black) vs ~48% (White).",
-        "organization": "Racial disparities in epithelial ovarian cancer survival — OCWAA consortium (peer-reviewed, NIH/PMC)",
+        "organization": "Racial disparities in epithelial ovarian cancer survival, OCWAA consortium (peer-reviewed, NIH/PMC)",
         "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9420829/",
         "verified": true
       },
@@ -1127,7 +1127,7 @@
       },
       {
         "claim": "Perceived discrimination and lower trust in physicians are associated with worse ovarian cancer mortality among Black women.",
-        "organization": "Perceived discrimination, trust in physicians, and ovarian cancer mortality — African American Cancer Epidemiology Study (peer-reviewed, NIH/PMC)",
+        "organization": "Perceived discrimination, trust in physicians, and ovarian cancer mortality, African American Cancer Epidemiology Study (peer-reviewed, NIH/PMC)",
         "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12578685/",
         "verified": true
       },
