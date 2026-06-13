@@ -5,8 +5,11 @@
     <!--
       This file exists so Netlify's form post-processing detects our forms
       during the build. The actual UI form is rendered by Next.js (App Router)
-      at /contact and posts to "/" with the same form `name` and field names.
-      Keep field names in sync between this file and src/app/contact/page.tsx.
+      at /contact and posts to "/__forms.html" (this file's path) with the same
+      form `name` and field names. Posting to "/" would hit the Next.js SSR
+      function instead of Netlify's form handler, silently dropping submissions.
+      Keep field names in sync between this file and
+      src/components/contact/ContactForm.tsx.
     -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="bot-field" />
