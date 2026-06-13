@@ -26,7 +26,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticle(slug);
-  if (!article) return { title: "Article not found — HopeCare Global Inc" };
+  if (!article) return { title: "Article not found, HopeCare Global Inc" };
 
   const url = `${SITE}/education/${article.slug}`;
   return {
@@ -165,7 +165,7 @@ export default async function ArticlePage({
                             >
                               {s.organization}
                             </a>
-                            {s.claim ? ` — ${s.claim}` : ""}
+                            {s.claim ? `, ${s.claim}` : ""}
                           </li>
                         ))}
                       </ul>
@@ -263,7 +263,7 @@ function DraftState({ excerpt }: { excerpt: string }) {
       <p className="mt-4 text-ink-mute leading-relaxed">
         This guide is written and is currently being reviewed by a medical
         professional before publication. We publish health content only after a
-        clinician has verified it — so you can trust what you read here.
+        clinician has verified it, so you can trust what you read here.
       </p>
       <Link
         href="/education"

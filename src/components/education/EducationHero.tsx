@@ -60,7 +60,7 @@ export function EducationHero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="mt-6 text-lg md:text-xl text-ink-soft leading-[1.55] max-w-2xl"
           >
-            Clear, dignified, plain-language guides on ovarian cancer — from the
+            Clear, dignified, plain-language guides on ovarian cancer, from the
             first quiet symptoms to life after treatment. Every article is{" "}
             <strong className="text-navy font-semibold">
               reviewed by a medical professional

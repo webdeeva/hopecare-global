@@ -1,5 +1,5 @@
 // ─────────────────────────────────────────────────────────────
-// HopeCare Global — Education content registry
+// HopeCare Global, Education content registry
 // Source of truth for the /education hub and article pages.
 // Article bodies are added here AFTER clinician review (status: "published").
 // Until then they render as "in review" so the routes work without
@@ -43,7 +43,7 @@ export interface Article {
   /** Approx words; drives reading-time estimate */
   words: number;
   status: ArticleStatus;
-  /** Published markdown body — populated after clinician sign-off */
+  /** Published markdown body, populated after clinician sign-off */
   body?: string;
   /** ISO date string once published */
   publishedAt?: string;
@@ -58,7 +58,7 @@ export const CLUSTERS: Cluster[] = [
     label: "Symptoms & Early Detection",
     kicker: "Know the signs",
     blurb:
-      "The vague, easy-to-dismiss signals — and the screening realities every woman deserves to understand.",
+      "The vague, easy-to-dismiss signals, and the screening realities every woman deserves to understand.",
     accent: "from-teal-deep to-teal",
   },
   {
@@ -74,7 +74,7 @@ export const CLUSTERS: Cluster[] = [
     label: "Diagnosis & Treatment",
     kicker: "A roadmap",
     blurb:
-      "Plain-language guidance for the days after a diagnosis — stages, types, treatments, and the right questions to ask.",
+      "Plain-language guidance for the days after a diagnosis, stages, types, treatments, and the right questions to ask.",
     accent: "from-teal-bright to-teal-deep",
   },
   {
@@ -82,7 +82,7 @@ export const CLUSTERS: Cluster[] = [
     label: "Health Equity & Global",
     kicker: "Closing the gap",
     blurb:
-      "Why outcomes differ by race and geography — and what equitable care looks like.",
+      "Why outcomes differ by race and geography, and what equitable care looks like.",
     accent: "from-green to-green-bright",
   },
   {
@@ -96,7 +96,7 @@ export const CLUSTERS: Cluster[] = [
 ];
 
 export const ARTICLES: Article[] = [
-  // Cluster A — Symptoms & Early Detection
+  // Cluster A, Symptoms & Early Detection
   {
     n: 1,
     slug: "ovarian-cancer-symptoms-early-detection-guide",
@@ -116,7 +116,7 @@ export const ARTICLES: Article[] = [
     cluster: "symptoms",
     role: "supporting",
     excerpt:
-      "Bloating and belly pain can mean a lot of things. Here's how the patterns differ — and when to push for answers.",
+      "Bloating and belly pain can mean a lot of things. Here's how the patterns differ, and when to push for answers.",
     targetKeyword: "ovarian cancer vs ibs",
     words: 1300,
     status: "draft",
@@ -137,7 +137,7 @@ export const ARTICLES: Article[] = [
     n: 4,
     slug: "ovarian-cancer-screening-explained",
     title:
-      "Why There Is No Routine Ovarian Cancer Screening Test — and What to Do Instead",
+      "Why There Is No Routine Ovarian Cancer Screening Test, and What to Do Instead",
     cluster: "symptoms",
     role: "supporting",
     excerpt:
@@ -153,7 +153,7 @@ export const ARTICLES: Article[] = [
     cluster: "symptoms",
     role: "supporting",
     excerpt:
-      "A common blood test — but not a simple yes-or-no. What the numbers mean, and what they don't.",
+      "A common blood test, but not a simple yes-or-no. What the numbers mean, and what they don't.",
     targetKeyword: "ca-125 test",
     words: 1300,
     status: "draft",
@@ -177,12 +177,12 @@ export const ARTICLES: Article[] = [
     cluster: "symptoms",
     role: "supporting",
     excerpt:
-      "A simple way to track what's normal for you — so you can spot what isn't and speak up sooner.",
+      "A simple way to track what's normal for you, so you can spot what isn't and speak up sooner.",
     targetKeyword: "ovarian cancer symptom tracker",
     words: 1300,
     status: "draft",
   },
-  // Cluster B — Risk, Genetics & Prevention
+  // Cluster B, Risk, Genetics & Prevention
   {
     n: 8,
     slug: "ovarian-cancer-risk-factors",
@@ -203,7 +203,7 @@ export const ARTICLES: Article[] = [
     cluster: "risk",
     role: "supporting",
     excerpt:
-      "A gene change can raise your risk — and knowing about it opens doors to prevention.",
+      "A gene change can raise your risk, and knowing about it opens doors to prevention.",
     targetKeyword: "brca ovarian cancer",
     words: 1400,
     status: "draft",
@@ -227,12 +227,12 @@ export const ARTICLES: Article[] = [
     cluster: "risk",
     role: "supporting",
     excerpt:
-      "No guarantees — but real, evidence-based steps that may tip the odds in your favor.",
+      "No guarantees, but real, evidence-based steps that may tip the odds in your favor.",
     targetKeyword: "reduce ovarian cancer risk",
     words: 1300,
     status: "draft",
   },
-  // Cluster C — Diagnosis & Treatment
+  // Cluster C, Diagnosis & Treatment
   {
     n: 12,
     slug: "just-diagnosed-ovarian-cancer-first-steps",
@@ -252,7 +252,7 @@ export const ARTICLES: Article[] = [
     cluster: "diagnosis",
     role: "supporting",
     excerpt:
-      "What 'stage' really means for treatment and outlook — without the jargon.",
+      "What 'stage' really means for treatment and outlook, without the jargon.",
     targetKeyword: "ovarian cancer stages",
     words: 1400,
     status: "draft",
@@ -297,7 +297,7 @@ export const ARTICLES: Article[] = [
   {
     n: 17,
     slug: "what-is-a-gynecologic-oncologist",
-    title: "What Is a Gynecologic Oncologist — and Why It Matters",
+    title: "What Is a Gynecologic Oncologist, and Why It Matters",
     cluster: "diagnosis",
     role: "supporting",
     excerpt:
@@ -306,7 +306,7 @@ export const ARTICLES: Article[] = [
     words: 1200,
     status: "draft",
   },
-  // Cluster D — Health Equity & Global
+  // Cluster D, Health Equity & Global
   {
     n: 18,
     slug: "ovarian-cancer-health-disparities",
@@ -315,7 +315,7 @@ export const ARTICLES: Article[] = [
     cluster: "equity",
     role: "pillar",
     excerpt:
-      "Who gets diagnosed early, who gets the best care — and why it's not equal. What has to change.",
+      "Who gets diagnosed early, who gets the best care, and why it's not equal. What has to change.",
     targetKeyword: "ovarian cancer disparities",
     words: 2200,
     status: "draft",
@@ -324,7 +324,7 @@ export const ARTICLES: Article[] = [
     n: 19,
     slug: "black-women-ovarian-cancer-mortality",
     title:
-      "Why Black Women Face Higher Ovarian Cancer Mortality — and What Has to Change",
+      "Why Black Women Face Higher Ovarian Cancer Mortality, and What Has to Change",
     cluster: "equity",
     role: "supporting",
     excerpt:
@@ -345,7 +345,7 @@ export const ARTICLES: Article[] = [
     words: 1400,
     status: "draft",
   },
-  // Cluster E — Living With & Support
+  // Cluster E, Living With & Support
   {
     n: 21,
     slug: "ovarian-cancer-survivorship",
@@ -378,7 +378,7 @@ export const ARTICLES: Article[] = [
     cluster: "living",
     role: "supporting",
     excerpt:
-      "How to show up — practically and emotionally — without burning out yourself.",
+      "How to show up, practically and emotionally, without burning out yourself.",
     targetKeyword: "ovarian cancer caregiver",
     words: 1300,
     status: "draft",

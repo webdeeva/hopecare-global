@@ -7,14 +7,14 @@ import { EducationHero } from "@/components/education/EducationHero";
 import { EducationClusters } from "@/components/education/EducationClusters";
 
 export const metadata: Metadata = {
-  title: "Education — Ovarian Cancer Guides | HopeCare Global Inc",
+  title: "Education, Ovarian Cancer Guides | HopeCare Global Inc",
   description:
-    "Plain-language, medically reviewed guides on ovarian cancer — symptoms and early detection, risk and genetics, diagnosis and treatment, health equity, survivorship and support.",
+    "Plain-language, medically reviewed guides on ovarian cancer, symptoms and early detection, risk and genetics, diagnosis and treatment, health equity, survivorship and support.",
   alternates: { canonical: "https://www.hopecareglobal.org/education" },
   openGraph: {
-    title: "Ovarian Cancer Education — HopeCare Global Inc",
+    title: "Ovarian Cancer Education, HopeCare Global Inc",
     description:
-      "Clear, trusted, medically reviewed guides on ovarian cancer — from the first signs to life after treatment.",
+      "Clear, trusted, medically reviewed guides on ovarian cancer, from the first signs to life after treatment.",
     url: "https://www.hopecareglobal.org/education",
     siteName: "HopeCare Global Inc",
     locale: "en_US",
@@ -44,7 +44,7 @@ export default function EducationPage() {
               <span className="text-gradient-light">answered yet?</span>
             </h2>
             <p className="mt-5 text-lg text-white/75 leading-relaxed">
-              Reach out — or tell us what you&apos;d like to learn about next.
+              Reach out, or tell us what you&apos;d like to learn about next.
               These guides are here to serve you.
             </p>
             <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
