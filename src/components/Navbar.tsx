@@ -6,12 +6,15 @@ import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, Heart } from "lucide-react";
 import { Logo } from "./Logo";
 
+const MotionLink = motion(Link);
+
 const links = [
-  { href: "#mission", label: "Mission" },
-  { href: "#programs", label: "Programs" },
-  { href: "#impact", label: "Impact" },
-  { href: "#founder", label: "Founder" },
-  { href: "#involved", label: "Get Involved" },
+  { href: "/#mission", label: "Mission" },
+  { href: "/#programs", label: "Programs" },
+  { href: "/#impact", label: "Impact" },
+  { href: "/education", label: "Education", route: true },
+  { href: "/#founder", label: "Founder" },
+  { href: "/#involved", label: "Get Involved" },
 ];
 
 export function Navbar() {
@@ -42,16 +45,24 @@ export function Navbar() {
         </a>
 
         <nav className="hidden lg:flex items-center gap-1">
-          {links.map((l) => (
-            <a
-              key={l.href}
-              href={l.href}
-              className="px-4 py-2 text-sm font-medium text-ink-soft hover:text-teal-deep transition-colors relative group"
-            >
-              {l.label}
+          {links.map((l) => {
+            const className =
+              "px-4 py-2 text-sm font-medium text-ink-soft hover:text-teal-deep transition-colors relative group";
+            const underline = (
               <span className="absolute left-4 right-4 -bottom-0.5 h-px bg-gradient-to-r from-teal to-green scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
-            </a>
-          ))}
+            );
+            return l.route ? (
+              <Link key={l.href} href={l.href} className={className}>
+                {l.label}
+                {underline}
+              </Link>
+            ) : (
+              <a key={l.href} href={l.href} className={className}>
+                {l.label}
+                {underline}
+              </a>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-3">
@@ -82,19 +93,22 @@ export function Navbar() {
             className="lg:hidden overflow-hidden bg-cream/95 backdrop-blur-xl border-t border-navy/5"
           >
             <nav className="container-wide flex flex-col py-6 gap-1">
-              {links.map((l, i) => (
-                <motion.a
-                  key={l.href}
-                  href={l.href}
-                  onClick={() => setOpen(false)}
-                  initial={{ x: -16, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{ delay: 0.06 * i, duration: 0.4 }}
-                  className="py-3 px-2 text-lg font-medium text-ink hover:text-teal-deep border-b border-navy/5"
-                >
-                  {l.label}
-                </motion.a>
-              ))}
+              {links.map((l, i) => {
+                const Tag = l.route ? MotionLink : motion.a;
+                return (
+                  <Tag
+                    key={l.href}
+                    href={l.href}
+                    onClick={() => setOpen(false)}
+                    initial={{ x: -16, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{ delay: 0.06 * i, duration: 0.4 }}
+                    className="py-3 px-2 text-lg font-medium text-ink hover:text-teal-deep border-b border-navy/5"
+                  >
+                    {l.label}
+                  </Tag>
+                );
+              })}
               <Link
                 href="/donate"
                 onClick={() => setOpen(false)}

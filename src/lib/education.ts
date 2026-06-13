@@ -1,0 +1,446 @@
+// ─────────────────────────────────────────────────────────────
+// HopeCare Global — Education content registry
+// Source of truth for the /education hub and article pages.
+// Article bodies are added here AFTER clinician review (status: "published").
+// Until then they render as "in review" so the routes work without
+// publishing unreviewed medical (YMYL) content.
+// ─────────────────────────────────────────────────────────────
+
+export type ArticleStatus = "draft" | "published";
+
+export type ClusterId =
+  | "symptoms"
+  | "risk"
+  | "diagnosis"
+  | "equity"
+  | "living";
+
+export interface Cluster {
+  id: ClusterId;
+  label: string;
+  kicker: string;
+  blurb: string;
+  /** Tailwind gradient stops, e.g. "from-teal-deep to-teal" */
+  accent: string;
+}
+
+export interface Source {
+  claim: string;
+  organization: string;
+  url: string;
+}
+
+export interface Article {
+  /** Stable order number, matches the 25-article production run */
+  n: number;
+  slug: string;
+  title: string;
+  cluster: ClusterId;
+  role: "pillar" | "supporting";
+  /** Short, non-clinical teaser shown on cards (safe to display pre-review) */
+  excerpt: string;
+  targetKeyword: string;
+  /** Approx words; drives reading-time estimate */
+  words: number;
+  status: ArticleStatus;
+  /** Published markdown body — populated after clinician sign-off */
+  body?: string;
+  /** ISO date string once published */
+  publishedAt?: string;
+  /** Name + credential of the clinician who reviewed it */
+  medicallyReviewedBy?: string;
+  sources?: Source[];
+}
+
+export const CLUSTERS: Cluster[] = [
+  {
+    id: "symptoms",
+    label: "Symptoms & Early Detection",
+    kicker: "Know the signs",
+    blurb:
+      "The vague, easy-to-dismiss signals — and the screening realities every woman deserves to understand.",
+    accent: "from-teal-deep to-teal",
+  },
+  {
+    id: "risk",
+    label: "Risk, Genetics & Prevention",
+    kicker: "Understand your risk",
+    blurb:
+      "Family history, BRCA, and what the research really says about lowering your risk.",
+    accent: "from-teal to-teal-bright",
+  },
+  {
+    id: "diagnosis",
+    label: "Diagnosis & Treatment",
+    kicker: "A roadmap",
+    blurb:
+      "Plain-language guidance for the days after a diagnosis — stages, types, treatments, and the right questions to ask.",
+    accent: "from-teal-bright to-teal-deep",
+  },
+  {
+    id: "equity",
+    label: "Health Equity & Global",
+    kicker: "Closing the gap",
+    blurb:
+      "Why outcomes differ by race and geography — and what equitable care looks like.",
+    accent: "from-green to-green-bright",
+  },
+  {
+    id: "living",
+    label: "Living With & Support",
+    kicker: "You're not alone",
+    blurb:
+      "Survivorship, caregiving, cost navigation, and breaking the silence in our families and faith communities.",
+    accent: "from-green-bright to-green",
+  },
+];
+
+export const ARTICLES: Article[] = [
+  // Cluster A — Symptoms & Early Detection
+  {
+    n: 1,
+    slug: "ovarian-cancer-symptoms-early-detection-guide",
+    title: "Ovarian Cancer Symptoms & Early Detection: The Complete Guide",
+    cluster: "symptoms",
+    role: "pillar",
+    excerpt:
+      "The signs are quiet and easy to miss. Here's what to watch for, and why catching it early changes everything.",
+    targetKeyword: "ovarian cancer symptoms",
+    words: 2200,
+    status: "draft",
+  },
+  {
+    n: 2,
+    slug: "ovarian-cancer-vs-ibs",
+    title: "Ovarian Cancer vs. IBS: How to Tell the Difference",
+    cluster: "symptoms",
+    role: "supporting",
+    excerpt:
+      "Bloating and belly pain can mean a lot of things. Here's how the patterns differ — and when to push for answers.",
+    targetKeyword: "ovarian cancer vs ibs",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 3,
+    slug: "bloating-and-ovarian-cancer",
+    title: "Is Bloating a Sign of Ovarian Cancer? When to Worry",
+    cluster: "symptoms",
+    role: "supporting",
+    excerpt:
+      "Most bloating is harmless. The kind that doesn't go away is worth a closer look.",
+    targetKeyword: "bloating ovarian cancer",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 4,
+    slug: "ovarian-cancer-screening-explained",
+    title:
+      "Why There Is No Routine Ovarian Cancer Screening Test — and What to Do Instead",
+    cluster: "symptoms",
+    role: "supporting",
+    excerpt:
+      "There's no Pap smear for ovarian cancer. Here's what actually helps you stay ahead of it.",
+    targetKeyword: "ovarian cancer screening",
+    words: 1400,
+    status: "draft",
+  },
+  {
+    n: 5,
+    slug: "ca-125-test-explained",
+    title: "The CA-125 Test: What It Can and Cannot Tell You",
+    cluster: "symptoms",
+    role: "supporting",
+    excerpt:
+      "A common blood test — but not a simple yes-or-no. What the numbers mean, and what they don't.",
+    targetKeyword: "ca-125 test",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 6,
+    slug: "pelvic-exam-transvaginal-ultrasound",
+    title: "Pelvic Exams and Transvaginal Ultrasound: What to Expect",
+    cluster: "symptoms",
+    role: "supporting",
+    excerpt:
+      "Knowing what happens in the room takes some of the fear out of it. A calm, step-by-step walk-through.",
+    targetKeyword: "transvaginal ultrasound ovarian cancer",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 7,
+    slug: "ovarian-cancer-symptom-tracking-guide",
+    title: "Know Your Body: A Symptom-Tracking Guide for Ovarian Health",
+    cluster: "symptoms",
+    role: "supporting",
+    excerpt:
+      "A simple way to track what's normal for you — so you can spot what isn't and speak up sooner.",
+    targetKeyword: "ovarian cancer symptom tracker",
+    words: 1300,
+    status: "draft",
+  },
+  // Cluster B — Risk, Genetics & Prevention
+  {
+    n: 8,
+    slug: "ovarian-cancer-risk-factors",
+    title: "Ovarian Cancer Risk Factors: Age, Genetics, and Lifestyle",
+    cluster: "risk",
+    role: "pillar",
+    excerpt:
+      "Some risks you can change, some you can't. Understanding both helps you make informed choices.",
+    targetKeyword: "ovarian cancer risk factors",
+    words: 2200,
+    status: "draft",
+  },
+  {
+    n: 9,
+    slug: "brca-genetic-testing-ovarian-cancer",
+    title:
+      "BRCA1 and BRCA2: What Genetic Testing Means for Your Ovarian Cancer Risk",
+    cluster: "risk",
+    role: "supporting",
+    excerpt:
+      "A gene change can raise your risk — and knowing about it opens doors to prevention.",
+    targetKeyword: "brca ovarian cancer",
+    words: 1400,
+    status: "draft",
+  },
+  {
+    n: 10,
+    slug: "ovarian-cancer-family-history-testing",
+    title: "Family History and Ovarian Cancer: Should You Get Tested?",
+    cluster: "risk",
+    role: "supporting",
+    excerpt:
+      "If cancer runs in your family, here's how to think about testing and what it could mean.",
+    targetKeyword: "ovarian cancer family history",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 11,
+    slug: "lower-ovarian-cancer-risk",
+    title: "Can You Lower Your Risk of Ovarian Cancer? What the Research Says",
+    cluster: "risk",
+    role: "supporting",
+    excerpt:
+      "No guarantees — but real, evidence-based steps that may tip the odds in your favor.",
+    targetKeyword: "reduce ovarian cancer risk",
+    words: 1300,
+    status: "draft",
+  },
+  // Cluster C — Diagnosis & Treatment
+  {
+    n: 12,
+    slug: "just-diagnosed-ovarian-cancer-first-steps",
+    title: "Just Diagnosed with Ovarian Cancer: A First-Steps Guide",
+    cluster: "diagnosis",
+    role: "pillar",
+    excerpt:
+      "The first days are overwhelming. Here's a steady roadmap for what comes next.",
+    targetKeyword: "ovarian cancer diagnosis",
+    words: 2200,
+    status: "draft",
+  },
+  {
+    n: 13,
+    slug: "ovarian-cancer-stages-explained",
+    title: "Ovarian Cancer Stages I–IV, Explained in Plain Language",
+    cluster: "diagnosis",
+    role: "supporting",
+    excerpt:
+      "What 'stage' really means for treatment and outlook — without the jargon.",
+    targetKeyword: "ovarian cancer stages",
+    words: 1400,
+    status: "draft",
+  },
+  {
+    n: 14,
+    slug: "types-of-ovarian-cancer",
+    title: "Types of Ovarian Cancer: Epithelial, Germ Cell, and Stromal",
+    cluster: "diagnosis",
+    role: "supporting",
+    excerpt:
+      "Not all ovarian cancers are the same. Knowing the type shapes the treatment plan.",
+    targetKeyword: "types of ovarian cancer",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 15,
+    slug: "ovarian-cancer-treatment-options",
+    title:
+      "Treatment Options for Ovarian Cancer: Surgery, Chemo, and Targeted Therapy",
+    cluster: "diagnosis",
+    role: "supporting",
+    excerpt:
+      "An overview of the main treatments and how doctors decide which path fits.",
+    targetKeyword: "ovarian cancer treatment",
+    words: 1500,
+    status: "draft",
+  },
+  {
+    n: 16,
+    slug: "questions-to-ask-your-oncologist",
+    title: "Questions to Ask Your Oncologist After an Ovarian Cancer Diagnosis",
+    cluster: "diagnosis",
+    role: "supporting",
+    excerpt:
+      "Walk into appointments prepared. A printable list of the questions that matter most.",
+    targetKeyword: "questions to ask oncologist",
+    words: 1200,
+    status: "draft",
+  },
+  {
+    n: 17,
+    slug: "what-is-a-gynecologic-oncologist",
+    title: "What Is a Gynecologic Oncologist — and Why It Matters",
+    cluster: "diagnosis",
+    role: "supporting",
+    excerpt:
+      "Seeing the right specialist can change outcomes. Here's who they are and why it counts.",
+    targetKeyword: "gynecologic oncologist",
+    words: 1200,
+    status: "draft",
+  },
+  // Cluster D — Health Equity & Global
+  {
+    n: 18,
+    slug: "ovarian-cancer-health-disparities",
+    title:
+      "Closing the Gap: Health Disparities in Ovarian Cancer Diagnosis and Access",
+    cluster: "equity",
+    role: "pillar",
+    excerpt:
+      "Who gets diagnosed early, who gets the best care — and why it's not equal. What has to change.",
+    targetKeyword: "ovarian cancer disparities",
+    words: 2200,
+    status: "draft",
+  },
+  {
+    n: 19,
+    slug: "black-women-ovarian-cancer-mortality",
+    title:
+      "Why Black Women Face Higher Ovarian Cancer Mortality — and What Has to Change",
+    cluster: "equity",
+    role: "supporting",
+    excerpt:
+      "The disparity is real and documented. Understanding why is the first step to closing it.",
+    targetKeyword: "black women ovarian cancer",
+    words: 1500,
+    status: "draft",
+  },
+  {
+    n: 20,
+    slug: "ovarian-cancer-around-the-world",
+    title: "Ovarian Cancer Around the World: A Global Health Priority",
+    cluster: "equity",
+    role: "supporting",
+    excerpt:
+      "This isn't only a Western concern. A look at the global picture and the work ahead.",
+    targetKeyword: "global ovarian cancer",
+    words: 1400,
+    status: "draft",
+  },
+  // Cluster E — Living With & Support
+  {
+    n: 21,
+    slug: "ovarian-cancer-survivorship",
+    title:
+      "Life After Treatment: Ovarian Cancer Survivorship and Follow-Up Care",
+    cluster: "living",
+    role: "pillar",
+    excerpt:
+      "Finishing treatment is a milestone, not the end of the journey. What survivorship really looks like.",
+    targetKeyword: "ovarian cancer survivorship",
+    words: 2200,
+    status: "draft",
+  },
+  {
+    n: 22,
+    slug: "cancer-care-financial-assistance",
+    title: "Navigating the Cost of Cancer Care: Financial Aid and Resources",
+    cluster: "living",
+    role: "supporting",
+    excerpt:
+      "Care shouldn't bankrupt you. A practical guide to the help that's out there.",
+    targetKeyword: "ovarian cancer financial assistance",
+    words: 1400,
+    status: "draft",
+  },
+  {
+    n: 23,
+    slug: "ovarian-cancer-caregiver-guide",
+    title: "Supporting a Loved One Through Ovarian Cancer: A Caregiver Guide",
+    cluster: "living",
+    role: "supporting",
+    excerpt:
+      "How to show up — practically and emotionally — without burning out yourself.",
+    targetKeyword: "ovarian cancer caregiver",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 24,
+    slug: "breaking-ovarian-cancer-stigma",
+    title:
+      "Breaking the Stigma: Talking About Ovarian Cancer in Faith and Family Communities",
+    cluster: "living",
+    role: "supporting",
+    excerpt:
+      "Silence costs lives. How to start honest, dignified conversations where they're hardest to have.",
+    targetKeyword: "ovarian cancer stigma",
+    words: 1300,
+    status: "draft",
+  },
+  {
+    n: 25,
+    slug: "ovarian-cancer-clinical-trials",
+    title: "Clinical Trials for Ovarian Cancer: What They Are and How to Find One",
+    cluster: "living",
+    role: "supporting",
+    excerpt:
+      "Trials can mean access to tomorrow's treatments today. Here's how they work and how to find one.",
+    targetKeyword: "ovarian cancer clinical trials",
+    words: 1300,
+    status: "draft",
+  },
+];
+
+// ── Helpers ──────────────────────────────────────────────────
+
+export function readingTimeMinutes(words: number): number {
+  return Math.max(1, Math.round(words / 200));
+}
+
+export function getCluster(id: ClusterId): Cluster {
+  const c = CLUSTERS.find((c) => c.id === id);
+  if (!c) throw new Error(`Unknown cluster: ${id}`);
+  return c;
+}
+
+export function articlesByCluster(id: ClusterId): Article[] {
+  return ARTICLES.filter((a) => a.cluster === id).sort((a, b) => {
+    // Pillar first, then by order number
+    if (a.role !== b.role) return a.role === "pillar" ? -1 : 1;
+    return a.n - b.n;
+  });
+}
+
+export function getArticle(slug: string): Article | undefined {
+  return ARTICLES.find((a) => a.slug === slug);
+}
+
+export function publishedArticles(): Article[] {
+  return ARTICLES.filter((a) => a.status === "published");
+}
+
+/** Other articles in the same cluster, for "Related reading". */
+export function relatedArticles(article: Article, limit = 3): Article[] {
+  return ARTICLES.filter(
+    (a) => a.cluster === article.cluster && a.slug !== article.slug
+  ).slice(0, limit);
+}
