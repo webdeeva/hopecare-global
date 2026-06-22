@@ -14,14 +14,13 @@ import {
   readingTimeMinutes,
 } from "@/lib/education";
 import { getArticleContent } from "@/lib/education-content";
+import { SITE_URL as SITE } from "@/lib/site";
 
 const DATE_FMT = new Intl.DateTimeFormat("en-US", {
   year: "numeric",
   month: "long",
   day: "numeric",
 });
-
-const SITE = "https://www.hopecareglobal.org";
 
 export function generateStaticParams() {
   return ARTICLES.map((a) => ({ slug: a.slug }));
@@ -100,6 +99,26 @@ export default async function ArticlePage({
           about: { "@type": "MedicalCondition", name: "Ovarian cancer" },
         }
       : null;
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Education", item: `${SITE}/education` },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: cluster.label,
+        item: `${SITE}/education#${cluster.id}`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: article.title,
+        item: `${SITE}/education/${article.slug}`,
+      },
+    ],
+  };
 
   return (
     <>
@@ -275,6 +294,10 @@ export default async function ArticlePage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
     </>
   );
 }

@@ -4,17 +4,19 @@ import { Footer } from "@/components/Footer";
 import { ContactHero } from "@/components/contact/ContactHero";
 import { ContactForm } from "@/components/contact/ContactForm";
 import { ContactDirect } from "@/components/contact/ContactDirect";
+import { SITE_NAME, abs } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact — HopeCare Global Inc",
   description:
     "Reach out about volunteering, partnership, planned giving, press inquiries, or to share your story. We respond within two business days.",
+  alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact HopeCare Global Inc",
     description:
       "Reach out to start a partnership, volunteer, or share your story.",
-    url: "https://www.hopecareglobal.org/contact",
-    siteName: "HopeCare Global Inc",
+    url: abs("/contact"),
+    siteName: SITE_NAME,
     locale: "en_US",
     type: "website",
   },

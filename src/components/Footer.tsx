@@ -110,13 +110,13 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.hopecareglobal.org"
+                  href="https://hopecareglobal.org"
                   className="group flex items-center gap-3 text-cream/85 hover:text-teal-soft"
                 >
                   <span className="w-9 h-9 rounded-full bg-white/8 grid place-items-center group-hover:bg-teal/20 transition-colors">
                     <Globe className="w-4 h-4" />
                   </span>
-                  www.hopecareglobal.org
+                  hopecareglobal.org
                 </a>
               </li>
             </ul>

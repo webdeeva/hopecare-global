@@ -2,8 +2,8 @@
 
 import { motion } from "motion/react";
 import { Heart, ArrowUpRight } from "lucide-react";
-
-const PAYPAL_URL = "https://www.paypal.com/ncp/payment/88ZQAFSLWAJJY";
+import { PAYPAL_URL } from "@/lib/site";
+import { trackDonateClick } from "@/lib/gtag";
 
 export function DonateCTA() {
   return (
@@ -56,6 +56,7 @@ export function DonateCTA() {
               href={PAYPAL_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackDonateClick("donate_cta")}
               className="group inline-flex items-center gap-2 bg-cream text-navy px-7 py-4 rounded-full font-semibold btn-lift shadow-[0_18px_50px_-15px_rgba(0,0,0,0.4)]"
             >
               <Heart className="w-4 h-4" strokeWidth={2.5} />

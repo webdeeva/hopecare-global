@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display, Dancing_Script } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@/components/Analytics";
+import { SITE_URL, SITE_NAME, orgWebsiteGraph } from "@/lib/site";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -22,6 +24,7 @@ const script = Dancing_Script({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "HopeCare Global Inc — Ovarian Cancer Awareness · Global Outreach",
   description:
     "Advancing early detection, education, and access to care through ovarian cancer awareness and global outreach. Empowering communities. Inspiring hope. Changing lives.",
@@ -35,13 +38,14 @@ export const metadata: Metadata = {
     "HopeCare Global",
     "Dr. Petrina Harrison",
   ],
-  authors: [{ name: "HopeCare Global Inc" }],
+  authors: [{ name: SITE_NAME }],
+  alternates: { canonical: "/" },
   openGraph: {
     title: "HopeCare Global Inc — Ovarian Cancer Awareness",
     description:
       "Empowering communities. Inspiring hope. Changing lives. Join the global movement for ovarian cancer awareness and equitable access to care.",
-    url: "https://www.hopecareglobal.org",
-    siteName: "HopeCare Global Inc",
+    url: SITE_URL,
+    siteName: SITE_NAME,
     locale: "en_US",
     type: "website",
   },
@@ -63,7 +67,12 @@ export default function RootLayout({
       className={`${inter.variable} ${playfair.variable} ${script.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-cream text-ink">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgWebsiteGraph()) }}
+        />
         {children}
+        <Analytics />
       </body>
     </html>
   );

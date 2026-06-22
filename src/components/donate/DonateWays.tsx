@@ -12,7 +12,9 @@ import {
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
-const PAYPAL_URL = "https://www.paypal.com/ncp/payment/88ZQAFSLWAJJY";
+import { PAYPAL_URL } from "@/lib/site";
+import { trackDonateClick } from "@/lib/gtag";
+
 const CONTACT = (topic: string) => `/contact?topic=${encodeURIComponent(topic)}`;
 
 type Way = {
@@ -142,6 +144,9 @@ export function DonateWays() {
               <a
                 href={w.href}
                 {...(w.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                {...(w.href === PAYPAL_URL
+                  ? { onClick: () => trackDonateClick("donate_ways") }
+                  : {})}
                 className="relative mt-6 inline-flex items-center gap-1.5 text-sm font-semibold text-teal-deep group/link"
               >
                 {w.cta}

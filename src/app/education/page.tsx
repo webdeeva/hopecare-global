@@ -5,26 +5,49 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { EducationHero } from "@/components/education/EducationHero";
 import { EducationClusters } from "@/components/education/EducationClusters";
+import { SITE_NAME, abs } from "@/lib/site";
+import { publishedArticles } from "@/lib/education";
 
 export const metadata: Metadata = {
   title: "Education, Ovarian Cancer Guides | HopeCare Global Inc",
   description:
     "Plain-language guides on ovarian cancer grounded in trusted medical sources, symptoms and early detection, risk and genetics, diagnosis and treatment, health equity, survivorship and support.",
-  alternates: { canonical: "https://www.hopecareglobal.org/education" },
+  alternates: { canonical: "/education" },
   openGraph: {
     title: "Ovarian Cancer Education, HopeCare Global Inc",
     description:
       "Clear, trusted, plain-language guides on ovarian cancer, from the first signs to life after treatment.",
-    url: "https://www.hopecareglobal.org/education",
-    siteName: "HopeCare Global Inc",
+    url: abs("/education"),
+    siteName: SITE_NAME,
     locale: "en_US",
     type: "website",
+  },
+};
+
+const collectionJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Ovarian Cancer Education",
+  url: abs("/education"),
+  about: { "@type": "MedicalCondition", name: "Ovarian cancer" },
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: publishedArticles().map((a, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: abs(`/education/${a.slug}`),
+      name: a.title,
+    })),
   },
 };
 
 export default function EducationPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
       <Navbar />
       <main className="flex-1">
         <EducationHero />

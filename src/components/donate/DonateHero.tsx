@@ -3,8 +3,8 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { Heart, ArrowUpRight, Shield } from "lucide-react";
-
-const PAYPAL_URL = "https://www.paypal.com/ncp/payment/88ZQAFSLWAJJY";
+import { PAYPAL_URL } from "@/lib/site";
+import { trackDonateClick } from "@/lib/gtag";
 
 export function DonateHero() {
   return (
@@ -105,6 +105,7 @@ export function DonateHero() {
               href={PAYPAL_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackDonateClick("donate_hero")}
               className="group inline-flex items-center gap-2 bg-gradient-to-r from-teal-deep via-teal to-green text-white px-7 py-4 rounded-full font-semibold btn-lift shadow-[0_18px_50px_-15px_rgba(15,139,158,0.55)]"
             >
               <Heart className="w-4 h-4" strokeWidth={2.5} />
