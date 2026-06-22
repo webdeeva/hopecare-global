@@ -63,9 +63,9 @@ export function EducationHero() {
             Clear, dignified, plain-language guides on ovarian cancer, from the
             first quiet symptoms to life after treatment. Every article is{" "}
             <strong className="text-navy font-semibold">
-              reviewed by a medical professional
+              grounded in trusted medical sources
             </strong>{" "}
-            and grounded in trusted sources.
+            like the ACS, NCI, and CDC.
           </motion.p>
         </div>
       </div>

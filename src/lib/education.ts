@@ -42,6 +42,8 @@ export interface Article {
   targetKeyword: string;
   /** Approx words; drives reading-time estimate */
   words: number;
+  /** Hero illustration path under /public */
+  heroImage: string;
   status: ArticleStatus;
   /** Published markdown body, populated after clinician sign-off */
   body?: string;
@@ -107,7 +109,9 @@ export const ARTICLES: Article[] = [
       "The signs are quiet and easy to miss. Here's what to watch for, and why catching it early changes everything.",
     targetKeyword: "ovarian cancer symptoms",
     words: 2200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-symptoms-early-detection-guide.png",
   },
   {
     n: 2,
@@ -119,7 +123,9 @@ export const ARTICLES: Article[] = [
       "Bloating and belly pain can mean a lot of things. Here's how the patterns differ, and when to push for answers.",
     targetKeyword: "ovarian cancer vs ibs",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-vs-ibs.png",
   },
   {
     n: 3,
@@ -131,7 +137,9 @@ export const ARTICLES: Article[] = [
       "Most bloating is harmless. The kind that doesn't go away is worth a closer look.",
     targetKeyword: "bloating ovarian cancer",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/bloating-and-ovarian-cancer.png",
   },
   {
     n: 4,
@@ -144,7 +152,9 @@ export const ARTICLES: Article[] = [
       "There's no Pap smear for ovarian cancer. Here's what actually helps you stay ahead of it.",
     targetKeyword: "ovarian cancer screening",
     words: 1400,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-screening-explained.png",
   },
   {
     n: 5,
@@ -156,7 +166,9 @@ export const ARTICLES: Article[] = [
       "A common blood test, but not a simple yes-or-no. What the numbers mean, and what they don't.",
     targetKeyword: "ca-125 test",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ca-125-test-explained.png",
   },
   {
     n: 6,
@@ -168,7 +180,9 @@ export const ARTICLES: Article[] = [
       "Knowing what happens in the room takes some of the fear out of it. A calm, step-by-step walk-through.",
     targetKeyword: "transvaginal ultrasound ovarian cancer",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/pelvic-exam-transvaginal-ultrasound.png",
   },
   {
     n: 7,
@@ -180,7 +194,9 @@ export const ARTICLES: Article[] = [
       "A simple way to track what's normal for you, so you can spot what isn't and speak up sooner.",
     targetKeyword: "ovarian cancer symptom tracker",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-symptom-tracking-guide.png",
   },
   // Cluster B, Risk, Genetics & Prevention
   {
@@ -193,7 +209,9 @@ export const ARTICLES: Article[] = [
       "Some risks you can change, some you can't. Understanding both helps you make informed choices.",
     targetKeyword: "ovarian cancer risk factors",
     words: 2200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-risk-factors.png",
   },
   {
     n: 9,
@@ -206,7 +224,9 @@ export const ARTICLES: Article[] = [
       "A gene change can raise your risk, and knowing about it opens doors to prevention.",
     targetKeyword: "brca ovarian cancer",
     words: 1400,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/brca-genetic-testing-ovarian-cancer.png",
   },
   {
     n: 10,
@@ -218,7 +238,9 @@ export const ARTICLES: Article[] = [
       "If cancer runs in your family, here's how to think about testing and what it could mean.",
     targetKeyword: "ovarian cancer family history",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-family-history-testing.png",
   },
   {
     n: 11,
@@ -230,7 +252,9 @@ export const ARTICLES: Article[] = [
       "No guarantees, but real, evidence-based steps that may tip the odds in your favor.",
     targetKeyword: "reduce ovarian cancer risk",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/lower-ovarian-cancer-risk.png",
   },
   // Cluster C, Diagnosis & Treatment
   {
@@ -243,7 +267,9 @@ export const ARTICLES: Article[] = [
       "The first days are overwhelming. Here's a steady roadmap for what comes next.",
     targetKeyword: "ovarian cancer diagnosis",
     words: 2200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/just-diagnosed-ovarian-cancer-first-steps.png",
   },
   {
     n: 13,
@@ -255,7 +281,9 @@ export const ARTICLES: Article[] = [
       "What 'stage' really means for treatment and outlook, without the jargon.",
     targetKeyword: "ovarian cancer stages",
     words: 1400,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-stages-explained.png",
   },
   {
     n: 14,
@@ -267,7 +295,9 @@ export const ARTICLES: Article[] = [
       "Not all ovarian cancers are the same. Knowing the type shapes the treatment plan.",
     targetKeyword: "types of ovarian cancer",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/types-of-ovarian-cancer.png",
   },
   {
     n: 15,
@@ -280,7 +310,9 @@ export const ARTICLES: Article[] = [
       "An overview of the main treatments and how doctors decide which path fits.",
     targetKeyword: "ovarian cancer treatment",
     words: 1500,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-treatment-options.png",
   },
   {
     n: 16,
@@ -292,7 +324,9 @@ export const ARTICLES: Article[] = [
       "Walk into appointments prepared. A printable list of the questions that matter most.",
     targetKeyword: "questions to ask oncologist",
     words: 1200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/questions-to-ask-your-oncologist.png",
   },
   {
     n: 17,
@@ -304,7 +338,9 @@ export const ARTICLES: Article[] = [
       "Seeing the right specialist can change outcomes. Here's who they are and why it counts.",
     targetKeyword: "gynecologic oncologist",
     words: 1200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/what-is-a-gynecologic-oncologist.png",
   },
   // Cluster D, Health Equity & Global
   {
@@ -318,7 +354,9 @@ export const ARTICLES: Article[] = [
       "Who gets diagnosed early, who gets the best care, and why it's not equal. What has to change.",
     targetKeyword: "ovarian cancer disparities",
     words: 2200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-health-disparities.png",
   },
   {
     n: 19,
@@ -331,7 +369,9 @@ export const ARTICLES: Article[] = [
       "The disparity is real and documented. Understanding why is the first step to closing it.",
     targetKeyword: "black women ovarian cancer",
     words: 1500,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/black-women-ovarian-cancer-mortality.png",
   },
   {
     n: 20,
@@ -343,7 +383,9 @@ export const ARTICLES: Article[] = [
       "This isn't only a Western concern. A look at the global picture and the work ahead.",
     targetKeyword: "global ovarian cancer",
     words: 1400,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-around-the-world.png",
   },
   // Cluster E, Living With & Support
   {
@@ -357,7 +399,9 @@ export const ARTICLES: Article[] = [
       "Finishing treatment is a milestone, not the end of the journey. What survivorship really looks like.",
     targetKeyword: "ovarian cancer survivorship",
     words: 2200,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-survivorship.png",
   },
   {
     n: 22,
@@ -369,7 +413,9 @@ export const ARTICLES: Article[] = [
       "Care shouldn't bankrupt you. A practical guide to the help that's out there.",
     targetKeyword: "ovarian cancer financial assistance",
     words: 1400,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/cancer-care-financial-assistance.png",
   },
   {
     n: 23,
@@ -381,7 +427,9 @@ export const ARTICLES: Article[] = [
       "How to show up, practically and emotionally, without burning out yourself.",
     targetKeyword: "ovarian cancer caregiver",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-caregiver-guide.png",
   },
   {
     n: 24,
@@ -394,7 +442,9 @@ export const ARTICLES: Article[] = [
       "Silence costs lives. How to start honest, dignified conversations where they're hardest to have.",
     targetKeyword: "ovarian cancer stigma",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/breaking-ovarian-cancer-stigma.png",
   },
   {
     n: 25,
@@ -406,7 +456,9 @@ export const ARTICLES: Article[] = [
       "Trials can mean access to tomorrow's treatments today. Here's how they work and how to find one.",
     targetKeyword: "ovarian cancer clinical trials",
     words: 1300,
-    status: "draft",
+    status: "published",
+    publishedAt: "2026-06-21",
+    heroImage: "/education/ovarian-cancer-clinical-trials.png",
   },
 ];
 

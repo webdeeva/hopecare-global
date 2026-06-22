@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { notFound } from "next/navigation";
-import { ArrowUpRight, ArrowLeft, Clock, ShieldCheck, Info } from "lucide-react";
+import { ArrowUpRight, ArrowLeft, Clock, Calendar, Info } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { MarkdownArticle } from "@/components/education/MarkdownArticle";
@@ -12,6 +13,13 @@ import {
   relatedArticles,
   readingTimeMinutes,
 } from "@/lib/education";
+import { getArticleContent } from "@/lib/education-content";
+
+const DATE_FMT = new Intl.DateTimeFormat("en-US", {
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+});
 
 const SITE = "https://www.hopecareglobal.org";
 
@@ -28,19 +36,22 @@ export async function generateMetadata({
   const article = getArticle(slug);
   if (!article) return { title: "Article not found, HopeCare Global Inc" };
 
+  const content = getArticleContent(slug);
+  const description = content?.metaDescription || article.excerpt;
   const url = `${SITE}/education/${article.slug}`;
   return {
     title: `${article.title} | HopeCare Global Inc`,
-    description: article.excerpt,
+    description,
     keywords: [article.targetKeyword],
     alternates: { canonical: url },
     openGraph: {
       title: article.title,
-      description: article.excerpt,
+      description,
       url,
       siteName: "HopeCare Global Inc",
       locale: "en_US",
       type: "article",
+      images: [{ url: `${SITE}${article.heroImage}` }],
     },
   };
 }
@@ -54,10 +65,12 @@ export default async function ArticlePage({
   const article = getArticle(slug);
   if (!article) notFound();
 
+  const content = getArticleContent(slug);
   const cluster = getCluster(article.cluster);
   const minutes = readingTimeMinutes(article.words);
   const related = relatedArticles(article);
-  const isLive = article.status === "published" && !!article.body;
+  const sources = content?.sources ?? [];
+  const isLive = article.status === "published" && !!content?.body;
 
   const jsonLd =
     isLive && article.publishedAt
@@ -67,6 +80,8 @@ export default async function ArticlePage({
           headline: article.title,
           description: article.excerpt,
           datePublished: article.publishedAt,
+          dateModified: article.publishedAt,
+          image: `${SITE}${article.heroImage}`,
           url: `${SITE}/education/${article.slug}`,
           author: { "@type": "Organization", name: "HopeCare Global Inc" },
           publisher: {
@@ -133,29 +148,41 @@ export default async function ArticlePage({
                   <Clock className="w-4 h-4" />
                   {minutes} min read
                 </span>
-                <span className="inline-flex items-center gap-1.5">
-                  <ShieldCheck className="w-4 h-4 text-teal" />
-                  {article.medicallyReviewedBy
-                    ? `Medically reviewed by ${article.medicallyReviewedBy}`
-                    : "Medically reviewed"}
-                </span>
+                {article.publishedAt && (
+                  <span className="inline-flex items-center gap-1.5">
+                    <Calendar className="w-4 h-4 text-teal" />
+                    {DATE_FMT.format(new Date(article.publishedAt))}
+                  </span>
+                )}
               </div>
             </header>
+
+            {/* Hero image */}
+            <div className="mt-8 relative aspect-[16/9] rounded-3xl overflow-hidden bg-mist border border-navy/5">
+              <Image
+                src={article.heroImage}
+                alt=""
+                fill
+                priority
+                sizes="(min-width: 768px) 48rem, 100vw"
+                className="object-cover"
+              />
+            </div>
 
             {/* Body */}
             <div className="mt-10">
               {isLive ? (
                 <>
-                  <MarkdownArticle body={article.body!} />
+                  <MarkdownArticle body={content!.body} />
 
                   {/* Sources */}
-                  {article.sources && article.sources.length > 0 && (
+                  {sources.length > 0 && (
                     <section className="mt-14 pt-8 border-t border-navy/10">
                       <h2 className="font-display text-xl font-bold text-navy">
                         Sources
                       </h2>
                       <ul className="mt-4 space-y-2 text-sm text-ink-soft">
-                        {article.sources.map((s, i) => (
+                        {sources.map((s, i) => (
                           <li key={i}>
                             <a
                               href={s.url}
@@ -256,14 +283,12 @@ function DraftState({ excerpt }: { excerpt: string }) {
   return (
     <div className="rounded-3xl bg-white border border-navy/8 p-8 md:p-10 shadow-[0_20px_50px_-25px_rgba(10,37,64,0.18)]">
       <span className="inline-flex items-center gap-2 text-[0.66rem] tracking-[0.2em] uppercase font-bold text-teal-deep bg-teal-soft/50 px-3 py-1.5 rounded-full">
-        <ShieldCheck className="w-3.5 h-3.5" />
-        In medical review
+        <Info className="w-3.5 h-3.5" />
+        Coming soon
       </span>
       <p className="mt-6 text-lg text-ink-soft leading-relaxed">{excerpt}</p>
       <p className="mt-4 text-ink-mute leading-relaxed">
-        This guide is written and is currently being reviewed by a medical
-        professional before publication. We publish health content only after a
-        clinician has verified it, so you can trust what you read here.
+        This guide is being prepared and will be published here shortly.
       </p>
       <Link
         href="/education"

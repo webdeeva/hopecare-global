@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowUpRight, Clock, BookOpen } from "lucide-react";
 import {
@@ -75,16 +76,31 @@ function ArticleCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-60px" }}
       transition={{ duration: 0.5, delay: Math.min(index * 0.05, 0.3) }}
-      className={`group relative h-full rounded-3xl bg-white border border-navy/5 p-7 md:p-8 overflow-hidden ${
+      className={`group relative h-full flex flex-col rounded-3xl bg-white border border-navy/5 overflow-hidden ${
         isLive ? "card-lift cursor-pointer" : ""
       } ${isPillar ? "md:col-span-2 lg:col-span-2" : ""}`}
     >
-      {/* accent wash */}
+      {/* hero thumbnail */}
       <div
-        className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${accent}`}
-        aria-hidden
-      />
+        className={`relative w-full overflow-hidden bg-mist ${
+          isPillar ? "aspect-[2.4/1]" : "aspect-[16/10]"
+        }`}
+      >
+        <Image
+          src={article.heroImage}
+          alt=""
+          fill
+          sizes={isPillar ? "(min-width: 768px) 44rem, 100vw" : "(min-width: 1024px) 22rem, (min-width: 768px) 50vw, 100vw"}
+          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+        />
+        {/* accent wash */}
+        <div
+          className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${accent}`}
+          aria-hidden
+        />
+      </div>
 
+      <div className="flex flex-col flex-1 p-7 md:p-8">
       <div className="flex items-center gap-2 flex-wrap">
         {isPillar && (
           <span
@@ -113,7 +129,7 @@ function ArticleCard({
         {article.excerpt}
       </p>
 
-      <div className="relative mt-6 flex items-center justify-between">
+      <div className="relative mt-auto pt-6 flex items-center justify-between">
         <span className="inline-flex items-center gap-1.5 text-[0.78rem] font-medium text-ink-mute">
           <Clock className="w-3.5 h-3.5" />
           {minutes} min read
@@ -130,6 +146,7 @@ function ArticleCard({
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           )}
         </span>
+      </div>
       </div>
     </motion.article>
   );

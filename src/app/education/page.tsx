@@ -9,12 +9,12 @@ import { EducationClusters } from "@/components/education/EducationClusters";
 export const metadata: Metadata = {
   title: "Education, Ovarian Cancer Guides | HopeCare Global Inc",
   description:
-    "Plain-language, medically reviewed guides on ovarian cancer, symptoms and early detection, risk and genetics, diagnosis and treatment, health equity, survivorship and support.",
+    "Plain-language guides on ovarian cancer grounded in trusted medical sources, symptoms and early detection, risk and genetics, diagnosis and treatment, health equity, survivorship and support.",
   alternates: { canonical: "https://www.hopecareglobal.org/education" },
   openGraph: {
     title: "Ovarian Cancer Education, HopeCare Global Inc",
     description:
-      "Clear, trusted, medically reviewed guides on ovarian cancer, from the first signs to life after treatment.",
+      "Clear, trusted, plain-language guides on ovarian cancer, from the first signs to life after treatment.",
     url: "https://www.hopecareglobal.org/education",
     siteName: "HopeCare Global Inc",
     locale: "en_US",
