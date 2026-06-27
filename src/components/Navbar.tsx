@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X, Heart, Activity } from "lucide-react";
 import { Logo } from "./Logo";
 
 const MotionLink = motion(Link);
@@ -66,6 +66,13 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <a
+            href="/#symptoms"
+            className="hidden sm:inline-flex items-center gap-2 btn-lift bg-gradient-to-r from-teal-deep via-teal to-green text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(15,139,158,0.5)]"
+          >
+            <Activity className="w-4 h-4" strokeWidth={2.5} />
+            Know the Signs
+          </a>
           <Link
             href="/donate"
             className="hidden sm:inline-flex items-center gap-2 btn-lift bg-navy text-cream px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(10,37,64,0.4)] hover:bg-navy-deep"
@@ -109,10 +116,18 @@ export function Navbar() {
                   </Tag>
                 );
               })}
+              <a
+                href="/#symptoms"
+                onClick={() => setOpen(false)}
+                className="mt-4 inline-flex items-center justify-center gap-2 bg-gradient-to-r from-teal-deep via-teal to-green text-white px-5 py-3 rounded-full text-sm font-semibold"
+              >
+                <Activity className="w-4 h-4" strokeWidth={2.5} />
+                Know the Signs
+              </a>
               <Link
                 href="/donate"
                 onClick={() => setOpen(false)}
-                className="mt-4 inline-flex items-center justify-center gap-2 bg-navy text-cream px-5 py-3 rounded-full text-sm font-semibold"
+                className="mt-2 inline-flex items-center justify-center gap-2 bg-navy text-cream px-5 py-3 rounded-full text-sm font-semibold"
               >
                 <Heart className="w-4 h-4" strokeWidth={2.5} />
                 Donate
