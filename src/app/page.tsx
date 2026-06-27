@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { Mission } from "@/components/Mission";
 import { Stats } from "@/components/Stats";
 import { Programs } from "@/components/Programs";
+import { SymptomsCTA } from "@/components/SymptomsCTA";
 import { Marquee } from "@/components/Marquee";
 import { Founder } from "@/components/Founder";
 import { GetInvolved } from "@/components/GetInvolved";
@@ -18,6 +19,7 @@ export default function Home() {
         <Mission />
         <Stats />
         <Programs />
+        <SymptomsCTA />
         <Marquee />
         <Founder />
         <GetInvolved />
