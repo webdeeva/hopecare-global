@@ -50,7 +50,7 @@ export async function generateMetadata({
       siteName: "HopeCare Global Inc",
       locale: "en_US",
       type: "article",
-      images: [{ url: `${SITE}${article.heroImage}` }],
+      ...(article.heroImage ? { images: [{ url: `${SITE}${article.heroImage}` }] } : {}),
     },
   };
 }
@@ -80,7 +80,7 @@ export default async function ArticlePage({
           description: article.excerpt,
           datePublished: article.publishedAt,
           dateModified: article.publishedAt,
-          image: `${SITE}${article.heroImage}`,
+          ...(article.heroImage ? { image: `${SITE}${article.heroImage}` } : {}),
           url: `${SITE}/education/${article.slug}`,
           author: { "@type": "Organization", name: "HopeCare Global Inc" },
           publisher: {
@@ -177,16 +177,18 @@ export default async function ArticlePage({
             </header>
 
             {/* Hero image */}
-            <div className="mt-8 relative aspect-[16/9] rounded-3xl overflow-hidden bg-mist border border-navy/5">
-              <Image
-                src={article.heroImage}
-                alt=""
-                fill
-                priority
-                sizes="(min-width: 768px) 48rem, 100vw"
-                className="object-cover"
-              />
-            </div>
+            {article.heroImage && (
+              <div className="mt-8 relative aspect-[16/9] rounded-3xl overflow-hidden bg-mist border border-navy/5">
+                <Image
+                  src={article.heroImage}
+                  alt=""
+                  fill
+                  priority
+                  sizes="(min-width: 768px) 48rem, 100vw"
+                  className="object-cover"
+                />
+              </div>
+            )}
 
             {/* Body */}
             <div className="mt-10">

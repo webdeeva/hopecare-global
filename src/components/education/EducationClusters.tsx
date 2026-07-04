@@ -86,13 +86,17 @@ function ArticleCard({
           isPillar ? "aspect-[2.4/1]" : "aspect-[16/10]"
         }`}
       >
-        <Image
-          src={article.heroImage}
-          alt=""
-          fill
-          sizes={isPillar ? "(min-width: 768px) 44rem, 100vw" : "(min-width: 1024px) 22rem, (min-width: 768px) 50vw, 100vw"}
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-        />
+        {article.heroImage ? (
+          <Image
+            src={article.heroImage}
+            alt=""
+            fill
+            sizes={isPillar ? "(min-width: 768px) 44rem, 100vw" : "(min-width: 1024px) 22rem, (min-width: 768px) 50vw, 100vw"}
+            className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        ) : (
+          <div className={`absolute inset-0 bg-gradient-to-br ${accent} opacity-20`} aria-hidden />
+        )}
         {/* accent wash */}
         <div
           className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${accent}`}

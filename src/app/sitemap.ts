@@ -20,7 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: a.publishedAt ?? SITE_UPDATED,
     changeFrequency: "monthly",
     priority: a.role === "pillar" ? 0.8 : 0.7,
-    images: [abs(a.heroImage)],
+    ...(a.heroImage ? { images: [abs(a.heroImage)] } : {}),
   }));
 
   return [...staticRoutes, ...articles];
