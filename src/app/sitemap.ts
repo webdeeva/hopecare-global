@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: abs("/education"), lastModified: SITE_UPDATED, changeFrequency: "weekly", priority: 0.9 },
     { url: abs("/donate"), lastModified: SITE_UPDATED, changeFrequency: "monthly", priority: 0.8 },
     { url: abs("/contact"), lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.5 },
+    { url: abs("/privacy"), lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const articles: MetadataRoute.Sitemap = publishedArticles().map((a) => ({
