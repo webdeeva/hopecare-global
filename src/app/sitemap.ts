@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: abs("/donate"), lastModified: SITE_UPDATED, changeFrequency: "monthly", priority: 0.8 },
     { url: abs("/contact"), lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.5 },
     { url: abs("/privacy"), lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.3 },
+    { url: abs("/terms"), lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.3 },
+    { url: abs("/medical-disclaimer"), lastModified: SITE_UPDATED, changeFrequency: "yearly", priority: 0.3 },
   ];
 
   const articles: MetadataRoute.Sitemap = publishedArticles().map((a) => ({
