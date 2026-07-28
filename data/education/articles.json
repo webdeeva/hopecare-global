@@ -346,7 +346,8 @@
     "excerpt": "Understanding PARP inhibitors: A targeted therapy that blocks DNA repair in cancer cells, often used in maintenance for ovarian cancer.",
     "targetKeyword": "PARP inhibitors ovarian cancer",
     "words": 500,
-    "status": "draft",
-    "heroImage": "/education/understanding-parp-inhibitors.png"
+    "status": "published",
+    "heroImage": "/education/understanding-parp-inhibitors.png",
+    "publishedAt": "2026-07-28"
   }
 ]
