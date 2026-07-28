@@ -349,5 +349,16 @@
     "status": "published",
     "heroImage": "/education/understanding-parp-inhibitors.png",
     "publishedAt": "2026-07-28"
+  },
+  {
+    "n": 28,
+    "slug": "hereditary-ovarian-cancer-risk",
+    "title": "Hereditary Ovarian Cancer: Understanding Your Risks and Genetic Health",
+    "cluster": "risk",
+    "role": "pillar",
+    "excerpt": "Understanding hereditary ovarian cancer, the role of family history and genetic mutations like BRCA, and how to take proactive steps for your health.",
+    "targetKeyword": "hereditary ovarian cancer risk",
+    "words": 549,
+    "status": "draft"
   }
 ]
