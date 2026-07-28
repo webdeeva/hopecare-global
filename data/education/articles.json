@@ -336,5 +336,16 @@
     "status": "published",
     "heroImage": "/education/understanding-he4-and-roma-score.png",
     "publishedAt": "2026-07-28"
+  },
+  {
+    "n": 27,
+    "slug": "understanding-parp-inhibitors",
+    "title": "Understanding PARP Inhibitors: A Targeted Approach to Ovarian Cancer Treatment",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "Understanding PARP inhibitors: A targeted therapy that blocks DNA repair in cancer cells, often used in maintenance for ovarian cancer.",
+    "targetKeyword": "PARP inhibitors ovarian cancer",
+    "words": 500,
+    "status": "draft"
   }
 ]

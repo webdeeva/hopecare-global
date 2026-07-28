@@ -1009,5 +1009,21 @@
         "url": "https://www.mayocliniclabs.com/test-catalog/overview/62661"
       }
     ]
+  },
+  "understanding-parp-inhibitors": {
+    "metaDescription": "Learn how PARP inhibitors work using the 'two toolkits' concept, their role in maintenance therapy, and how tumor testing informs treatment decisions.",
+    "body": "## Understanding PARP Inhibitors: A Targeted Approach to Ovarian Cancer Treatment\n\nIn the past, most ovarian cancer treatments relied on chemotherapy, which attacks rapidly dividing cells throughout the body. While effective, this can have significant side effects. **PARP inhibitors** represent a newer, targeted approach—they don't just kill rapidly growing cells; they specifically seek out and disable a cancer cell's ability to repair its own DNA.\n\n### How PARP Inhibitors Work: The \"Two Toolkits\" Concept\n\nTo understand how these drugs work, think about how your cells repair themselves. Every day, small breaks occur in your DNA. Your cells use different \"toolkits\" to fix these breaks.\n\n1.  **The PARP Toolkit:** PARP is an enzyme that acts as a first responder for minor DNA breaks.\n2.  **The BRCA/HR Toolkit:** For more serious double-strand DNA breaks, your cells use a different toolkit, often involving the BRCA genes (Homologous Recombination repair).\n\nMany ovarian cancer cells have **BRCA or Homologous Recombination Deficiency (HRD)**, which means their \"BRCA toolkit\" is already broken. When we use a PARP inhibitor, we disable their *only* remaining repair system (the PARP toolkit). \n\nBecause the cancer cell can no longer repair its DNA, it accumulates damage and dies. Importantly, your normal, healthy cells usually still have an intact BRCA toolkit, so they can survive the treatment—this is why these drugs are called \"targeted.\"\n\n### When and Why They Are Used\n\nPARP inhibitors are typically used in two primary clinical scenarios:\n\n*   **Maintenance Therapy:** This is the most common use. After a patient responds well to initial platinum-based chemotherapy (meaning the cancer has shrunk or disappeared), a PARP inhibitor is given as a daily pill to \"maintain\" that progress and delay the chance of the cancer growing or returning.\n*   **Active Treatment:** In some cases of recurrent disease—especially when the cancer is \"platinum-sensitive\"—PARP inhibitors may be used as a primary medication to treat the tumor.\n\n### Testing for Benefit\n\nDeciding whether a PARP inhibitor is the right choice often depends on **tumor testing**, specifically looking for:\n*   **BRCA mutations** (germline or somatic).\n*   **HRD status**, which identifies if the tumor has other DNA repair weaknesses.\n\nPatients with BRCA mutations or HRD-positive tumors often see the most significant benefit, but these drugs are increasingly being used even for tumors that do *not* have these specific markers, depending on the clinical context.\n\n### Living with PARP Inhibitors\n\nUnlike IV chemotherapy, PARP inhibitors are usually taken as **daily oral tablets**. While they are often better tolerated than traditional chemotherapy, they still have side effects that require monitoring, such as fatigue, nausea, or changes in blood cell counts (like low red or white blood cells). \n\nThe most important takeaway: **Maintenance therapy is about quality of life and longevity.** The goal is to keep the cancer controlled with a therapy that allows a patient to maintain their daily routine while reducing the risk of recurrence.\n\n***\n\n*Disclaimer: This information is for educational purposes only. Always discuss your specific tumor testing results and treatment options with your gynecologic oncologist.*",
+    "sources": [
+      {
+        "claim": "PARP inhibitors block PARP enzymes, preventing DNA repair and leading to cancer cell death in HR-deficient tumors.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7509090/",
+        "organization": "National Center for Biotechnology Information (NCBI)"
+      },
+      {
+        "organization": "American Cancer Society (ACS)",
+        "url": "https://www.cancer.org/cancer/types/ovarian-cancer/treating/targeted-therapy.html",
+        "claim": "PARP inhibitors are standard maintenance therapy for advanced ovarian cancer."
+      }
+    ]
   }
 }
