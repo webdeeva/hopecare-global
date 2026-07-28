@@ -333,7 +333,8 @@
     "excerpt": "Understanding the role of HE4 and the ROMA algorithm in stratifying ovarian cancer risk.",
     "targetKeyword": "ROMA score ovarian cancer",
     "words": 493,
-    "status": "draft",
-    "heroImage": "/education/understanding-he4-and-roma-score.png"
+    "status": "published",
+    "heroImage": "/education/understanding-he4-and-roma-score.png",
+    "publishedAt": "2026-07-28"
   }
 ]
