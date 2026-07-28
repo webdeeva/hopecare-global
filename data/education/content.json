@@ -993,5 +993,21 @@
         "url": "https://www.cancer.org/cancer/managing-cancer/making-treatment-decisions/clinical-trials/things-to-consider.html"
       }
     ]
+  },
+  "understanding-he4-and-roma-score": {
+    "metaDescription": "Learn what HE4 and the ROMA score are, how they are used in ovarian cancer diagnosis, and why these blood tests are used for risk stratification.",
+    "body": "## The Role of HE4 and the ROMA Score in Ovarian Cancer Risk Assessment\n\nWhen you are facing a medical diagnosis, you often hear many acronyms. Two terms that are increasingly part of the conversation around ovarian cancer risk are **HE4** and the **ROMA score**. \n\nIf your physician has mentioned these tests, it is likely because they are trying to gain a clearer picture of an **adnexal mass**—a growth on or near the ovary—found during an exam or imaging scan. \n\n### What is HE4?\n\n**HE4 (Human Epididymis Protein 4)** is a protein that is often overproduced by ovarian cancer cells, specifically epithelial ovarian cancers. \n\nWhile the **CA-125** test has traditionally been used to monitor ovarian conditions, it can sometimes be elevated for reasons *other* than cancer, such as endometriosis, fibroids, or other inflammatory gynecologic conditions. HE4 is often more specific to ovarian cancer, which helps clinicians differentiate between benign (non-cancerous) growths and potential malignancies.\n\n### What is the ROMA Score?\n\n**ROMA stands for Risk of Ovarian Malignancy Algorithm.** It is not a test in itself, but rather a calculation that combines three key pieces of information to estimate the risk that an ovarian mass might be malignant: \n\n1.  **HE4** levels\n2.  **CA-125** levels\n3.  **Menopausal status** (your age and whether you have gone through menopause)\n\nBy looking at all three factors together, the ROMA score provides a more nuanced risk assessment than a single protein test could.\n\n### When are these tests used?\n\nIt is vital to understand that HE4 and ROMA are **not** general screening tests for the public. They are diagnostic tools for a specific clinical situation. They are most commonly used in women who:\n*   Have already been identified as having an adnexal mass.\n*   Are currently scheduled for surgery to investigate that mass.\n*   Have not yet received a referral to a gynecologic oncologist.\n\nThe goal of using the ROMA score is to help your healthcare team decide if you should be referred to a **gynecologic oncologist**—a surgeon with specialized training in cancers of the reproductive system—to ensure you receive the most precise and appropriate care.\n\n### Interpretation and Next Steps\n\nThe ROMA score classifies a patient into a \"high risk\" or \"low risk\" category, but these results are **never meant to stand alone**. They must be interpreted by your doctor alongside:\n*   Clinical history and physical examination.\n*   Imaging results (such as transvaginal ultrasound or pelvic MRI).\n*   Other established risk scoring systems.\n\n**A low ROMA score does not rule out cancer, and a high score does not confirm it.** These tools are designed to facilitate better communication between your primary care provider and a specialist, helping to ensure that if there is a concern, you are in the right hands as quickly as possible.\n\n***\n\n*Disclaimer: This information is for educational purposes only and does not constitute medical advice. Please consult with your gynecologic oncologist or primary care provider regarding your specific test results and treatment plan.*",
+    "sources": [
+      {
+        "claim": "HE4 is more specific to epithelial ovarian cancer than CA-125 in some clinical contexts.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6090087/",
+        "organization": "National Center for Biotechnology Information (NCBI)"
+      },
+      {
+        "organization": "Mayo Clinic Laboratories",
+        "claim": "ROMA algorithm integrates HE4, CA-125, and menopausal status to estimate risk in women with adnexal masses.",
+        "url": "https://www.mayocliniclabs.com/test-catalog/overview/62661"
+      }
+    ]
   }
 }

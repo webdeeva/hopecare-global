@@ -323,5 +323,16 @@
     "status": "published",
     "publishedAt": "2026-06-21",
     "heroImage": "/education/ovarian-cancer-clinical-trials.png"
+  },
+  {
+    "n": 26,
+    "slug": "understanding-he4-and-roma-score",
+    "title": "Understanding HE4 and the ROMA Score: A Clinical Guide",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "Understanding the role of HE4 and the ROMA algorithm in stratifying ovarian cancer risk.",
+    "targetKeyword": "ROMA score ovarian cancer",
+    "words": 493,
+    "status": "draft"
   }
 ]
