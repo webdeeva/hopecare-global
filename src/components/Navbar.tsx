@@ -13,6 +13,7 @@ const links = [
   { href: "/#programs", label: "Programs" },
   { href: "/#impact", label: "Impact" },
   { href: "/education", label: "Education", route: true },
+  { href: "/ovatrack", label: "OvaTrack App", route: true },
   { href: "/#founder", label: "Founder" },
   { href: "/#involved", label: "Get Involved" },
 ];
