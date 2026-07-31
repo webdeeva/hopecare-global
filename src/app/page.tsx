@@ -4,6 +4,7 @@ import { Mission } from "@/components/Mission";
 import { Stats } from "@/components/Stats";
 import { Programs } from "@/components/Programs";
 import { SymptomsCTA } from "@/components/SymptomsCTA";
+import { MythFact } from "@/components/MythFact";
 import { Marquee } from "@/components/Marquee";
 import { Founder } from "@/components/Founder";
 import { GetInvolved } from "@/components/GetInvolved";
@@ -20,6 +21,7 @@ export default function Home() {
         <Stats />
         <Programs />
         <SymptomsCTA />
+        <MythFact />
         <Marquee />
         <Founder />
         <GetInvolved />
