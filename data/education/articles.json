@@ -361,5 +361,16 @@
     "words": 549,
     "status": "draft",
     "heroImage": "/education/hereditary-ovarian-cancer-risk.png"
+  },
+  {
+    "n": 29,
+    "slug": "glp1-ovarian-cancer-risk-overview",
+    "title": "Could GLP-1 Medications Reduce Ovarian Cancer Risk? What the New Research Says",
+    "cluster": "risk",
+    "role": "supporting",
+    "excerpt": "A growing body of research suggests GLP-1 receptor agonists may offer a protective effect against ovarian cancer. Here's what the latest evidence shows.",
+    "targetKeyword": "GLP-1 ovarian cancer risk",
+    "words": 597,
+    "status": "draft"
   }
 ]
