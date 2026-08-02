@@ -372,5 +372,16 @@
     "targetKeyword": "GLP-1 ovarian cancer risk",
     "words": 597,
     "status": "draft"
+  },
+  {
+    "n": 30,
+    "slug": "glp1-ovarian-cancer-clinical-evidence",
+    "title": "GLP-1 Receptor Agonists and Ovarian Cancer: Evidence Review for Clinicians",
+    "cluster": "risk",
+    "role": "supporting",
+    "excerpt": "A clinical overview of the evidence linking GLP-1 receptor agonist use to reduced ovarian cancer incidence and improved patient outcomes.",
+    "targetKeyword": "GLP-1 ovarian cancer clinical review",
+    "words": 866,
+    "status": "draft"
   }
 ]
