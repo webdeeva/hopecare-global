@@ -371,8 +371,9 @@
     "excerpt": "A growing body of research suggests GLP-1 receptor agonists may offer a protective effect against ovarian cancer. Here's what the latest evidence shows.",
     "targetKeyword": "GLP-1 ovarian cancer risk",
     "words": 597,
-    "status": "draft",
-    "heroImage": "/education/glp1-ovarian-cancer-risk-overview.png"
+    "status": "published",
+    "heroImage": "/education/glp1-ovarian-cancer-risk-overview.png",
+    "publishedAt": "2026-08-02"
   },
   {
     "n": 30,
