@@ -20,8 +20,8 @@ const tiers = [
   {
     icon: Stethoscope,
     amount: "$500",
-    title: "Screens",
-    body: "Underwrites a community screening event so women without insurance still get seen, evaluated, and referred.",
+    title: "Evaluations",
+    body: "Underwrites a community clinic day so women without insurance still get seen, evaluated, and referred.",
   },
 ];
 

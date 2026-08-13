@@ -14,7 +14,7 @@ const stats = [
     value: 80,
     suffix: "%",
     label: "diagnosed at late stage",
-    detail: "Because early symptoms are vague — and screening is hard.",
+    detail: "Because early symptoms are vague, and there is no screening test.",
   },
   {
     value: 2.3,

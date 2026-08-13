@@ -45,7 +45,7 @@ export function Mission() {
           <div className="pt-2 grid sm:grid-cols-3 gap-4">
             {[
               { label: "Early Detection", body: "Reaching women before stage IV." },
-              { label: "Education", body: "Symptoms, screening, real talk." },
+              { label: "Education", body: "Symptoms, risk, real talk." },
               { label: "Access", body: "Care where there was none." },
             ].map((p, i) => (
               <motion.div

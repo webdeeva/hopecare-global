@@ -35,7 +35,7 @@ export function Newsletter() {
             <span className="font-script text-gradient-brand">movement</span>.
           </h2>
           <p className="mt-5 text-lg text-ink-soft max-w-2xl mx-auto leading-relaxed">
-            Quarterly updates on screening events, partnership announcements,
+            Quarterly updates on awareness events, partnership announcements,
             and stories from the women we&apos;re standing with. No spam, ever.
           </p>
 

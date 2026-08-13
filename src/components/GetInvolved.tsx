@@ -17,7 +17,7 @@ const actions: Action[] = [
   {
     icon: Heart,
     title: "Donate",
-    body: "Fuel screening events, education programs, and patient navigation. Every dollar widens our reach.",
+    body: "Fuel education programs, patient navigation, and community outreach. Every dollar widens our reach.",
     cta: "Make a Gift",
     href: "/donate",
     tone: "primary",

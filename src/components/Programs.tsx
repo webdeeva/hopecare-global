@@ -24,11 +24,11 @@ const programs: Program[] = [
     icon: Stethoscope,
     tag: "Clinical",
     title: "Early Detection",
-    body: "Symptom literacy, screening pathways, and partnerships with clinics that meet women where they are.",
+    body: "Symptom literacy, care pathways, and partnerships with clinics that meet women where they are.",
     bullets: [
       "Symptom-recognition workshops",
       "Provider referral network",
-      "Community screening events",
+      "Community awareness events",
     ],
     accent: "from-teal-deep to-teal",
   },

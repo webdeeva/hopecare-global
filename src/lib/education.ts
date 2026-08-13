@@ -61,7 +61,7 @@ export const CLUSTERS: Cluster[] = [
     label: "Symptoms & Early Detection",
     kicker: "Know the signs",
     blurb:
-      "The vague, easy-to-dismiss signals, and the screening realities every woman deserves to understand.",
+      "The vague, easy-to-dismiss signals, and the early-detection realities every woman deserves to understand.",
     accent: "from-teal-deep to-teal",
   },
   {

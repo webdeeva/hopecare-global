@@ -88,7 +88,7 @@ export function DonateHero() {
             className="mt-7 text-lg md:text-xl text-ink-soft leading-[1.55] max-w-[34rem]"
           >
             Every dollar widens our reach: into the clinics that{" "}
-            <strong className="text-navy font-semibold">screen earlier</strong>, the rooms where we{" "}
+            <strong className="text-navy font-semibold">catch it earlier</strong>, the rooms where we{" "}
             <strong className="text-navy font-semibold">teach the symptoms</strong>, and the lives of
             women who deserve to be{" "}
             <strong className="text-navy font-semibold">seen, supported, and heard</strong>.
@@ -182,7 +182,7 @@ export function DonateHero() {
                 Every dollar to early detection &amp; access.
               </div>
               <p className="mt-2 text-[0.74rem] text-ink-soft leading-snug">
-                Your gift directly funds screening events, education programs, and patient navigation.
+                Your gift directly funds education programs, patient navigation, and community outreach.
               </p>
             </div>
           </motion.div>
