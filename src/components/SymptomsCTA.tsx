@@ -64,11 +64,9 @@ export function SymptomsCTA() {
             <span className="text-gradient-light">Knowing them is power.</span>
           </h2>
           <p className="mt-6 text-lg text-white/70 leading-relaxed">
-            There is no routine screening test for ovarian cancer, so recognizing
-            the symptoms matters. They are easy to dismiss on their own. What
-            matters is when they are{" "}
+            While there is no routine screening for everyone, regular, tailored risk assessment and symptom monitoring are critical. What matters most is when symptoms are{" "}
             <strong className="text-white font-semibold">
-              new, frequent, and last more than a couple of weeks
+              new, persistent, and last more than a couple of weeks
             </strong>
             .
           </p>
