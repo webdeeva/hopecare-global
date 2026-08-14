@@ -64,7 +64,7 @@ export function SymptomsCTA() {
             <span className="text-gradient-light">Knowing them is power.</span>
           </h2>
           <p className="mt-6 text-lg text-white/70 leading-relaxed">
-            There is no routine test for everyone, so regular, tailored risk assessment and symptom monitoring are critical. What matters most is when symptoms are{" "}
+            We lack a standard, reliable test for everyone. Instead, we must rely on regular, tailored risk assessment and symptom monitoring. What matters most is when symptoms are{" "}
             <strong className="text-white font-semibold">
               new, persistent, and last more than a couple of weeks
             </strong>
