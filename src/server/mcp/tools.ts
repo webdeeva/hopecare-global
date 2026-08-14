@@ -196,6 +196,21 @@ export const TOOLS = [
     },
   },
   {
+    name: "replace_text",
+    description:
+      "Change a specific piece of text on the site WITHOUT rewriting the whole file (safest way to edit page/component copy, e.g. a headline in src/components/Hero.tsx). Finds an exact string and replaces it, then commits + deploys. The find string must match exactly ONCE (read_file first to copy it precisely). Scoped to data/, public/, src/. A broken build fails safely (Netlify keeps the last good deploy).",
+    inputSchema: {
+      type: "object",
+      properties: {
+        path: { type: "string" },
+        find: { type: "string", description: "Exact existing text to replace (must appear exactly once)" },
+        replace: { type: "string", description: "The new text" },
+        message: { type: "string", description: "Commit message" },
+      },
+      required: ["path", "find", "replace"],
+    },
+  },
+  {
     name: "get_deploy_status",
     description: "Get the status of the latest Netlify deploys (state, commit, errors).",
     inputSchema: { type: "object", properties: {} },
@@ -367,6 +382,23 @@ export async function callTool(name: string, args: Args): Promise<unknown> {
       if (!pathAllowed(path)) throw new Error(`Path not allowed: ${path} (must be under data/, public/, or src/)`);
       const commit = await commitFiles([{ path, content: String(args.content) }], String(args.message || `Update ${path}`));
       return { path, commit: commit.url };
+    }
+
+    case "replace_text": {
+      const path = String(args.path).replace(/^\/+/, "");
+      if (!pathAllowed(path)) throw new Error(`Path not allowed: ${path} (must be under data/, public/, or src/)`);
+      const f = await getFile(path);
+      if (!f) throw new Error(`File not found: ${path}`);
+      const find = String(args.find);
+      const replace = String(args.replace);
+      const occurrences = f.text.split(find).length - 1;
+      if (occurrences === 0)
+        throw new Error(`Text not found in ${path}. Use read_file and copy the exact snippet (spacing, punctuation, and casing must match).`);
+      if (occurrences > 1)
+        throw new Error(`That text appears ${occurrences} times in ${path}. Provide a longer, unique snippet so only the intended one changes.`);
+      const updated = f.text.replace(find, replace);
+      const commit = await commitFiles([{ path, content: updated }], String(args.message || `Edit text in ${path}`));
+      return { path, replaced: 1, commit: commit.url };
     }
 
     case "get_deploy_status":
