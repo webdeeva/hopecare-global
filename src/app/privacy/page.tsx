@@ -52,7 +52,7 @@ export default function PrivacyPage() {
               HopeCare Global Inc (&ldquo;HopeCare,&rdquo; &ldquo;we,&rdquo; &ldquo;us&rdquo;) is a
               501(c)(3) nonprofit advancing ovarian cancer awareness, education, and equitable access
               to care. We respect your privacy. This policy explains what information we handle across
-              our website and our mobile app, the <strong className="text-navy">Ovarian Health Tracker</strong>.
+              our website and our mobile app, the <strong className="text-navy">HopeCare OvaTrack (Ovarian Health Tracker)</strong>.
             </div>
 
             <Section title="The Ovarian Health Tracker app">
