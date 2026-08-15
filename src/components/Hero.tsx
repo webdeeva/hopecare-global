@@ -182,7 +182,7 @@ export function Hero() {
                 Lifetime risk · women
               </div>
               <p className="mt-2 text-[0.72rem] text-ink-soft leading-snug">
-                Roughly 1 in 78 women will be diagnosed. We refuse to let her face those odds alone.
+                Roughly 1 in 91 women will be diagnosed. We refuse to let her face those odds alone.
               </p>
             </div>
           </motion.div>
