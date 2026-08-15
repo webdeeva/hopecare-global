@@ -55,7 +55,7 @@ export default function PrivacyPage() {
               our website and our mobile app, the <strong className="text-navy">HopeCare OvaTrack (Ovarian Health Tracker)</strong>.
             </div>
 
-            <Section title="The Ovarian Health Tracker app">
+            <Section title="The HopeCare OvaTrack app">
               <p>
                 The app is built to be private by design. Everything you enter, including your daily
                 check-ins and symptom history, is <strong className="text-navy">stored only on your
