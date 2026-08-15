@@ -125,7 +125,7 @@ export function Footer() {
               {[
                 { Icon: InstagramIcon, href: "https://www.instagram.com/hopecareglobal/", label: "Instagram" },
                 { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn" },
-                { Icon: FacebookIcon, href: "#", label: "Facebook" },
+                { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook" },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}
