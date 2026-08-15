@@ -123,7 +123,7 @@ export function Footer() {
 
             <div className="mt-6 flex items-center gap-2">
               {[
-                { Icon: InstagramIcon, href: "#", label: "Instagram" },
+                { Icon: InstagramIcon, href: "https://www.instagram.com/hopecareglobal/", label: "Instagram" },
                 { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn" },
                 { Icon: FacebookIcon, href: "#", label: "Facebook" },
               ].map(({ Icon, href, label }) => (
