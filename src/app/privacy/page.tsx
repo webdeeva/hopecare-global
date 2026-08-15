@@ -6,7 +6,7 @@ import { SITE_NAME, SUPPORT_EMAIL, abs } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy | HopeCare Global Inc",
   description:
-    "How HopeCare Global Inc handles your information across our website and the Ovarian Health Tracker app. Your health data stays private on your device.",
+    "How HopeCare Global Inc handles your information across our website and the HopeCare OvaTrack app. Your health data stays private on your device.",
   alternates: { canonical: "/privacy" },
   openGraph: {
     title: "Privacy Policy, HopeCare Global Inc",
