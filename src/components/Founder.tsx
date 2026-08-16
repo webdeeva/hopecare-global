@@ -72,23 +72,16 @@ export function Founder() {
             </div>
           </div>
 
-          {/* Credential ribbon strip below card */}
-          <div className="mt-6 grid grid-cols-2 gap-3">
-            {credentials.map((c, i) => (
-              <motion.div
-                key={c.label}
-                initial={{ opacity: 0, y: 14 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 + i * 0.06 }}
-                className="rounded-xl bg-white border border-navy/5 px-4 py-3 flex items-center gap-2.5"
-              >
-                <BadgeCheck className="w-4 h-4 text-teal shrink-0" strokeWidth={2.5} />
-                <div className="min-w-0">
+          {/* Credential list */}
+          <div className="mt-8 space-y-3">
+            {credentials.map((c) => (
+              <div key={c.label} className="flex items-start gap-3">
+                <BadgeCheck className="w-5 h-5 text-teal shrink-0 mt-0.5" strokeWidth={2.5} />
+                <div>
                   <div className="font-semibold text-navy text-sm">{c.label}</div>
-                  <div className="text-[0.7rem] text-ink-mute leading-tight truncate">{c.desc}</div>
+                  <div className="text-sm text-ink-mute">{c.desc}</div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </motion.div>
