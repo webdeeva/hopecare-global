@@ -176,13 +176,13 @@ export function Hero() {
               <div className="flex items-baseline gap-2.5">
                 <span className="text-4xl font-bold text-navy leading-none tracking-tight">1</span>
                 <span className="text-xl text-teal-deep font-light leading-none -mb-0.5">/</span>
-                <span className="text-4xl font-bold text-teal-deep leading-none tracking-tight">91</span>
+                <span className="text-4xl font-bold text-teal-deep leading-none tracking-tight">78</span>
               </div>
               <div className="mt-1.5 text-[0.6rem] tracking-[0.22em] uppercase text-ink-mute font-bold">
                 Lifetime risk · women
               </div>
               <p className="mt-2 text-[0.72rem] text-ink-soft leading-snug">
-                Roughly 1 in 91 women will be diagnosed. We refuse to let her face those odds alone.
+                Roughly 1 in 78 women will be diagnosed. We refuse to let her face those odds alone.
               </p>
             </div>
           </motion.div>
