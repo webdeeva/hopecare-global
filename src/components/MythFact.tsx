@@ -37,7 +37,7 @@ export function MythFact() {
           <div className="kicker text-teal-deep">Myth vs. Fact</div>
           <div className="mt-4 h-px w-16 bg-gradient-to-r from-teal to-green" />
           <h2 className="font-display mt-6 text-4xl md:text-5xl font-bold leading-[1.05] text-navy">
-            Let&apos;s clarify common misconceptions.
+            Let&apos;s clarify a common misconception.
           </h2>
         </motion.div>
 
