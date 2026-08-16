@@ -151,7 +151,7 @@ export function Founder() {
               href="/story"
               className="group inline-flex items-center gap-3 btn-lift bg-teal-soft text-navy px-5 py-3 rounded-full border border-teal/20 font-medium"
             >
-              Read my story
+              Read her story
             </a>
           </div>
 
