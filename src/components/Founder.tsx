@@ -8,7 +8,7 @@ const credentials = [
   { label: "DNP", desc: "Doctor of Nursing Practice" },
   { label: "APRN", desc: "Advanced Practice Registered Nurse" },
   { label: "AGCNS-BC", desc: "Adult-Gerontology CNS, Board-Certified" },
-  { label: "CIC", desc: "Certified in Infection Control" },
+  { label: "CIC", desc: "Certified in Infection Prevention and Control" },
 ];
 
 export function Founder() {
