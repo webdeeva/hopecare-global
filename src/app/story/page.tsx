@@ -35,7 +35,7 @@ export default function StoryPage() {
           <p>That work became more than an academic endeavor; it became an integral part of my healing.</p>
           <p>I transformed my losses, my unanswered questions, and the burden I once carried in isolation into the foundation of HopeCare Global—a nonprofit organization dedicated to ovarian cancer awareness, evidence-based education, and advocacy, empowering women to recognize when their bodies are signaling distress.</p>
           <p>My opportunistic salpingectomy may have served as a vital intervention. Now, I strive to ensure my experience serves as a protective barrier for others. I cannot retroactively alter the path I endured, but I am committed to carving a clearer, more informed trajectory for those who come after me.</p>
-          <p>This is how I transformed personal pain into institutional purpose—and converted loss into a legacy of advocacy.</p>
+          <p><em><strong>This is how I transformed personal pain into institutional purpose—and converted loss into a legacy of advocacy.</strong></em></p>
         </div>
       </div>
     </main>
