@@ -133,6 +133,12 @@ export function Founder() {
           {/* Contact */}
           <div className="mt-10 flex flex-wrap gap-3">
             <a
+              href="/story"
+              className="group inline-flex items-center gap-3 btn-lift bg-teal-soft text-navy px-5 py-3 rounded-full border border-teal/20 font-medium"
+            >
+              Read her story
+            </a>
+            <a
               href="mailto:support@hopecareglobal.org"
               className="group inline-flex items-center gap-3 btn-lift bg-white text-navy px-5 py-3 rounded-full border border-navy/10 font-medium"
             >
@@ -140,12 +146,6 @@ export function Founder() {
                 <Mail className="w-4 h-4" strokeWidth={2.5} />
               </span>
               support@hopecareglobal.org
-            </a>
-            <a
-              href="/story"
-              className="group inline-flex items-center gap-3 btn-lift bg-teal-soft text-navy px-5 py-3 rounded-full border border-teal/20 font-medium"
-            >
-              Read her story
             </a>
             <a
               href="/contact"
