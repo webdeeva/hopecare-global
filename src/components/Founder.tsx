@@ -142,16 +142,16 @@ export function Founder() {
               support@hopecareglobal.org
             </a>
             <a
-              href="/contact"
-              className="group inline-flex items-center gap-3 btn-lift bg-navy text-cream px-5 py-3 rounded-full font-medium"
-            >
-              Send a message
-            </a>
-            <a
               href="/story"
               className="group inline-flex items-center gap-3 btn-lift bg-teal-soft text-navy px-5 py-3 rounded-full border border-teal/20 font-medium"
             >
               Read her story
+            </a>
+            <a
+              href="/contact"
+              className="group inline-flex items-center gap-3 btn-lift bg-navy text-cream px-5 py-3 rounded-full font-medium"
+            >
+              Send a message
             </a>
           </div>
 
