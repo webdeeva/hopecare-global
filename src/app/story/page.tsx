@@ -19,7 +19,7 @@ export default function StoryPage() {
         {/* Updated Header Style to match section headers */}
         <div className="mb-10">
           <div className="text-teal-bright uppercase tracking-[0.2em] text-xs font-bold mb-4">
-             Know the Signs
+             How It Began
           </div>
           <h1 className="font-display text-4xl md:text-5xl font-bold leading-[1.05] text-white">
             Turning My Pain and Loss Into Purpose
