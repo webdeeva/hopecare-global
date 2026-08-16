@@ -397,7 +397,8 @@
     "excerpt": "Learn about opportunistic salpingectomy—the surgical removal of fallopian tubes during other pelvic procedures—and how it serves as a key risk-reduction strategy for ovarian cancer.",
     "targetKeyword": "salpingectomy ovarian cancer prevention",
     "words": 287,
-    "status": "draft",
-    "heroImage": "/education/opportunistic-salpingectomy-prevention.png"
+    "status": "published",
+    "heroImage": "/education/opportunistic-salpingectomy-prevention.png",
+    "publishedAt": "2026-08-16"
   }
 ]
