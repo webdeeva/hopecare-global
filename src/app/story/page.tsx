@@ -16,7 +16,7 @@ export default function StoryPage() {
           <div className="absolute inset-0 bg-[#0a2540]/20" />
         </div>
 
-        <h1 className="text-5xl font-bold text-white mb-8">Know the Signs</h1>
+        <h1 className="text-5xl font-bold text-white mb-8">Know the Signs: Turning My Pain and Loss Into Purpose</h1>
         <div className="prose prose-lg text-white/90">
           <p>As the first daughter, I carried a deeply personal burden from a young age—recurrent miscarriages, endometriosis, adenomyosis, obesity, and multiple surgeries. Much later, a diagnosis of antiphospholipid syndrome (APS) finally helped explain the pregnancy losses I had endured, but that understanding came only after years of grief and unanswered questions.</p>
           <p>As the first daughter of my parents, I also carried the heartbreak of knowing that I would not be able to give my mother and father their first grandchild. It was a painful reality that I often felt I had to carry alone.</p>
