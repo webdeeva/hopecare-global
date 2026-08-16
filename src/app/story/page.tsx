@@ -1,8 +1,20 @@
 import React from 'react';
+import Image from 'next/image';
 
 export default function StoryPage() {
   return (
     <main className="py-24 px-6 md:px-12 max-w-4xl mx-auto">
+      {/* Hero Image */}
+      <div className="relative w-full h-64 md:h-96 mb-12 rounded-3xl overflow-hidden shadow-lg">
+        <Image 
+          src="/education/story-hero.png" 
+          alt="Reflective imagery for Dr. Petrina Harrison's journey"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy/20" />
+      </div>
+
       <h1 className="text-5xl font-bold text-navy mb-8">Turning My Pain and Loss Into Purpose</h1>
       <div className="prose prose-lg text-ink-soft">
         <p>As the first daughter, I carried a deeply personal burden from a young age—recurrent miscarriages, endometriosis, adenomyosis, obesity, and multiple surgeries. Much later, a diagnosis of antiphospholipid syndrome (APS) finally helped explain the pregnancy losses I had endured, but that understanding came only after years of grief and unanswered questions.</p>
