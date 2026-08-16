@@ -117,7 +117,7 @@ export function Founder() {
               acute clinical care, infection prevention, and community advocacy.
             </p>
             <p>
-              She founded HopeCare Global Inc. to transform decades of clinical experience and her personal journey into action against ovarian cancer—a disease that too often hides in plain sight, particularly in Black, immigrant, and underserved communities.
+              She founded HopeCare Global Inc. to transform decades of clinical experience and her personal journey into action against ovarian cancer, a disease that too often hides in plain sight, particularly in Black, immigrant, and underserved communities.
             </p>
           </div>
 
