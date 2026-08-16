@@ -30,12 +30,12 @@ export default function StoryPage() {
         {/* Narrative Content */}
         <div className="prose prose-lg text-white/90">
           <p>As my parents’ first daughter, I carried a deeply personal burden—recurrent miscarriages, endometriosis, adenomyosis, obesity, and multiple surgeries. Years later, a diagnosis of antiphospholipid syndrome (APS) finally helped explain my pregnancy losses, but only after years of grief and unanswered questions. I also carried the heartbreak of knowing I would not be able to give my parents their first grandchild—a painful reality I often endured alone.</p>
-          <p>At age 38, my health journey reached a critical juncture. After reviewing my complex clinical history, my gynecologic surgeon strongly recommended a hysterectomy and removing my fallopian tubes to reduce my risk of ovarian cancer.</p>
+          <p>At age 38, with no children, my health journey reached a critical juncture. After reviewing my complex clinical history, my gynecologic surgeon strongly recommended a hysterectomy and removing my fallopian tubes to reduce my risk of ovarian cancer.</p>
           <p>That recommendation led to a hysterectomy with opportunistic salpingectomy—the planned removal of my fallopian tubes during an already medically necessary pelvic procedure. I could not have fully understood the significance of that decision at the time. Research now indicates that many high-grade serous ovarian cancers originate in the fallopian tubes. Although salpingectomy does not eliminate ovarian cancer risk, it can provide an important risk-reduction strategy.</p>
           <p>Understanding my risk factors—and recognizing that ovarian cancer has no reliable routine screening test—gave my trauma a new direction. I focused my doctoral research on how clinical decision support systems can help healthcare professionals recognize subtle symptoms and risk factors earlier and with greater precision.</p>
           <p>That work became an essential part of my healing. I transformed my losses and unanswered questions into the foundation of HopeCare Global, a nonprofit dedicated to ovarian cancer awareness, evidence-based education, and advocacy.</p>
           <p>I cannot change the path I endured, but I can help create a clearer, more informed path for the women who come after me.</p>
-          <p><em><strong>This is how I transformed personal pain into institutional purpose—and converted loss into a legacy of advocacy.</strong></em></p>
+          <p><em><strong>This is how I transformed personal pain into institutional purpose—and converted loss into a legacy of advocacy.</strong></p>
         </div>
       </div>
     </main>
