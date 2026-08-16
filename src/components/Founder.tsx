@@ -123,10 +123,7 @@ export function Founder() {
               in Black, immigrant, and underserved communities.
             </p>
             <p className="font-semibold text-teal-deep">
-              &ldquo;I transformed my losses, my unanswered questions, and the 
-              weight I once carried alone into HopeCare Global. I cannot change 
-              what I endured, but I can use it to help pave a clearer path for 
-              those who come after me.&rdquo;
+              &ldquo;Understanding my own risk, and learning that there’s still no reliable routine test to screen for ovarian cancer, gave my pain a new purpose. I focused my doctoral research on how technology can help doctors and nurses catch subtle symptoms and warning signs earlier and more accurately. That work became part of my healing. I took my losses and my unanswered questions and turned them into the foundation of HopeCare Global, a nonprofit dedicated to raising awareness about ovarian cancer, sharing real evidence based education, and advocating for women. I can’t change what I went through. But I can help make the path clearer, and easier, for the women who come after me. This is how I turned personal pain into something bigger than myself, and turned loss into a legacy of advocacy.&rdquo;
             </p>
           </div>
 
