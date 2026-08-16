@@ -117,6 +117,12 @@ export function Founder() {
               acute clinical care, infection prevention, and community advocacy.
             </p>
             <p>
+              As her parents' first child, she carried a heavy, personal burden. She went through repeated miscarriages, endometriosis, adenomyosis, obesity, and several surgeries. Years later, she was finally diagnosed with antiphospholipid syndrome, which helped explain why she kept losing her pregnancies—but that answer came only after years of grief and unanswered questions. She also carried the heartbreak of knowing she would not be able to give her parents their first grandchild.
+            </p>
+            <p>
+              Her journey started with loss, but it eventually led her to ovarian cancer research and advocacy. At 38 years old, after looking closely at her medical history, her surgeon recommended she have a hysterectomy and her fallopian tubes removed to lower her risk of ovarian cancer. She didn't fully grasp how important that decision was at the time; research now shows that many aggressive ovarian cancers start in the fallopian tubes.
+            </p>
+            <p>
               She founded HopeCare Global Inc to channel decades of bedside
               experience and her own journey as a survivor into the fight 
               against a disease that has hidden in plain sight — particularly 
