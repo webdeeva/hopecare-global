@@ -35,7 +35,7 @@ export default function StoryPage() {
           <p>Understanding my risk factors—and recognizing that ovarian cancer has no reliable routine screening test—gave my trauma a new direction. I focused my doctoral research on how clinical decision support systems can help healthcare professionals recognize subtle symptoms and risk factors earlier and with greater precision.</p>
           <p>That work became an essential part of my healing. I transformed my losses and unanswered questions into the foundation of HopeCare Global, a nonprofit dedicated to ovarian cancer awareness, evidence-based education, and advocacy.</p>
           <p>I cannot change the path I endured, but I can help create a clearer, more informed path for the women who come after me.</p>
-          <p><em><strong>This is how I transformed personal pain into institutional purpose—and converted loss into a legacy of advocacy.</strong></p>
+          <p><em><strong>This is how I transformed personal pain into institutional purpose—and converted loss into a legacy of advocacy.</strong></em></p>
         </div>
       </div>
     </main>
