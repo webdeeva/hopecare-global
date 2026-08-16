@@ -91,12 +91,12 @@ export function MythFact() {
               <strong className="text-navy font-semibold">cervical cancer, not ovarian cancer</strong>.
               Currently, there is{" "}
               <strong className="text-navy font-semibold">
-                no routine screening test recommended for ovarian cancer
+                no routine screening test for ovarian cancer
               </strong>{" "}
-              in people at average risk. Knowing the symptoms and seeking prompt
-              evaluation when they are{" "}
+              in people at average risk; therefore, early detection relies entirely on symptom awareness. 
+              Seeking prompt clinical evaluation when symptoms become{" "}
               <strong className="text-navy font-semibold">new, frequent, and persistent</strong>{" "}
-              is critical.
+              is the most effective tool we have for early intervention.
             </p>
 
             <Link
