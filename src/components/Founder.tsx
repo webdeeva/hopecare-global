@@ -112,7 +112,7 @@ export function Founder() {
           <div className="mt-8 relative pl-6 border-l-2 border-teal/40">
             <Quote className="absolute -left-4 -top-2 w-7 h-7 text-teal bg-cream" />
             <p className="font-display text-2xl text-navy leading-[1.4] italic">
-              &ldquo;Every woman deserves to be seen, screened, and supported —
+              &ldquo;Every woman deserves to be seen, supported, and empowered to advocate for her health —
               regardless of zip code, color, or country.&rdquo;
             </p>
           </div>
