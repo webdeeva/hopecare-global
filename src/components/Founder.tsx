@@ -125,9 +125,15 @@ export function Founder() {
             </p>
             <p>
               She founded HopeCare Global Inc to channel decades of bedside
-              experience into the fight against a disease that has hidden in
-              plain sight — particularly in Black, immigrant, and underserved
-              communities.
+              experience and her own journey as a survivor into the fight 
+              against a disease that has hidden in plain sight — particularly 
+              in Black, immigrant, and underserved communities.
+            </p>
+            <p className="font-semibold text-teal-deep">
+              &ldquo;I transformed my losses, my unanswered questions, and the 
+              weight I once carried alone into HopeCare Global. I cannot change 
+              what I endured, but I can use it to help pave a clearer path for 
+              those who come after me.&rdquo;
             </p>
           </div>
 
