@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function StoryPage() {
   return (
-    <main className="min-h-screen bg-deep-ocean py-24 px-6 md:px-12 text-white">
+    <main className="min-h-screen bg-[#0a2540] py-24 px-6 md:px-12 text-white">
       <div className="max-w-4xl mx-auto">
         {/* Hero Image */}
         <div className="relative w-full h-64 md:h-96 mb-12 rounded-3xl overflow-hidden shadow-lg">
@@ -13,7 +13,7 @@ export default function StoryPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-navy/20" />
+          <div className="absolute inset-0 bg-[#0a2540]/20" />
         </div>
 
         <h1 className="text-5xl font-bold text-white mb-8">Turning My Pain and Loss Into Purpose</h1>
