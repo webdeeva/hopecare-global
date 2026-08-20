@@ -111,10 +111,13 @@ function StoreBadges() {
           <span className="block text-base font-semibold">App Store</span>
         </span>
       </span>
-      <span
+      <a
+        href="https://play.google.com/store/apps/details?id=org.hopecareglobal.ovatrack"
+        target="_blank"
+        rel="noopener noreferrer"
         className={badge}
-        style={{ background: C.navy, cursor: "default" }}
-        aria-label="Coming soon to Google Play"
+        style={{ background: C.navy }}
+        aria-label="Download OvaTrack on Google Play"
       >
         <PlayGlyph />
         <span className="text-left leading-tight">
