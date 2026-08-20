@@ -119,11 +119,11 @@ function StoreBadges() {
         <PlayGlyph />
         <span className="text-left leading-tight">
           <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Coming soon
+            Available on
           </span>
           <span className="block text-base font-semibold">Google Play</span>
         </span>
-      </span>
+      </a>
     </div>
   );
 }
