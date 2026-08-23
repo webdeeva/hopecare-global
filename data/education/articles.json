@@ -400,5 +400,16 @@
     "status": "published",
     "heroImage": "/education/opportunistic-salpingectomy-prevention.png",
     "publishedAt": "2026-08-16"
+  },
+  {
+    "n": 32,
+    "slug": "phd-journey-stephanie-mucha-scholar",
+    "title": "A New Chapter: A New Page",
+    "cluster": "living",
+    "role": "supporting",
+    "excerpt": "Celebrating the beginning of my PhD journey at the University at Buffalo and the honor of being a Stephanie Mucha Scholar.",
+    "targetKeyword": "PhD nursing research",
+    "words": 222,
+    "status": "draft"
   }
 ]
