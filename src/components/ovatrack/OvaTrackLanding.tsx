@@ -98,19 +98,22 @@ function StoreBadges() {
     "group inline-flex items-center gap-3 rounded-2xl px-5 py-3 text-white transition-transform duration-300 hover:-translate-y-0.5";
   return (
     <div className="flex flex-wrap items-center gap-3">
-      <span
+      <a
+        href="https://testflight.apple.com/join/T1t7NW48"
+        target="_blank"
+        rel="noopener noreferrer"
         className={badge}
-        style={{ background: C.navy, cursor: "default" }}
-        aria-label="Coming soon to the Apple App Store"
+        style={{ background: C.navy }}
+        aria-label="Download OvaTrack on Apple TestFlight"
       >
         <Apple className="w-7 h-7" strokeWidth={1.6} />
         <span className="text-left leading-tight">
           <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Coming soon
+            Available on
           </span>
-          <span className="block text-base font-semibold">App Store</span>
+          <span className="block text-base font-semibold">TestFlight</span>
         </span>
-      </span>
+      </a>
       <a
         href="https://play.google.com/store/apps/details?id=org.hopecareglobal.ovatrack"
         target="_blank"
