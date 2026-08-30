@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "OvaTrack — Ovarian Health Tracker",
     description:
-      "Know the signs. Track the symptoms. Act early. A free, private ovarian health tracker from HopeCare Global. Coming soon to iPhone and Android.",
+      "Know the signs. Track the symptoms. Act early. A free, private ovarian health tracker from HopeCare Global. Available now on Apple TestFlight and Google Play.",
     url: abs("/ovatrack"),
     siteName: SITE_NAME,
     locale: "en_US",
