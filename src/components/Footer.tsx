@@ -175,7 +175,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-sm text-cream/55">
-            &copy; {new Date().getFullYear()} HopeCare Global Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} HopeCare Global, Inc. All rights reserved.
           </p>
           <p className="text-sm text-cream/55 flex items-center gap-2">
             Made with <Heart className="w-3.5 h-3.5 text-teal-bright fill-teal-bright" /> for women everywhere.
