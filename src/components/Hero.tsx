@@ -217,7 +217,7 @@ function TopRail() {
       transition={{ duration: 1 }}
       className="flex items-center justify-between gap-6 text-[0.66rem] tracking-[0.28em] uppercase font-bold text-navy/55"
     >
-      <span>HopeCare Global Inc</span>
+      <span>HopeCare Global, Inc.</span>
       <div className="flex-1 h-px bg-navy/12" />
       <span className="hidden sm:inline">A 501(c)(3) Nonprofit Organization</span>
       <div className="hidden md:block flex-1 h-px bg-navy/12" />
