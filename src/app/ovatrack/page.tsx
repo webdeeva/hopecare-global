@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "OvaTrack — Ovarian Health Tracker",
     description:
-      "Know the signs. Track the symptoms. Act early. Free and private, coming soon to iPhone and Android.",
+      "Know the signs. Track the symptoms. Act early. Free and private, available now on Apple TestFlight and Google Play.",
   },
 };
 
