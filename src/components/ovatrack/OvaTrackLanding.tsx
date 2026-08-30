@@ -571,8 +571,8 @@ function DownloadCTA() {
             Take the first step toward peace of mind.
           </h2>
           <p className="mt-5 text-lg text-white/80 max-w-xl mx-auto leading-relaxed">
-            OvaTrack is coming to iPhone and Android. Free to download, private by
-            design, and built with care by HopeCare Global.
+            OvaTrack is available on Apple TestFlight and Google Play. Free to
+            download, private by design, and built with care by HopeCare Global.
           </p>
           <div className="mt-9 flex justify-center">
             <StoreBadges />
