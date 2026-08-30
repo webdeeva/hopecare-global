@@ -7,7 +7,7 @@ import { SITE_NAME, abs } from "@/lib/site";
 export const metadata: Metadata = {
   title: "OvaTrack — Ovarian Health Tracker | HopeCare Global",
   description:
-    "OvaTrack is a free, private ovarian health tracker. Log symptoms in seconds, spot patterns that matter, and bring a clear summary to your provider. Coming soon to iPhone and Android.",
+    "OvaTrack is a free, private ovarian health tracker. Log symptoms in seconds, spot patterns that matter, and bring a clear summary to your provider. Available now on Apple TestFlight and Google Play.",
   keywords: [
     "OvaTrack",
     "ovarian health tracker",
