@@ -422,7 +422,8 @@
     "excerpt": "The Goff Symptom Index is a validated tool designed to help recognize symptom patterns that may signal ovarian cancer. Learn what symptoms it tracks, how it works, and why it matters for earlier detection.",
     "targetKeyword": "Goff Symptom Index ovarian cancer",
     "words": 966,
-    "status": "draft",
-    "heroImage": "/education/goff-symptom-index-ovarian-cancer.png"
+    "status": "published",
+    "heroImage": "/education/goff-symptom-index-ovarian-cancer.png",
+    "publishedAt": "2026-09-01"
   }
 ]
