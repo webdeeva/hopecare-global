@@ -412,5 +412,16 @@
     "words": 222,
     "status": "draft",
     "heroImage": "/education/phd-journey-stephanie-mucha-scholar.png"
+  },
+  {
+    "n": 33,
+    "slug": "goff-symptom-index-ovarian-cancer",
+    "title": "The Goff Symptom Index: A Tool for Earlier Ovarian Cancer Detection",
+    "cluster": "symptoms",
+    "role": "supporting",
+    "excerpt": "The Goff Symptom Index is a validated tool designed to help recognize symptom patterns that may signal ovarian cancer. Learn what symptoms it tracks, how it works, and why it matters for earlier detection.",
+    "targetKeyword": "Goff Symptom Index ovarian cancer",
+    "words": 966,
+    "status": "draft"
   }
 ]
