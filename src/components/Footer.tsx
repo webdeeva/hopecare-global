@@ -158,13 +158,13 @@ export function Footer() {
 
             <div className="mt-6 flex items-center gap-2 flex-wrap">
               {[
-                { Icon: InstagramIcon, href: "https://www.instagram.com/hopecareglobal/", label: "Instagram", color: "hover:text-[#E1306C]" },
-                { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook", color: "hover:text-[#4267B2]" },
-                { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn", color: "hover:text-[#0077b5]" },
-                { Icon: YouTubeIcon, href: "https://youtube.com/@hopecareglobalinc", label: "YouTube", color: "hover:text-[#FF0000]" },
-                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok", color: "hover:text-[#000000] bg-white hover:bg-white" },
-                { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium", color: "hover:text-[#000000] bg-white hover:bg-white" },
-                { Icon: SubstackIcon, href: "https://substack.com/@petrinaharrison", label: "Substack", color: "hover:text-[#FF6719]" },
+                { Icon: InstagramIcon, href: "https://www.instagram.com/hopecareglobal/", label: "Instagram", color: "text-[#E1306C]" },
+                { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook", color: "text-[#4267B2]" },
+                { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn", color: "text-[#0077b5]" },
+                { Icon: YouTubeIcon, href: "https://youtube.com/@hopecareglobalinc", label: "YouTube", color: "text-[#FF0000]" },
+                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok", color: "text-[#000000] bg-white" },
+                { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium", color: "text-[#000000] bg-white" },
+                { Icon: SubstackIcon, href: "https://substack.com/@petrinaharrison", label: "Substack", color: "text-[#FF6719]" },
               ].map(({ Icon, href, label, color }) => (
                 <a
                   key={label}
@@ -172,9 +172,9 @@ export function Footer() {
                   aria-label={label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={`w-10 h-10 rounded-full bg-white/8 grid place-items-center text-cream/80 transition-all ${color}`}
+                  className={`w-10 h-10 rounded-full bg-white grid place-items-center transition-all ${color} hover:opacity-80`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-5 h-5" />
                 </a>
               ))}
             </div>
