@@ -425,5 +425,16 @@
     "status": "published",
     "heroImage": "/education/goff-symptom-index-ovarian-cancer.png",
     "publishedAt": "2026-09-01"
+  },
+  {
+    "n": 34,
+    "slug": "rural-ovarian-cancer-diagnostic-delays",
+    "title": "Why Rural Women Delay Seeking Care for Ovarian Cancer Symptoms",
+    "cluster": "equity",
+    "role": "supporting",
+    "excerpt": "Exploring why rural women face significant delays in ovarian cancer diagnosis, from cultural barriers to structural gaps in care.",
+    "targetKeyword": "rural ovarian cancer diagnosis barriers",
+    "words": 470,
+    "status": "draft"
   }
 ]
