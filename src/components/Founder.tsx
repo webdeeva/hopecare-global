@@ -4,13 +4,6 @@ import Image from "next/image";
 import { motion } from "motion/react";
 import { Mail, Quote, BadgeCheck, Stethoscope, GraduationCap } from "lucide-react";
 
-const credentials = [
-  { label: "DNP", desc: "Doctor of Nursing Practice" },
-  { label: "APRN", desc: "Advanced Practice Registered Nurse" },
-  { label: "AGCNS-BC", desc: "Adult-Gerontology CNS, Board-Certified" },
-  { label: "CIC", desc: "Certified in Infection Prevention and Control" },
-];
-
 export function Founder() {
   return (
     <section id="founder" className="relative py-28 md:py-36 bg-cream overflow-hidden">
@@ -70,19 +63,6 @@ export function Founder() {
                 </div>
               </div>
             </div>
-          </div>
-
-          {/* Credential list */}
-          <div className="mt-8 space-y-3">
-            {credentials.map((c) => (
-              <div key={c.label} className="flex items-start gap-3">
-                <BadgeCheck className="w-5 h-5 text-teal shrink-0 mt-0.5" strokeWidth={2.5} />
-                <div>
-                  <div className="font-semibold text-navy text-sm">{c.label}</div>
-                  <div className="text-sm text-ink-mute">{c.desc}</div>
-                </div>
-              </div>
-            ))}
           </div>
         </motion.div>
 
@@ -183,4 +163,3 @@ function RibbonIcon() {
     </svg>
   );
 }
-
