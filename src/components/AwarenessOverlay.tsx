@@ -114,7 +114,7 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
       </button>
       <div className="max-w-2xl text-center text-white">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">September is Ovarian Cancer Awareness Month</h2>
-        <p className="text-xl mb-8 opacity-90">Every woman deserves to be seen, screened, and supported. Join us in raising awareness and closing the gap in care.</p>
+        <p className="text-xl mb-8 opacity-90">Every woman deserves to be seen and supported. Note: There is currently no routine screening test for ovarian cancer. Join us in raising awareness for symptoms and closing the gap in care.</p>
         <a
           href="/education"
           className="inline-block bg-teal text-white px-8 py-3 rounded-full font-semibold hover:bg-teal-deep transition-colors"
