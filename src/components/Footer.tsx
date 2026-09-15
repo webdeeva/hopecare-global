@@ -158,21 +158,21 @@ export function Footer() {
 
             <div className="mt-6 flex items-center gap-2 flex-wrap">
               {[
-                { Icon: InstagramIcon, href: "https://www.instagram.com/hopecareglobal/", label: "Instagram" },
-                { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook" },
-                { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn" },
-                { Icon: YouTubeIcon, href: "https://youtube.com/@hopecareglobalinc", label: "YouTube" },
-                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok" },
-                { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium" },
-                { Icon: SubstackIcon, href: "https://substack.com/@petrinaharrison", label: "Substack" },
-              ].map(({ Icon, href, label }) => (
+                { Icon: InstagramIcon, href: "https://www.instagram.com/hopecareglobal/", label: "Instagram", color: "hover:text-[#E1306C]" },
+                { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook", color: "hover:text-[#4267B2]" },
+                { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn", color: "hover:text-[#0077b5]" },
+                { Icon: YouTubeIcon, href: "https://youtube.com/@hopecareglobalinc", label: "YouTube", color: "hover:text-[#FF0000]" },
+                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok", color: "hover:text-[#000000] bg-white hover:bg-white" },
+                { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium", color: "hover:text-[#000000] bg-white hover:bg-white" },
+                { Icon: SubstackIcon, href: "https://substack.com/@petrinaharrison", label: "Substack", color: "hover:text-[#FF6719]" },
+              ].map(({ Icon, href, label, color }) => (
                 <a
                   key={label}
                   href={href}
                   aria-label={label}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-10 h-10 rounded-full bg-white/8 grid place-items-center text-cream/80 hover:bg-teal hover:text-white transition-all"
+                  className={`w-10 h-10 rounded-full bg-white/8 grid place-items-center text-cream/80 transition-all ${color}`}
                 >
                   <Icon className="w-4 h-4" />
                 </a>
