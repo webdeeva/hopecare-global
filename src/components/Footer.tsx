@@ -36,6 +36,14 @@ function YouTubeIcon({ className = "" }: { className?: string }) {
     </svg>
   );
 }
+function TikTokIcon({ className = "" }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M9 12a4 4 0 1 0 4 4V4a2 2 0 0 0-2 2" />
+      <path d="M15 8c-2 0-3 1-3 3" />
+    </svg>
+  );
+}
 function MediumIcon({ className = "" }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
@@ -154,6 +162,7 @@ export function Footer() {
                 { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook" },
                 { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn" },
                 { Icon: YouTubeIcon, href: "https://youtube.com/@hopecareglobalinc", label: "YouTube" },
+                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok" },
                 { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium" },
                 { Icon: SubstackIcon, href: "https://substack.com/@petrinaharrison", label: "Substack" },
               ].map(({ Icon, href, label }) => (
