@@ -162,8 +162,8 @@ export function Footer() {
                 { Icon: FacebookIcon, href: "https://www.facebook.com/HopeCareGlobal", label: "Facebook", color: "text-[#4267B2]" },
                 { Icon: LinkedinIcon, href: "https://www.linkedin.com/company/hopecare-global-inc", label: "LinkedIn", color: "text-[#0077b5]" },
                 { Icon: YouTubeIcon, href: "https://youtube.com/@hopecareglobalinc", label: "YouTube", color: "text-[#FF0000]" },
-                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok", color: "text-[#000000] bg-white" },
-                { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium", color: "text-[#000000] bg-white" },
+                { Icon: TikTokIcon, href: "https://tiktok.com/@hopecareglobal", label: "TikTok", color: "text-[#000000]" },
+                { Icon: MediumIcon, href: "https://medium.com/@petrinaharrison80", label: "Medium", color: "text-[#000000]" },
                 { Icon: SubstackIcon, href: "https://substack.com/@petrinaharrison", label: "Substack", color: "text-[#FF6719]" },
               ].map(({ Icon, href, label, color }) => (
                 <a
