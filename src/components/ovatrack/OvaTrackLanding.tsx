@@ -564,8 +564,8 @@ function DownloadCTA() {
       <div className="container-wide max-w-3xl text-center">
         <motion.div {...rise()}>
           <div className="inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-white/90 text-xs font-bold tracking-widest uppercase bg-white/10 border border-white/15">
-            <Bell className="w-3.5 h-3.5" />
-            Launching soon
+            <Check className="w-3.5 h-3.5" />
+            Now Available
           </div>
           <h2 className="font-display mt-6 text-4xl md:text-5xl font-bold text-white">
             Take the first step toward peace of mind.
