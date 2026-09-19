@@ -97,7 +97,7 @@ function StoreBadges() {
   const badge =
     "group inline-flex items-center gap-3 rounded-2xl px-5 py-3 text-white transition-transform duration-300 hover:-translate-y-0.5";
   return (
-    <div className="flex flex-wrap items-center gap-3">
+    <div className="flex flex-row items-center gap-4">
       <a
         href="https://apps.apple.com/app/ovatrack/id6739190757"
         target="_blank"
