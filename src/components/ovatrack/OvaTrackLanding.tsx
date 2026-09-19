@@ -99,19 +99,19 @@ function StoreBadges() {
   return (
     <div className="flex flex-wrap items-center gap-3">
       <a
-        href="https://testflight.apple.com/join/T1t7NW48"
+        href="https://apps.apple.com/app/ovatrack/id6739190757"
         target="_blank"
         rel="noopener noreferrer"
         className={badge}
         style={{ background: C.navy }}
-        aria-label="Download OvaTrack on Apple TestFlight"
+        aria-label="Download OvaTrack on the App Store"
       >
         <Apple className="w-7 h-7" strokeWidth={1.6} />
         <span className="text-left leading-tight">
           <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Available on
+            Download on the
           </span>
-          <span className="block text-base font-semibold">TestFlight</span>
+          <span className="block text-base font-semibold">App Store</span>
         </span>
       </a>
       <a
