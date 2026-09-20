@@ -579,7 +579,7 @@ function DownloadCTA() {
             <div className="mt-4 p-4 bg-white/10 rounded-2xl border border-white/20">
               <p className="text-white text-sm font-semibold mb-3">Scan to download</p>
               <div className="w-32 h-32 bg-white p-2 rounded-xl">
-                 <img src="/ovatrack/qr-code.jpg" alt="OvaTrack Download QR Code" className="w-full h-full" />
+                 <img src="/ovatrack/qr-code.svg" alt="OvaTrack Download QR Code" className="w-full h-full" />
               </div>
             </div>
           </div>
