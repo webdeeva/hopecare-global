@@ -576,12 +576,7 @@ function DownloadCTA() {
           </p>
           <div className="mt-9 flex flex-col items-center gap-6">
             <StoreBadges />
-            <div className="mt-4 p-4 bg-white/10 rounded-2xl border border-white/20">
-              <p className="text-white text-sm font-semibold mb-3">Scan to download</p>
-              <div className="w-32 h-32 bg-white p-2 rounded-xl">
-                 <img src="/ovatrack/qr-code.svg" alt="OvaTrack Download QR Code" className="w-full h-full" />
-              </div>
-            </div>
+            
           </div>
           <p className="mt-8 inline-flex items-center gap-2 text-white/70 text-sm">
             <Heart className="w-4 h-4" />A project of HopeCare Global Inc, a 501(c)(3)
