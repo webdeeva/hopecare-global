@@ -99,7 +99,7 @@ function StoreBadges() {
   return (
     <div className="flex flex-row items-center gap-4">
       <a
-        href="https://apps.apple.com/app/ovatrack/id6739988229"
+        href="https://apps.apple.com/us/app/ovatrack/id6800895813"
         target="_blank"
         rel="noopener noreferrer"
         className={badge}
