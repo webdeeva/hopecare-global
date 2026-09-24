@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Heart, Activity, ChevronDown } from "lucide-react";
+import { Menu, X, Heart, Activity, ChevronDown, Globe } from "lucide-react";
 import { Logo } from "./Logo";
 
 const MotionLink = motion(Link);
@@ -87,6 +87,14 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-2 mr-2">
+            <Globe className="w-4 h-4 text-navy" />
+            <select className="bg-transparent text-sm font-medium text-navy cursor-pointer">
+                <option value="en">English</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+            </select>
+          </div>
           <a
             href="/#symptoms"
             className="hidden sm:inline-flex items-center gap-2 btn-lift bg-gradient-to-r from-teal-deep via-teal to-green text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(15,139,158,0.5)]"
