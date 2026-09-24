@@ -463,5 +463,17 @@
     "status": "published",
     "heroImage": "/education/new-blood-test-ovarian-cancer-research-mide-study.png",
     "publishedAt": "2026-09-24"
+  },
+  {
+    "n": 37,
+    "slug": "ovarian-cancer-symptoms-risks-quick-reference",
+    "title": "Ovarian Cancer: Symptoms & Risks Quick Reference",
+    "cluster": "symptoms",
+    "role": "supporting",
+    "excerpt": "A visual quick-reference guide for common ovarian cancer symptoms and risk factors.",
+    "targetKeyword": "Ovarian Cancer: Symptoms & Risks Quick Reference",
+    "words": 292,
+    "status": "published",
+    "publishedAt": "2026-09-24"
   }
 ]
