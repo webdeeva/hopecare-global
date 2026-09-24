@@ -9,26 +9,21 @@ import { Logo } from "./Logo";
 const MotionLink = motion(Link);
 
 const links = [
-  { href: "/#mission", label: "Mission" },
   {
-    label: "Ovarian Cancer",
+    label: "Education",
     submenu: [
       { href: "/education/ovarian-cancer-symptoms-early-detection-guide", label: "What is Ovarian Cancer?" },
       { href: "/education/ovarian-cancer-symptoms-risks-quick-reference", label: "Symptoms & Risks" },
       { href: "/education/ovarian-cancer-screening-explained", label: "Detection & Testing" },
-    ],
-  },
-  {
-    label: "Evidence",
-    submenu: [
       { href: "/#research", label: "Clinical Research" },
       { href: "/#statistics", label: "Data Resources" },
     ],
   },
   {
-    label: "Impact",
+    label: "Our Work",
     submenu: [
-      { href: "/#programs", label: "Our Programs" },
+      { href: "/#mission", label: "Mission" },
+      { href: "/#programs", label: "Programs" },
       { href: "/ovatrack", label: "OvaTrack App" },
     ],
   },
