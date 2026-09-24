@@ -10,8 +10,6 @@ const MotionLink = motion(Link);
 
 const links = [
   { href: "/#mission", label: "Mission" },
-  { href: "/#programs", label: "Programs" },
-  { href: "/#impact", label: "Impact" },
   {
     label: "Ovarian Cancer",
     submenu: [
@@ -20,7 +18,20 @@ const links = [
       { href: "/education/ovarian-cancer-screening-explained", label: "Detection & Testing" },
     ],
   },
-  { href: "/ovatrack", label: "OvaTrack App", route: true },
+  {
+    label: "Evidence",
+    submenu: [
+      { href: "/#research", label: "Clinical Research" },
+      { href: "/#statistics", label: "Data Resources" },
+    ],
+  },
+  {
+    label: "Impact",
+    submenu: [
+      { href: "/#programs", label: "Our Programs" },
+      { href: "/ovatrack", label: "OvaTrack App" },
+    ],
+  },
   { href: "/#founder", label: "Founder" },
   { href: "/#involved", label: "Get Involved" },
 ];
@@ -28,7 +39,7 @@ const links = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -74,11 +85,7 @@ export function Navbar() {
             }
             const className =
               "px-4 py-2 text-sm font-medium text-ink-soft hover:text-teal-deep transition-colors relative group";
-            return l.route ? (
-              <Link key={l.href} href={l.href} className={className}>
-                {l.label}
-              </Link>
-            ) : (
+            return (
               <a key={l.href} href={l.href} className={className}>
                 {l.label}
               </a>
@@ -129,18 +136,19 @@ export function Navbar() {
             className="lg:hidden overflow-hidden bg-cream/95 backdrop-blur-xl border-t border-navy/5"
           >
             <nav className="container-wide flex flex-col py-6 gap-1">
-              {links.map((l, i) => {
+              {links.map((l) => {
                 if (l.submenu) {
+                    const isOpen = openSubmenu === l.label;
                     return (
                         <div key={l.label}>
-                            <button onClick={() => setSubmenuOpen(!submenuOpen)} className="w-full text-left py-3 px-2 text-lg font-medium text-ink hover:text-teal-deep flex justify-between items-center">
+                            <button onClick={() => setOpenSubmenu(isOpen ? null : l.label)} className="w-full text-left py-3 px-2 text-lg font-medium text-ink hover:text-teal-deep flex justify-between items-center">
                                 {l.label}
-                                <ChevronDown className={`transition-transform ${submenuOpen ? 'rotate-180' : ''}`} />
+                                <ChevronDown className={`transition-transform ${isOpen ? 'rotate-180' : ''}`} />
                             </button>
-                            {submenuOpen && (
+                            {isOpen && (
                                 <div className="pl-4 pb-2">
                                     {l.submenu.map(sub => (
-                                        <Link key={sub.href} href={sub.href} onClick={() => setOpen(false)} className="block py-2 text-ink-soft">
+                                        <Link key={sub.href} href={sub.href} onClick={() => { setOpen(false); setOpenSubmenu(null); }} className="block py-2 text-ink-soft">
                                             {sub.label}
                                         </Link>
                                     ))}
@@ -149,16 +157,15 @@ export function Navbar() {
                         </div>
                     )
                 }
-                const Tag = l.route ? MotionLink : motion.a;
                 return (
-                  <Tag
+                  <a
                     key={l.href}
                     href={l.href}
                     onClick={() => setOpen(false)}
                     className="py-3 px-2 text-lg font-medium text-ink hover:text-teal-deep border-b border-navy/5"
                   >
                     {l.label}
-                  </Tag>
+                  </a>
                 );
               })}
             </nav>
