@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Heart, Activity, ChevronDown, Globe, Mic } from "lucide-react";
+import { Menu, X, Heart, Activity, ChevronDown, Globe } from "lucide-react";
 import { Logo } from "./Logo";
 
 const MotionLink = motion(Link);
@@ -20,12 +20,12 @@ const links = [
       { href: "/#podcast", label: "Educational Podcast" },
     ],
   },
+  { href: "/ovatrack", label: "OvaTrack App", route: true },
   {
     label: "Our Work",
     submenu: [
       { href: "/#mission", label: "Mission" },
       { href: "/#programs", label: "Programs" },
-      { href: "/ovatrack", label: "OvaTrack App" },
     ],
   },
   { href: "/#founder", label: "Founder" },
@@ -69,7 +69,7 @@ export function Navbar() {
                     {l.label}
                     <ChevronDown className="w-4 h-4" />
                   </button>
-                  <div className="absolute top-full left-0 w-56 bg-cream border border-navy/5 shadow-xl rounded-lg py-2 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none group-hover:pointer-events-auto">
+                  <div className="absolute top-full left-0 w-56 bg-cream border border-navy/5 shadow-xl rounded-lg py-2 opacity-0 group-hover:opacity-100 transition-pointer-events-none group-hover:pointer-events-auto">
                     {l.submenu.map((sub) => (
                       <Link key={sub.href} href={sub.href} className="block px-4 py-2 text-sm text-ink hover:text-teal-deep hover:bg-cream-deep/50">
                         {sub.label}
