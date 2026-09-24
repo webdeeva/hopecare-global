@@ -450,5 +450,16 @@
     "words": 156,
     "status": "published",
     "publishedAt": "2026-09-17"
+  },
+  {
+    "n": 36,
+    "slug": "new-blood-test-ovarian-cancer-research-mide-study",
+    "title": "New Research: MicroRNA Blood Tests for Ovarian Cancer Detection",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "Exploring new research into microRNA-based blood tests and the MiDe Study's role in the future of earlier ovarian cancer detection.",
+    "targetKeyword": "New Research: MicroRNA Blood Tests for Ovarian Cancer Detection",
+    "words": 304,
+    "status": "draft"
   }
 ]
