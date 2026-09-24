@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Heart, Activity, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, Heart, Activity, ChevronDown, Globe, Mic } from "lucide-react";
 import { Logo } from "./Logo";
 
 const MotionLink = motion(Link);
@@ -17,6 +17,7 @@ const links = [
       { href: "/education/ovarian-cancer-screening-explained", label: "Detection & Testing" },
       { href: "/#research", label: "Clinical Research" },
       { href: "/#statistics", label: "Data Resources" },
+      { href: "/#podcast", label: "Educational Podcast" },
     ],
   },
   {
