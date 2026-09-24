@@ -25,11 +25,11 @@ const links = [
     label: "Our Work",
     submenu: [
       { href: "/#mission", label: "Mission" },
+      { href: "/#involved", label: "Join the Movement" },
       { href: "/#programs", label: "Programs" },
     ],
   },
   { href: "/#founder", label: "Founder" },
-  { href: "/#involved", label: "Get Involved" },
 ];
 
 export function Navbar() {
