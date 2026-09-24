@@ -6,9 +6,9 @@ import { motion, useInView, animate } from "motion/react";
 const stats = [
   {
     value: 1,
-    suffix: " in 91",
+    suffix: " in 78",
     label: "lifetime risk of ovarian cancer for women",
-    detail: "Roughly 1 in 91 women will be diagnosed in their lifetime.",
+    detail: "Roughly 1 in 78 women will be diagnosed in their lifetime.",
   },
   {
     value: 80,
