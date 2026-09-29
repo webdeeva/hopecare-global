@@ -10,7 +10,7 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
 
   const isOvarianCancerMonth = month === 8; // September
 
-  // In September, show Awareness Month + OvaTrack
+  // In September, show Awareness Month/HCAW + OvaTrack
   if (isOvarianCancerMonth) {
     return (
       <motion.div
@@ -26,8 +26,10 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
           <X size={32} />
         </button>
         <div className="max-w-2xl text-center text-white">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">September is Ovarian Cancer Awareness Month</h2>
-          <p className="text-lg mb-6 opacity-90">Every woman deserves to be seen and supported. Join us in raising awareness.</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Hereditary Cancer Awareness Week</h2>
+          <p className="text-lg mb-6 opacity-90">
+            Knowledge is power. Learn your family's history and understand your genetic risk. Every woman deserves to be seen and supported.
+          </p>
           <div className="bg-white/10 rounded-2xl p-6 mb-8 border border-white/20">
             <h3 className="text-2xl font-bold mb-2">Track Your Health with OvaTrack</h3>
             <p className="text-white/80 mb-4">
@@ -41,10 +43,10 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
             </a>
           </div>
           <a
-            href="/education"
+            href="/education/hereditary-ovarian-cancer-risk"
             className="inline-block text-white underline opacity-80 hover:opacity-100"
           >
-            Explore Educational Resources
+            Learn About Genetic Risk
           </a>
         </div>
       </motion.div>
