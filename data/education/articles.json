@@ -476,5 +476,17 @@
     "status": "published",
     "publishedAt": "2026-09-24",
     "heroImage": "/education/ovarian-cancer-symptoms-risks-quick-reference.png"
+  },
+  {
+    "n": 38,
+    "slug": "hereditary-ovarian-cancer-basics-risk",
+    "title": "Understanding Hereditary Ovarian Cancer Risk: The Basics",
+    "cluster": "risk",
+    "role": "supporting",
+    "excerpt": "Learn how to identify if ovarian cancer runs in your family and the first steps to take if you have concerns.",
+    "targetKeyword": "hereditary ovarian cancer risk basics",
+    "words": 177,
+    "status": "published",
+    "publishedAt": "2026-09-29"
   }
 ]
