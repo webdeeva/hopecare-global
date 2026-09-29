@@ -1032,13 +1032,23 @@
     "sources": [
       {
         "url": "https://ovarian.org.uk/hereditary-cancer-and-risk/",
-        "organization": "Ovarian Cancer Action",
-        "claim": "Around 15-20% of ovarian cancers have a hereditary cause."
+        "claim": "Around 15-20% of ovarian cancers have a hereditary cause.",
+        "organization": "Ovarian Cancer Action"
+      },
+      {
+        "claim": "Genetic testing can help understand and manage risk for breast and ovarian cancers based on family history.",
+        "url": "https://www.cdc.gov/breast-ovarian-cancer-hereditary/testing/index.html",
+        "organization": "CDC"
+      },
+      {
+        "claim": "Know your family health history to assess cancer risk.",
+        "url": "https://www.cdc.gov/genomics/famhistory/index.htm",
+        "organization": "CDC"
       },
       {
         "organization": "CDC",
-        "claim": "Genetic testing can help understand and manage risk for breast and ovarian cancers based on family history.",
-        "url": "https://www.cdc.gov/breast-ovarian-cancer-hereditary/testing/index.html"
+        "url": "https://www.cdc.gov/ovariancancer/risk/index.htm",
+        "claim": "Understanding ovarian cancer risk factors and genetic counseling."
       }
     ]
   },
