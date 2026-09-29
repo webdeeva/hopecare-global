@@ -7,6 +7,7 @@ import { Mission } from "@/components/Mission";
 import { Stats } from "@/components/Stats";
 import { Programs } from "@/components/Programs";
 import { SymptomsCTA } from "@/components/SymptomsCTA";
+import { HereditaryFocusCTA } from "@/components/HereditaryFocusCTA";
 import { MythFact } from "@/components/MythFact";
 import { Marquee } from "@/components/Marquee";
 import { Founder } from "@/components/Founder";
