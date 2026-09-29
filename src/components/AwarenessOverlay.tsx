@@ -27,6 +27,7 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
         </button>
         <div className="max-w-2xl text-center text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Hereditary Cancer Awareness Week</h2>
+          <p className="text-xl font-semibold mb-4 text-teal">September 28 – October 4</p>
           <p className="text-lg mb-6 opacity-90">
             Knowledge is power. Learn your family's history and understand your genetic risk. Every woman deserves to be seen and supported.
           </p>
