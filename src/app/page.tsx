@@ -20,9 +20,10 @@ export default function Home() {
   const [showAwareness, setShowAwareness] = useState(false);
 
   useEffect(() => {
-    // Show only in September (month index 8)
+    // Show overlay whenever AwarenessOverlay has active content
     const month = new Date().getMonth();
-    if (month === 8) {
+    // September (HCAW) or October (IMPACT Act news + OvaTrack)
+    if (month === 8 || month === 9) {
       setShowAwareness(true);
     }
   }, []);
