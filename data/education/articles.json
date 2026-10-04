@@ -498,7 +498,8 @@
     "excerpt": "A landmark bipartisan bill to expand genetic testing, improve access to gynecologic oncology care, and strengthen education — and where HopeCare stands on it.",
     "targetKeyword": "Ovarian Cancer IMPACT Act",
     "words": 576,
-    "status": "draft",
-    "heroImage": "/education/ovarian-cancer-impact-act-explained.png"
+    "status": "published",
+    "heroImage": "/education/ovarian-cancer-impact-act-explained.png",
+    "publishedAt": "2026-10-04"
   }
 ]
