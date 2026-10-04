@@ -28,6 +28,39 @@ export function Hero() {
         <TopRail />
       </div>
 
+      {/* Persistent IMPACT Act news ribbon — stays visible after overlay dismissed */}
+      <a
+        href="#"
+        className="block relative z-20 bg-gradient-to-r from-amber via-teal to-amber/80 text-navy overflow-hidden"
+        onClick={(e) => { e.preventDefault(); document.querySelector('[class*=\"z-\\[100\\]\"')?.classList.contains('fixed') && document.querySelector<HTMLElement>('[class*=\"z-\\[100\\]\"')?.style.setProperty('display','block'); }}
+      >
+        <div className="flex items-center gap-4 px-4 md:px-8 py-2.5 animate-marquee whitespace-nowrap will-change-transform text-sm md:text-base font-semibold">
+          <span className="inline-flex items-center gap-2">
+            <span className="bg-navy text-white text-[0.6rem] uppercase tracking-widest font-bold px-2 py-0.5 rounded">BREAKING</span>
+            <span>Ovarian Cancer IMPACT Act — Bipartisan bill introduced in Congress</span>
+          </span>
+          <span className="opacity-40 mx-4">&bull;</span>
+          <span className="inline-flex items-center gap-2">
+            <span className="bg-navy text-white text-[0.6rem] uppercase tracking-widest font-bold px-2 py-0.5 rounded">NEW</span>
+            <span>Slotkin, Britt, DeLauro, Bacon lead effort to expand genetic testing access</span>
+          </span>
+          <span className="opacity-40 mx-4">&bull;</span>
+          <span className="text-teal-deep font-bold">HopeCare Global is engaged &amp; advocating</span>
+          <span className="opacity-40 mx-4">&bull;</span>
+          <span className="inline-flex items-center gap-2">
+            <span className="bg-navy text-white text-[0.6rem] uppercase tracking-widest font-bold px-2 py-0.5 rounded">BREAKING</span>
+            <span>Ovarian Cancer IMPACT Act — Bipartisan bill introduced in Congress</span>
+          </span>
+          <span className="opacity-40 mx-4">&bull;</span>
+          <span className="inline-flex items-center gap-2">
+            <span className="bg-navy text-white text-[0.6rem] uppercase tracking-widest font-bold px-2 py-0.5 rounded">NEW</span>
+            <span>Slotkin, Britt, DeLauro, Bacon lead effort to expand genetic testing access</span>
+          </span>
+          <span className="opacity-40 mx-4">&bull;</span>
+          <span className="text-teal-deep font-bold">HopeCare Global is engaged &amp; advocating</span>
+        </div>
+      </a>
+
       {/* MAIN HERO GRID — text left, full-bleed photo right */}
       <div className="mt-10 md:mt-14 grid lg:grid-cols-[1fr_1.05fr] items-stretch">
         {/* ─── Left: copy column ─────────────────────────── */}
