@@ -84,7 +84,7 @@ export function Hero() {
           >
             <span className="w-10 h-px bg-gradient-to-r from-teal to-transparent" />
             <span className="text-[0.72rem] tracking-[0.28em] uppercase font-bold text-teal-deep">
-              Hereditary Cancer Awareness Week (Sept 28 – Oct 4)
+              Ovarian Cancer IMPACT Act — Bipartisan Bill Now in Congress
             </span>
           </motion.div>
 
