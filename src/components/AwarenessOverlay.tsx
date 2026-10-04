@@ -105,10 +105,10 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
 
         <div className="flex flex-wrap justify-center gap-4 mb-6">
           <a
-            href="/education"
+            href="/education/ovarian-cancer-impact-act-explained"
             className="inline-block bg-teal text-white px-7 py-3 rounded-full font-semibold hover:bg-teal-deep transition-colors shadow-lg"
           >
-            Learn More About the Bill
+            Read the Full Breakdown
           </a>
           <a
             href="/get-involved"
