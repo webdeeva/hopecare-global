@@ -488,5 +488,16 @@
     "words": 177,
     "status": "published",
     "publishedAt": "2026-09-29"
+  },
+  {
+    "n": 39,
+    "slug": "ovarian-cancer-impact-act-explained",
+    "title": "The Ovarian Cancer IMPACT Act: What It Means for You",
+    "cluster": "equity",
+    "role": "supporting",
+    "excerpt": "A landmark bipartisan bill to expand genetic testing, improve access to gynecologic oncology care, and strengthen education — and where HopeCare stands on it.",
+    "targetKeyword": "Ovarian Cancer IMPACT Act",
+    "words": 576,
+    "status": "draft"
   }
 ]
