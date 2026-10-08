@@ -132,6 +132,8 @@ export function Founder() {
               { Icon: Stethoscope, label: "Clinical Practice" },
               { Icon: GraduationCap, label: "Nursing Education" },
               { Icon: BadgeCheck, label: "Infection Control" },
+              { Icon: BadgeCheck, label: "ANA Member" },
+              { Icon: BadgeCheck, label: "OCRA Lead Advocate" },
             ].map(({ Icon, label }) => (
               <span
                 key={label}
