@@ -47,6 +47,7 @@ export default function DonatePage() {
         <DonateHero />
         <DonateImpact />
         <DonateWays />
+        <SponsorshipTiers />
         <DonateFAQ />
         <DonateCTA />
       </main>
