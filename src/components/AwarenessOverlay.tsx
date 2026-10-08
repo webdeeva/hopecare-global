@@ -60,15 +60,21 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-navy/95 p-4 overflow-y-auto"
+      className="fixed inset-0 z-[100] flex items-center justify-center bg-black/50 p-4"
     >
-      <button
-        onClick={onClose}
-        className="absolute top-6 right-6 text-white/70 hover:text-white"
+      <motion.div
+        initial={{ scale: 0.95 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0.95 }}
+        className="bg-navy p-6 md:p-8 rounded-3xl max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl"
       >
-        <X size={32} />
-      </button>
-      <div className="max-w-3xl text-center text-white">
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 text-white/70 hover:text-white"
+        >
+          <X size={24} />
+        </button>
+        <div className="text-center text-white">
 
         {/* ==== IMPACT ACT HERO ==== */}
         <span className="inline-block bg-amber px-4 py-1 rounded-full text-xs uppercase tracking-widest font-semibold mb-3 text-navy">
