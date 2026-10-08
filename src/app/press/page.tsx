@@ -31,7 +31,7 @@ export default function PressPage() {
           <a href="mailto:support@hopecareglobal.org">support@hopecareglobal.org</a>.
         </p>
         <p>
-          <a href="/press/Petrina_Harrison_EPK.pdf" target="_blank" rel="noopener">
+          <a href="/downloads/Petrina_Harrison_EPK.txt" target="_blank" rel="noopener">
             Download Dr. Harrison&rsquo;s Electronic Press Kit (PDF)
           </a>
         </p>
