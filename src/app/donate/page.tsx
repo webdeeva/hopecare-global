@@ -4,6 +4,7 @@ import { Footer } from "@/components/Footer";
 import { DonateHero } from "@/components/donate/DonateHero";
 import { DonateImpact } from "@/components/donate/DonateImpact";
 import { DonateWays } from "@/components/donate/DonateWays";
+import { SponsorshipTiers } from "@/components/donate/SponsorshipTiers";
 import { DonateFAQ } from "@/components/donate/DonateFAQ";
 import { DonateCTA } from "@/components/donate/DonateCTA";
 import { faqs } from "@/data/donate-faqs";
