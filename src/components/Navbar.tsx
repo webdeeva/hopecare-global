@@ -21,7 +21,7 @@ const links = [
     ],
   },
   { href: "/ovatrack", label: "OvaTrack App", route: true },
-  { href: "/press/ovatrack-launch", label: "News &amp; Press", route: true },
+  { href: "/press", label: "News &amp; Press", route: true },
   {
     label: "Our Work",
     submenu: [
