@@ -72,7 +72,7 @@ const navGroups = [
       { href: "#programs", label: "Programs" },
       { href: "#impact", label: "Impact" },
       { href: "#founder", label: "Founder" },
-      { href: "/press/ovatrack-launch", label: "News &amp; Press" },
+      { href: "/press", label: "News &amp; Press" },
     ],
   },
   {
