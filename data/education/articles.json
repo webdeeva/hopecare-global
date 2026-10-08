@@ -501,5 +501,16 @@
     "status": "published",
     "heroImage": "/education/ovarian-cancer-impact-act-explained.png",
     "publishedAt": "2026-10-04"
+  },
+  {
+    "n": 40,
+    "slug": "ovatrack-launch",
+    "title": "Dr. Petrina N. Harrison Launches OvaTrack",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "HopeCare Global today announced the launch of OvaTrack, a mobile application designed to help women understand their ovarian cancer risk, track symptoms, and navigate the path to care.",
+    "targetKeyword": "OvaTrack launch",
+    "words": 445,
+    "status": "draft"
   }
 ]
