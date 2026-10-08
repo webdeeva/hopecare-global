@@ -511,7 +511,8 @@
     "excerpt": "HopeCare Global today announced the launch of OvaTrack, a mobile application designed to help women understand their ovarian cancer risk, track symptoms, and navigate the path to care.",
     "targetKeyword": "OvaTrack launch",
     "words": 445,
-    "status": "draft",
-    "heroImage": "/education/ovatrack-launch.png"
+    "status": "published",
+    "heroImage": "/education/ovatrack-launch.png",
+    "publishedAt": "2026-10-08"
   }
 ]
