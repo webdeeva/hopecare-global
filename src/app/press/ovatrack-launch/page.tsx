@@ -67,7 +67,7 @@ export default function OvaTrackLaunch() {
         <section className={s.kit}>
           <h2 className={s.h2}>Media kit</h2>
           <p>View Dr. Harrison&rsquo;s Electronic Press Kit, including her biography, credentials, research, and speaking topics.</p>
-          <a className={s.btn} href="/press/Petrina_Harrison_EPK.pdf" target="_blank" rel="noopener">Open the EPK (PDF)</a>
+          <a className={s.btn} href="/downloads/Petrina_Harrison_EPK.txt" target="_blank" rel="noopener">Open the EPK (coming soon)</a>
         </section>
 
         <h2 className={s.h2}>Get involved</h2>
