@@ -15,6 +15,7 @@ const TOPICS = [
   "Press / media",
   "Speaking engagement",
   "Share my story",
+  "Partnership Inquiry",
 ] as const;
 
 type Status = "idle" | "submitting" | "ok" | "error";
