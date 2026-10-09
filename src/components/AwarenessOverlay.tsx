@@ -137,7 +137,9 @@ export function AwarenessOverlay({ onClose }: { onClose: () => void }) {
           </a>
         </div>
 
-      </motion.div>
+        </div>
+
+        </motion.div>
     </motion.div>
   );
 }
