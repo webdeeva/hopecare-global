@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import s from "../press/press.module.css";
-import { serif, sans } from "./fonts";
+import { serif, sans } from "../press/fonts";
 
 export const metadata: Metadata = {
   title: "Press Releases & Media | HopeCare Global Inc",
