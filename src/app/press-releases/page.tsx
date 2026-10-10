@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import s from "./press.module.css";
+import s from "../press/press.module.css";
 import { serif, sans } from "./fonts";
 
 export const metadata: Metadata = {
