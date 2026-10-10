@@ -8,6 +8,9 @@
 :root {
   /* Brand palette */
   --teal: #0f8b9e;
+  --ink: #0a1929;
+  --ink-soft: #3a4a5a;
+  --ink-mute: #6b7a8a;
   --teal-deep: #086b7d;
   --teal-bright: #14b5cc;
   --teal-soft: #d4ecf0;
