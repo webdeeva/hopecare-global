@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import s from "./press.module.css";
-import { serif, sans } from "./fonts";
+import s from "../press.module.css";
+import { serif, sans } from "../fonts";
 
 export const metadata: Metadata = {
   title: "News & Press | HopeCare Global Inc",
@@ -24,7 +24,7 @@ export default function PressPage() {
   return (
     <main className={`${s.page} ${serif.variable} ${sans.variable}`}>
       <div className={s.article}>
-        <h1 className={s.title}>News &amp; Press</h1>
+        <h1 className={s.title}>Press Releases &amp; Media</h1>
         <p>
           Press releases and media resources from HopeCare Global Inc. For media inquiries, call{" "}
           <a href="tel:+18668848838">(866) 884-8838</a> or email{" "}
