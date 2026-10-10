@@ -22,36 +22,36 @@ const releases = [
 
 export default function PressReleasesPage() {
   return (
-    <main className={`${s.page} ${serif.variable} ${sans.variable}`}>
+    <main className={`${s.page} ${serif.variable} ${sans.variable}`} style={{ color: 'var(--ink)' }}>
       <div className={s.article}>
-        <h1>Press Releases &amp; Media</h1>
-        <p>
+        <h1 style={{ color: 'var(--ink)' }}>Press Releases &amp; Media</h1>
+        <p style={{ color: 'var(--ink-soft)' }}>
           Welcome to the HopeCare Global Press &amp; Media center. Here you will find official press releases, 
           media coverage, interviews, and organizational announcements.
         </p>
-        <p>
+        <p style={{ color: 'var(--ink-soft)' }}>
           For media and partnership inquiries, please contact:
         </p>
-        <address className={s.contact} style={{ fontStyle: 'normal' }}>
-          <strong>HopeCare Global Inc.</strong><br />
+        <address className={s.contact} style={{ fontStyle: 'normal', color: 'var(--ink-soft)' }}>
+          <strong style={{ color: 'var(--ink)' }}>HopeCare Global Inc.</strong><br />
           Media &amp; Partnership Inquiries<br />
-          Phone: <a href="tel:+18668848838">(866) 884-8838</a><br />
-          Email: <a href="mailto:support@hopecareglobal.org">support@hopecareglobal.org</a><br />
-          Website: <a href="https://hopecareglobal.org">https://hopecareglobal.org</a>
+          Phone: <a href="tel:+18668848838" style={{ color: 'var(--teal)' }}>(866) 884-8838</a><br />
+          Email: <a href="mailto:support@hopecareglobal.org" style={{ color: 'var(--teal)' }}>support@hopecareglobal.org</a><br />
+          Website: <a href="https://hopecareglobal.org" style={{ color: 'var(--teal)' }}>https://hopecareglobal.org</a>
         </address>
 
-        <h2 style={{ marginTop: '2rem' }}>Featured Press Releases</h2>
+        <h2 style={{ marginTop: '2rem', color: 'var(--ink)' }}>Featured Press Releases</h2>
         {releases.map((r) => (
           <article key={r.href} style={{ marginTop: '1.5rem', paddingBottom: '1.5rem', borderBottom: '1px solid var(--rule)' }}>
-            <time dateTime={r.date} style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>{r.label}</time>
-            <h3 style={{ fontSize: '1.25rem', marginTop: '0.5rem' }}><Link href={r.href}>{r.title}</Link></h3>
-            <p>{r.summary}</p>
-            <Link href={r.href} style={{ fontWeight: 600, color: 'var(--accent)' }}>Read Full Press Release &rarr;</Link>
+            <time dateTime={r.date} style={{ color: 'var(--ink-mute)', fontSize: '0.9rem' }}>{r.label}</time>
+            <h3 style={{ fontSize: '1.25rem', marginTop: '0.5rem' }}><Link href={r.href} style={{ color: 'var(--ink)' }}>{r.title}</Link></h3>
+            <p style={{ color: 'var(--ink-soft)' }}>{r.summary}</p>
+            <Link href={r.href} style={{ fontWeight: 600, color: 'var(--teal)' }}>Read Full Press Release &rarr;</Link>
           </article>
         ))}
         
-        <h2 style={{ marginTop: '2rem' }}>Media Coverage &amp; Interviews</h2>
-        <p style={{ color: 'var(--muted)' }}><em>Future media coverage, interviews, and announcements will be posted here.</em></p>
+        <h2 style={{ marginTop: '2rem', color: 'var(--ink)' }}>Media Coverage &amp; Interviews</h2>
+        <p style={{ color: 'var(--ink-mute)' }}><em>Future media coverage, interviews, and announcements will be posted here.</em></p>
       </div>
     </main>
   );
