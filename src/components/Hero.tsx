@@ -14,7 +14,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-cream pt-20 md:pt-24"
+      className="relative isolate overflow-hidden bg-cream pt-4 md:pt-6"
     >
       {/* Soft ambient bloom (low-key, just adds depth) */}
       <div
