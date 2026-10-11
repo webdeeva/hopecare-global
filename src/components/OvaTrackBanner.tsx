@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { ArrowUpRight } from "lucide-react";
@@ -25,15 +26,24 @@ export function OvaTrackBanner() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="flex flex-col items-center gap-3 md:gap-4 text-center"
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 text-center"
         >
-          {/* Message + CTA centered */}
-          <p className="text-white text-base md:text-lg lg:text-xl font-semibold leading-snug">
-            Meet OvaTrack &mdash; Know the Signs. Track the Symptoms. Act Early.
-          </p>
+          {/* Icon + message row */}
+          <div className="flex items-center gap-3 md:gap-4">
+            <Image
+              src="/ovatrack/ovatrack-icon.png"
+              alt="OvaTrack"
+              className="shrink-0 w-12 h-12 md:w-14 md:h-14"
+              width={56}
+              height={56}
+            />
+            <p className="text-white text-base md:text-lg lg:text-xl font-semibold leading-snug">
+              Meet OvaTrack &mdash; Know the Signs. Track the Symptoms. Act Early.
+            </p>
+          </div>
           <Link
             href="/ovatrack"
-            className="group inline-flex items-center gap-2 bg-white text-teal-deep px-6 md:px-7 py-2.5 md:py-3 rounded-full font-semibold text-sm md:text-base transition-all duration-300 hover:bg-white/95 hover:shadow-lg hover:-translate-y-0.5"
+            className="group shrink-0 inline-flex items-center gap-2 bg-white text-teal-deep px-6 md:px-7 py-2.5 md:py-3 rounded-full font-semibold text-sm md:text-base transition-all duration-300 hover:bg-white/95 hover:shadow-lg hover:-translate-y-0.5"
           >
             Download OvaTrack
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
