@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-cream pt-4 md:pt-6"
+      className="relative isolate overflow-hidden bg-cream pt-32 md:pt-28"
     >
       {/* Soft ambient bloom (low-key, just adds depth) */}
       <div
@@ -29,12 +29,12 @@ export function Hero() {
         <TopRail />
       </div>
 
-      <div className="container-wide mt-6">
+      <div className="container-wide mt-3">
         <CompactOvaTrackBanner />
       </div>
 
       {/* MAIN HERO GRID — text left, full-bleed photo right */}
-      <div className="mt-6 md:mt-14 grid lg:grid-cols-[1fr_1.05fr] items-stretch">
+      <div className="mt-3 md:mt-10 grid lg:grid-cols-[1fr_1.05fr] items-stretch">
         {/* ─── Left: copy column ─────────────────────────── */}
         <div
           className="
