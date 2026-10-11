@@ -24,7 +24,7 @@ export default function PressReleasesPage() {
   return (
     <main className={`${s.page} ${serif.variable} ${sans.variable}`} style={{ color: 'var(--ink)' }}>
       <div className={s.article}>
-        <h1 style={{ color: 'var(--ink)' }}>Press Releases &amp; Media</h1>
+        <h1 style={{ color: 'var(--ink)' }}>News &amp; Press Releases</h1>
         <p style={{ color: 'var(--ink-soft)' }}>
           Welcome to the HopeCare Global Press &amp; Media center. Here you will find official press releases, 
           media coverage, interviews, and organizational announcements.
