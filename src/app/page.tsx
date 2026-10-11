@@ -2,7 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
+import { OvaTrackBanner } from "@/components/OvaTrackBanner";
 import { Hero } from "@/components/Hero";
+import { OvaTrackSection } from "@/components/OvaTrackSection";
 import { Mission } from "@/components/Mission";
 import { Stats } from "@/components/Stats";
 import { Programs } from "@/components/Programs";
