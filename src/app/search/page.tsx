@@ -1,11 +1,16 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { motion } from "motion/react";
-import { Search, ArrowUpRight, Clock, X } from "lucide-react";
+import type { Metadata } from "next";
+import Link from "next/link";
+import { Search, ArrowUpRight, Clock } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ARTICLES, readingTimeMinutes, getCluster } from "@/lib/education";
+import { SITE_NAME, abs } from "@/lib/site";
+
+export const metadata: Metadata = {
+  title: "Search | HopeCare Global Inc",
+  description: "Search articles, guides, and resources across hopecareglobal.org.",
+  alternates: { canonical: "https://hopecareglobal.org/search" },
+};
 
 // ── Static site pages to include in search ──────────────
 const SITE_PAGES = [
@@ -42,10 +47,8 @@ function searchAll(q: string): SearchResult[] {
     const excerptLower = article.excerpt.toLowerCase();
     const keywordLower = article.targetKeyword?.toLowerCase() || "";
     const clusterLabel = getCluster(article.cluster).label.toLowerCase();
-    const terms = query.split(" ").filter(Boolean);
 
     if (titleLower.includes(query)) score += 10;
-    if (terms.some((w) => titleLower.includes(w))) score += 5;
     if (excerptLower.includes(query)) score += 4;
     if (keywordLower.includes(query)) score += 6;
     if (clusterLabel.includes(query)) score += 3;
@@ -66,15 +69,9 @@ function searchAll(q: string): SearchResult[] {
 
   SITE_PAGES.forEach((page) => {
     let score = 0;
-    const titleLower = page.title.toLowerCase();
-    const excerptLower = page.excerpt.toLowerCase();
-    const keywordLower = page.keywords?.toLowerCase() || "";
-    const terms = query.split(" ").filter(Boolean);
-
-    if (titleLower.includes(query)) score += 8;
-    if (terms.some((w) => titleLower.includes(w))) score += 4;
-    if (excerptLower.includes(query)) score += 4;
-    if (keywordLower.includes(query)) score += 3;
+    if (page.title.toLowerCase().includes(query)) score += 8;
+    if (page.excerpt.toLowerCase().includes(query)) score += 4;
+    if ((page.keywords?.toLowerCase() || "").includes(query)) score += 3;
 
     if (score > 0) {
       results.push({
@@ -91,47 +88,21 @@ function searchAll(q: string): SearchResult[] {
   return results;
 }
 
-export default function SearchPage() {
-  const [query, setQuery] = useState("");
-  const [results, setResults] = useState<SearchResult[]>([]);
-  const [searched, setSearched] = useState(false);
-  const [count, setCount] = useState(0);
+interface SearchPageParams {
+  searchParams: { q?: string };
+}
 
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const q = params.get("q") || "";
-    setQuery(q);
-    if (q) {
-      const r = searchAll(q);
-      setResults(r);
-      setCount(r.length);
-      setSearched(true);
-    }
-  }, []);
-
-  function handleSearch(e: Event) {
-    e.preventDefault();
-    const q = query.trim();
-    if (q) {
-      window.history.replaceState({}, "", `/search?q=${encodeURIComponent(q)}`);
-      const r = searchAll(q);
-      setResults(r);
-      setCount(r.length);
-      setSearched(true);
-    }
-  }
+export default function SearchPage({ searchParams }: SearchPageParams) {
+  const q = searchParams?.q || "";
+  const results = q ? searchAll(q) : [];
+  const count = results.length;
 
   return (
     <>
       <Navbar />
       <main className="flex-1 pt-28">
         <div className="container-wide">
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-            className="max-w-3xl mx-auto py-16 md:py-24"
-          >
+          <div className="max-w-3xl mx-auto py-16 md:py-24">
             <h1 className="font-display text-3xl md:text-4xl font-bold text-navy leading-[1.08]">
               Search
             </h1>
@@ -139,29 +110,17 @@ export default function SearchPage() {
               Find articles, guides, and resources across hopecareglobal.org.
             </p>
 
-            <form onSubmit={handleSearch} className="mt-8" action="/search" method="GET">
+            <form className="mt-8" action="/search" method="GET">
               <div className="flex items-center bg-white border border-navy/10 shadow-sm rounded-xl overflow-hidden">
                 <Search className="ml-4 w-5 h-5 text-teal" strokeWidth={2.5} />
                 <input
                   type="text"
                   name="q"
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
+                  value={q}
                   placeholder="Search ovarian cancer symptoms, OvaTrack, founder, press releases..."
                   className="flex-1 px-4 py-3.5 text-base text-ink bg-transparent outline-none"
-                  autoFocus
                   aria-label="Search query"
                 />
-                {query && (
-                  <button
-                    type="button"
-                    onClick={() => { setQuery(""); setResults([]); setSearched(false); setCount(0); }}
-                    className="p-2.5 text-ink-mute hover:text-navy transition-colors"
-                    aria-label="Clear search"
-                  >
-                    <X className="w-4 h-4" strokeWidth={2.5} />
-                  </button>
-                )}
                 <button
                   type="submit"
                   className="px-5 py-3.5 bg-gradient-to-r from-teal-deep to-teal text-white font-semibold text-sm rounded-r-xl transition-all"
@@ -171,17 +130,12 @@ export default function SearchPage() {
               </div>
             </form>
 
-            {searched && query && results.length === 0 && (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.3 }}
-                className="mt-16 py-12 text-center"
-              >
+            {q && count === 0 && (
+              <div className="mt-16 py-12 text-center">
                 <Search className="mx-auto w-10 h-10 text-ink-mute/50" strokeWidth={2} />
                 <h2 className="mt-4 text-xl font-semibold text-ink">No results found</h2>
                 <p className="mt-2 text-ink-soft">
-                  We couldn't find anything matching &ldquo;{query}&rdquo;. Try a different word or phrase &mdash; for example, symptoms, BRCA, OvaTrack, treatment, disparities, clinical trials, or founder.
+                  We couldn&rsquo;t find anything matching &ldquo;{q}&rdquo;. Try a different word or phrase &mdash; for example, symptoms, BRCA, OvaTrack, treatment, disparities, clinical trials, or founder.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
                   {["symptoms", "BRCA", "OvaTrack", "treatment", "disparities", "clinical trials", "founder", "donate"].map((suggestion) => (
@@ -199,23 +153,20 @@ export default function SearchPage() {
                   <a href="/#education" className="text-teal-deep underline">education library</a>
                   {" "}for all articles by topic.
                 </p>
-              </motion.div>
+              </div>
             )}
 
-            {searched && results.length > 0 && (
+            {q && count > 0 && (
               <>
                 <p className="mt-6 text-sm text-ink-mute">
-                  {count} {count === 1 ? "result" : "results"} for &ldquo;{query}&rdquo;
+                  {count} {count === 1 ? "result" : "results"} for &ldquo;{q}&rdquo;
                 </p>
 
                 <div className="mt-8 space-y-6">
                   {results.map((result, i) => (
-                    <motion.a
+                    <a
                       key={`${result.type}-${result.url}`}
                       href={result.url}
-                      initial={{ opacity: 0, y: 8 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.3, delay: Math.min(i * 0.03, 0.25) }}
                       className="block group rounded-2xl bg-white border border-navy/5 p-6 md:p-7 card-lift"
                     >
                       <div className="flex items-start gap-3 flex-wrap">
@@ -251,20 +202,20 @@ export default function SearchPage() {
                         </div>
                         <ArrowUpRight className="w-4 h-4 text-teal-deep transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </div>
-                    </motion.a>
+                    </a>
                   ))}
                 </div>
               </>
             )}
 
-            {!searched && (
+            {!q && (
               <div className="mt-16 text-center text-ink-mute">
                 <Search className="mx-auto w-8 h-8 text-teal-soft" strokeWidth={2} />
                 <p className="mt-3">Type a keyword above to search all articles and pages.</p>
                 <p className="mt-2 text-sm">Try: symptoms, BRCA, OvaTrack, treatment, disparities, founder, clinical trials</p>
               </div>
             )}
-          </motion.div>
+          </div>
         </div>
       </main>
       <Footer />
