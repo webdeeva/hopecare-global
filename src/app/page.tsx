@@ -22,8 +22,8 @@ export default function Home() {
   useEffect(() => {
     // Show overlay whenever AwarenessOverlay has active content
     const month = new Date().getMonth();
-    // September (HCAW) or October (IMPACT Act news + OvaTrack)
-    if (month === 8 || month === 9) {
+    // September HCAW window only
+    if (month === 8) {
       setShowAwareness(true);
     }
   }, []);
