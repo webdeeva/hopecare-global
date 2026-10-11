@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "motion/react";
-import { Menu, X, Heart, Activity, ChevronDown, Globe } from "lucide-react";
+import { Menu, X, Heart, Activity, ChevronDown, Globe, Search } from "lucide-react";
 import { Logo } from "./Logo";
 
 const MotionLink = motion(Link);
