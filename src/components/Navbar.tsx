@@ -74,7 +74,7 @@ export function Navbar() {
           : "bg-teal-soft"
       }`}
     >
-      <div className="container-wide flex items-center justify-between h-20">
+      <div className="container-wide flex items-center justify-between h-28">
         <a href="#top" aria-label="HopeCare Global Inc — home" className="block">
           <Logo size={108} priority />
         </a>
