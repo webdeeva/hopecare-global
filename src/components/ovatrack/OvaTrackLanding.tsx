@@ -227,18 +227,8 @@ function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.32 }}
-            className="font-script mt-3 text-3xl md:text-4xl"
-            style={{ color: C.teal }}
-          >
-            You know your body best.
-          </motion.p>
-
-          <motion.p
-            initial={{ opacity: 0, y: 12 }}
-            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.42 }}
-            className="mt-7 text-lg leading-[1.6] max-w-[32rem]"
+            className="mt-6 text-lg leading-[1.6] max-w-[32rem]"
             style={{ color: C.ink }}
           >
             A gentle daily check-in that helps you notice the subtle, persistent
