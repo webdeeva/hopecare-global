@@ -88,16 +88,15 @@ export function OvaTrackSection() {
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.7 }}
           >
-            {/* App icon treatment */}
+            {/* App icon — official OvaTrack app icon */}            
             <div className="inline-flex items-center gap-3">
-              <div
-                className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center shrink-0"
-                style={{
-                  background: "linear-gradient(135deg, #086b7d 0%, #14b5cc 100%)",
-                }}
-              >
-                <span className="text-white font-bold text-xl md:text-2xl">OT</span>
-              </div>
+              <Image
+                src="/ovatrack/ovatrack-icon.png"
+                alt="OvaTrack"
+                className="shrink-0 w-14 h-14 md:w-16 md:h-16"
+                width={64}
+                height={64}
+              />
               <span
                 className="text-[0.68rem] tracking-[0.34em] uppercase font-bold"
                 style={{ color: "#086b7d" }}
