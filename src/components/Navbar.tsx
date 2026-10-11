@@ -70,8 +70,8 @@ export function Navbar() {
       transition={{ duration: 0.7, ease: [0.2, 0.8, 0.2, 1] }}
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-cream/85 backdrop-blur-xl border-b border-navy/5 shadow-[0_4px_30px_-12px_rgba(10,37,64,0.12)]"
-          : "bg-transparent"
+          ? "bg-teal-soft/85 backdrop-blur-xl border-b border-navy/5 shadow-[0_4px_30px_-12px_rgba(10,37,64,0.12)]"
+          : "bg-teal-soft"
       }`}
     >
       <div className="container-wide flex items-center justify-between h-20">
