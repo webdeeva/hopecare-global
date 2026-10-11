@@ -24,7 +24,7 @@ export default function PressPage() {
   return (
     <main className={`${s.page} ${serif.variable} ${sans.variable}`}>
       <div className={s.article}>
-        <h1 className={s.title}>Press Releases &amp; Media</h1>
+        <h1 className={s.title}>News &amp; Press Releases</h1>
         <p>
           Press releases and media resources from HopeCare Global Inc. For media inquiries, call{" "}
           <a href="tel:+18668848838">(866) 884-8838</a> or email{" "}
