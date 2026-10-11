@@ -66,19 +66,23 @@ export function Hero() {
             is needed.
           </motion.h1>
 
-          {/* Sub-copy */}
-          <motion.p
+          {/* Sub-copy with Our Mission heading */}
+          <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="mt-7 text-lg md:text-xl text-ink-soft leading-[1.55] max-w-[34rem]"
           >
-            HopeCare Global advances{" "}
-            <strong className="text-navy font-semibold">early detection</strong>,{" "}
-            <strong className="text-navy font-semibold">education</strong>, and equitable{" "}
-            <strong className="text-navy font-semibold">access to care</strong> — confronting
-            ovarian cancer in communities the world has overlooked.
-          </motion.p>
+            <h2 className="kicker text-teal-deep uppercase tracking-wider font-semibold text-sm mt-7">
+              Our Mission
+            </h2>
+            <p className="mt-3 text-lg md:text-xl text-ink-soft leading-[1.55] max-w-[34rem]">
+              HopeCare Global advances{" "}
+              <strong className="text-navy font-semibold">early detection</strong>,{" "}
+              <strong className="text-navy font-semibold">education</strong>, and equitable{" "}
+              <strong className="text-navy font-semibold">access to care</strong> — confronting
+              ovarian cancer in communities the world has overlooked.
+            </p>
+          </motion.div>
 
           {/* CTAs */}
           <motion.div
@@ -96,10 +100,10 @@ export function Hero() {
             </a>
             <a
               href="#mission"
-              className="group inline-flex items-center gap-2 bg-white text-navy px-7 py-4 rounded-full font-semibold border border-navy/10 hover:border-teal/40 transition-colors btn-lift"
+              className="group inline-flex items-center gap-2 bg-navy text-white px-7 py-4 rounded-full font-semibold btn-lift hover:bg-navy-deep"
             >
-              Our Mission
-              <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5 text-teal-deep" />
+              Explore Our Mission
+              <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
             </a>
           </motion.div>
 
