@@ -17,7 +17,13 @@ const links = [
       { href: "/education/ovarian-cancer-screening-explained", label: "Detection & Testing" },
       { href: "/#research", label: "Clinical Research" },
       { href: "/#statistics", label: "Data Resources" },
-      { href: "/#podcast", label: "Educational Podcast" },
+    ],
+  },
+  {
+    label: "Podcast",
+    submenu: [
+      { href: "/#podcast", label: "All Episodes" },
+      { href: "/podcast/latest", label: "Latest Release" },
     ],
   },
   { href: "/ovatrack", label: "OvaTrack App", route: true },
