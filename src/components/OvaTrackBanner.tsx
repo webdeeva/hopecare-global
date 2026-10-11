@@ -13,7 +13,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function OvaTrackBanner() {
   return (
-    <section className="relative isolate overflow-hidden bg-gradient-to-r from-teal-deep via-teal to-teal-bright pt-20 md:pt-24 pb-3 md:pb-4">
+    <section className="relative isolate overflow-hidden bg-teal-soft pt-20 md:pt-24 pb-3 md:pb-4">
       {/* Subtle pattern overlay */}
       <div
         className="absolute inset-0 pointer-events-none opacity-[0.06] bg-dots"
@@ -30,13 +30,13 @@ export function OvaTrackBanner() {
         >
           {/* message row */}
           <div className="flex items-center">
-            <p className="text-white text-base md:text-lg lg:text-xl font-semibold leading-snug">
+            <p className="text-navy text-base md:text-lg lg:text-xl font-semibold leading-snug">
               Meet OvaTrack &mdash; Know the Signs. Track the Symptoms. Act Early.
             </p>
           </div>
           <Link
             href="/ovatrack"
-            className="group shrink-0 inline-flex items-center gap-2 bg-white text-teal-deep px-6 md:px-7 py-2.5 md:py-3 rounded-full font-semibold text-sm md:text-base transition-all duration-300 hover:bg-white/95 hover:shadow-lg hover:-translate-y-0.5"
+            className="group shrink-0 inline-flex items-center gap-2 bg-navy text-white px-6 md:px-7 py-2.5 md:py-3 rounded-full font-semibold text-sm md:text-base transition-all duration-300 hover:bg-navy-deep hover:shadow-lg hover:-translate-y-0.5"
           >
             Download OvaTrack
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
