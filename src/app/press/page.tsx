@@ -39,11 +39,6 @@ export default function PressPage() {
           <a href="tel:+18668848838">(866) 884-8838</a> or email{" "}
           <a href="mailto:support@hopecareglobal.org">support@hopecareglobal.org</a>.
         </p>
-        <p>
-          <a href="/downloads/Petrina_Harrison_EPK.txt" target="_blank" rel="noopener">
-            Download Dr. Harrison&rsquo;s Electronic Press Kit (PDF)
-          </a>
-        </p>
         {releases.map((r) => (
           <article key={r.href} className={s.item}>
             <time dateTime={r.date}>{r.label}</time>
