@@ -102,7 +102,7 @@ export function OvaTrackSection() {
                 className="text-[0.68rem] tracking-[0.34em] uppercase font-bold"
                 style={{ color: "#086b7d" }}
               >
-                HoopeCare Global
+                HopeCare Global
               </span>
             </div>
 
