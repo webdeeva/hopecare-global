@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { motion } from "motion/react";
 import { ArrowUpRight, ArrowDown } from "lucide-react";
+import { CompactOvaTrackBanner } from "./CompactOvaTrackBanner";
 
 /* ───────────────────────────────────────────────────────────
    HopeCare Global — Refactored hero.
