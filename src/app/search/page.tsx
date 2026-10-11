@@ -7,7 +7,6 @@ import { Search, ArrowUpRight, Clock, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ARTICLES, CLUSTERS, readingTimeMinutes, getCluster } from "@/lib/education";
-import type { Article } from "@/lib/education";
 
 // ── Static site pages to include in search ──────────────
 const SITE_PAGES = [
@@ -45,11 +44,12 @@ function searchAll(q: string): SearchResult[] {
     const excerptLower = article.excerpt.toLowerCase();
     const keywordLower = article.targetKeyword?.toLowerCase() || "";
     const clusterLabel = getCluster(article.cluster).label.toLowerCase();
+    const terms = query.split(" ").filter(Boolean);
 
     // Title exact match (highest)
     if (titleLower.includes(query)) score += 10;
-    // Title word start match
-    if (query.split(" ").some((w) => titleLower.includes(w))) score += 5;
+    // Title word matches
+    if (terms.some((w) => titleLower.includes(w))) score += 5;
     // Excerpt
     if (excerptLower.includes(query)) score += 4;
     // Keyword
@@ -78,9 +78,10 @@ function searchAll(q: string): SearchResult[] {
     const titleLower = page.title.toLowerCase();
     const excerptLower = page.excerpt.toLowerCase();
     const keywordLower = page.keywords?.toLowerCase() || "";
+    const terms = query.split(" ").filter(Boolean);
 
     if (titleLower.includes(query)) score += 8;
-    if (query.split(" ").some((w) => titleLower.includes(w))) score += 4;
+    if (terms.some((w) => titleLower.includes(w))) score += 4;
     if (excerptLower.includes(query)) score += 4;
     if (keywordLower.includes(query)) score += 3;
 
@@ -115,13 +116,11 @@ export default function SearchPage() {
     }
   }, []);
 
-  function handleSearch(e: FormDataEvent) {
+  function handleSearch(e: Event) {
     e.preventDefault();
     const q = query.trim();
-    const params = new URLSearchParams(window.location.search);
     if (q) {
-      params.set("q", q);
-      window.history.replaceState({}, "", `?${params.toString()}`);
+      window.history.replaceState({}, "", `/search?q=${encodeURIComponent(q)}`);
       setResults(searchAll(q));
       setSearched(true);
     }
@@ -145,7 +144,7 @@ export default function SearchPage() {
               Find articles, guides, and resources across hopecareglobal.org.
             </p>
 
-            <form onSubmit={handleSearch} className="mt-8">
+            <form onSubmit={handleSearch} className="mt-8" action="/search" method="GET">
               <div className="flex items-center bg-white border border-navy/10 shadow-sm rounded-xl overflow-hidden">
                 <Search className="ml-4 w-5 h-5 text-teal" strokeWidth={2.5} />
                 <input
@@ -170,7 +169,7 @@ export default function SearchPage() {
                 )}
                 <button
                   type="submit"
-                  className="px-5 py-3.5 bg-gradient-to-r from-teal-deep to-teal text-white font-semibold text-sm rounded-r-xl hover:brightness-110 transition-all"
+                  className="px-5 py-3.5 bg-gradient-to-r from-teal-deep to-teal text-white font-semibold text-sm rounded-r-xl transition-all hover:brightness-110"
                 >
                   Search
                 </button>
@@ -187,7 +186,7 @@ export default function SearchPage() {
                 <Search className="mx-auto w-10 h-10 text-ink-mute/50" strokeWidth={2} />
                 <h2 className="mt-4 text-xl font-semibold text-ink">No results found</h2>
                 <p className="mt-2 text-ink-soft">
-                  We couldn't find anything matching "{query}". Try a different word or phrase — for example, <em>symptoms, BRCA, OvaTrack, treatment, disparities, clinical trials</em>, or <em>founder</em>.
+                  We couldn't find anything matching &ldquo;{query}&rdquo;. Try a different word or phrase &mdash; for example, <em>symptoms, BRCA, OvaTrack, treatment, disparities, clinical trials</em>, or <em>founder</em>.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
                   {["symptoms", "BRCA", "OvaTrack", "treatment", "disparities", "clinical trials", "founder", "donate"].map((suggestion) => (
@@ -211,7 +210,7 @@ export default function SearchPage() {
             {searched && results.length > 0 && (
               <>
                 <p className="mt-6 text-sm text-ink-mute">
-                  {results.length} {results.length === 1 ? "result" : "results"} for "{query}"
+                  {results.length} {results.length === 1 ? "result" : "results"} for &ldquo;{query}&rdquo;
                 </p>
 
                 <div className="mt-8 space-y-6">
