@@ -135,6 +135,20 @@ export function Footer() {
             <ul className="mt-5 space-y-4">
               <li>
                 <a
+                  href="tel:+18668848838"
+                  className="group flex items-center gap-3 text-cream/85 hover:text-teal-soft"
+                >
+                  <span className="w-9 h-9 rounded-full bg-white/8 grid place-items-center group-hover:bg-teal/20 transition-colors">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-4 h-4">
+                      <path d="M22 4a4 4 0 0 0-4-4h-4l4-4a4 4 0 0 0-4-4h-4l4 4z" />
+                      <rect x="8" y="9" width="7" height="12" rx="2" />
+                    </svg>
+                  </span>
+                  (866) 884-8838
+                </a>
+              </li>
+              <li>
+                <a
                   href="mailto:support@hopecareglobal.org"
                   className="group flex items-center gap-3 text-cream/85 hover:text-teal-soft break-all"
                 >
