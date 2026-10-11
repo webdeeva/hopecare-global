@@ -76,7 +76,7 @@ export function Navbar() {
     >
       <div className="container-wide flex items-center justify-between h-20">
         <a href="#top" aria-label="HopeCare Global Inc — home" className="block">
-          <Logo size={80} priority />
+          <Logo size={108} priority />
         </a>
 
         <nav className="hidden lg:flex items-center gap-1">
