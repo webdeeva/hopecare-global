@@ -28,8 +28,12 @@ export function Hero() {
         <TopRail />
       </div>
 
+      <div className="container-wide mt-6">
+        <CompactOvaTrackBanner />
+      </div>
+
       {/* MAIN HERO GRID — text left, full-bleed photo right */}
-      <div className="mt-10 md:mt-14 grid lg:grid-cols-[1fr_1.05fr] items-stretch">
+      <div className="mt-6 md:mt-14 grid lg:grid-cols-[1fr_1.05fr] items-stretch">
         {/* ─── Left: copy column ─────────────────────────── */}
         <div
           className="
