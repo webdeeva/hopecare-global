@@ -9,24 +9,28 @@ type LogoProps = {
 
 /**
  * HopeCare Global Inc — official brand logo.
- * Uses the stable original logo.
+ * Includes explicit text for "GLOBAL INC." to ensure mobile readability.
  */
 export function Logo({
   size = 56,
   className = "",
   priority = false,
 }: LogoProps) {
-  // Restoring usage of the original stable asset
   const src = "/logo-clean.png";
   const width = Math.round(size * 1.11);
   return (
-    <Image
-      src={src}
-      alt="HopeCare Global Inc"
-      width={width}
-      height={size}
-      priority={priority}
-      className={`block select-none ${className}`}
-    />
+    <div className={`flex flex-col items-center ${className}`}>
+      <Image
+        src={src}
+        alt="HopeCare Global"
+        width={width}
+        height={size}
+        priority={priority}
+        className="block select-none"
+      />
+      <span className="text-[0.65rem] font-bold text-navy tracking-widest mt-0.5 uppercase">
+        GLOBAL INC.
+      </span>
+    </div>
   );
 }
