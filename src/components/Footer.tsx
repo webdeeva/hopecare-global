@@ -133,7 +133,15 @@ export function Footer() {
           {/* Contact */}
           <div>
             <div className="kicker text-teal-soft">Contact</div>
-            <ul className="mt-5 space-y-4">
+            <div className="mt-4 text-cream/70 text-sm leading-relaxed">
+              <strong className="text-cream">HopeCare Global Inc.</strong><br />
+              Mailing Address<br />
+              276 5th Avenue<br />
+              Suite 704 - 3055<br />
+              New York, NY 10001<br />
+              United States
+            </div>
+            <ul className="mt-4 space-y-4">
               <li>
                 <a
                   href="tel:+18668848838"
