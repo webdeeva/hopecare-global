@@ -117,6 +117,31 @@ export function Navbar() {
                 <option value="fr">Français</option>
             </select>
           </div>
+          <div className="relative hidden sm:block">
+            <button
+              onClick={() => setSearchOpen((s) => !s)}
+              className="flex items-center gap-2 px-3 py-2 text-navy transition-colors"
+              aria-label={searchOpen ? "Close search" : "Open search"}
+            >
+              <Search className="w-5 h-5" strokeWidth={2.5} />
+            </button>
+            {searchOpen && (
+              <div className="absolute top-full right-0 mt-1 w-72">
+                <form action="/search" method="GET" className="flex items-center bg-cream border border-navy/10 shadow-xl rounded-lg overflow-hidden">
+                  <input
+                    type="text"
+                    name="q"
+                    placeholder="Search articles..."
+                    className="w-full px-4 py-2.5 text-sm text-ink bg-transparent outline-none"
+                    autoFocus
+                  />
+                  <button type="submit" className="px-3 py-2.5 text-navy">
+                    <Search className="w-4 h-4" strokeWidth={2.5} />
+                  </button>
+                </form>
+              </div>
+            )}
+          </div>
           <a
             href="/#symptoms"
             className="hidden sm:inline-flex items-center gap-2 btn-lift bg-gradient-to-r from-teal-deep via-teal to-green text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(15,139,158,0.5)]"
