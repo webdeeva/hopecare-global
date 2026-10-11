@@ -6,6 +6,12 @@ import { Mail, MapPin, Clock } from "lucide-react";
 const ROWS = [
   {
     icon: Mail,
+    label: "Phone",
+    primary: "(866) 884-8838",
+    href: "tel:+18668848838",
+  },
+  {
+    icon: Mail,
     label: "Email",
     primary: "support@hopecareglobal.org",
     href: "mailto:support@hopecareglobal.org",
