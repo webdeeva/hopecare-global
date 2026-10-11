@@ -9,15 +9,15 @@ type LogoProps = {
 
 /**
  * HopeCare Global Inc — official brand logo.
- * Updated logo with high-visibility "GLOBAL INC."
+ * Uses the stable original logo.
  */
 export function Logo({
   size = 56,
   className = "",
   priority = false,
 }: LogoProps) {
-  // Filename for the second version with increased visibility
-  const src = "/logo-new-v2.png";
+  // Restoring usage of the original stable asset
+  const src = "/logo-clean.png";
   const width = Math.round(size * 1.11);
   return (
     <Image
