@@ -5,7 +5,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const ROWS = [
   {
-    icon: PhoneIcon,
+    icon: Phone,
     label: "Phone",
     primary: "(866) 884-8838",
     href: "tel:+18668848838",
