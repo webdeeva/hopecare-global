@@ -28,15 +28,8 @@ export function OvaTrackBanner() {
           transition={{ duration: 0.5 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 text-center"
         >
-          {/* Icon + message row */}
-          <div className="flex items-center gap-3 md:gap-4">
-            <Image
-              src="/ovatrack/ovatrack-icon.png"
-              alt="OvaTrack"
-              className="shrink-0 w-12 h-12 md:w-14 md:h-14"
-              width={56}
-              height={56}
-            />
+          {/* message row */}
+          <div className="flex items-center">
             <p className="text-white text-base md:text-lg lg:text-xl font-semibold leading-snug">
               Meet OvaTrack &mdash; Know the Signs. Track the Symptoms. Act Early.
             </p>
