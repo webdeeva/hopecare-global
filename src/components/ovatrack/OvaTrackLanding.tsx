@@ -221,7 +221,7 @@ function Hero() {
             className="mt-4 text-xl md:text-2xl font-medium"
             style={{ color: C.ink }}
           >
-            Know the signs. Track the symptoms. Act early.
+            <em>Know the Signs. Track the Symptoms. Act Early.</em>
           </motion.p>
 
           <motion.p
