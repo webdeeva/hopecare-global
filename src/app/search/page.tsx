@@ -1,12 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import { motion } from "motion/react";
 import { Search, ArrowUpRight, Clock, X } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ARTICLES, CLUSTERS, readingTimeMinutes, getCluster } from "@/lib/education";
+import { ARTICLES, readingTimeMinutes, getCluster } from "@/lib/education";
 
 // ── Static site pages to include in search ──────────────
 const SITE_PAGES = [
@@ -37,7 +36,6 @@ function searchAll(q: string): SearchResult[] {
 
   const results: SearchResult[] = [];
 
-  // Search articles
   ARTICLES.filter((a) => a.status === "published").forEach((article) => {
     let score = 0;
     const titleLower = article.title.toLowerCase();
@@ -46,17 +44,11 @@ function searchAll(q: string): SearchResult[] {
     const clusterLabel = getCluster(article.cluster).label.toLowerCase();
     const terms = query.split(" ").filter(Boolean);
 
-    // Title exact match (highest)
     if (titleLower.includes(query)) score += 10;
-    // Title word matches
     if (terms.some((w) => titleLower.includes(w))) score += 5;
-    // Excerpt
     if (excerptLower.includes(query)) score += 4;
-    // Keyword
     if (keywordLower.includes(query)) score += 6;
-    // Cluster label
     if (clusterLabel.includes(query)) score += 3;
-    // Slug
     if (article.slug.includes(query)) score += 3;
 
     if (score > 0) {
@@ -72,7 +64,6 @@ function searchAll(q: string): SearchResult[] {
     }
   });
 
-  // Search site pages
   SITE_PAGES.forEach((page) => {
     let score = 0;
     const titleLower = page.title.toLowerCase();
@@ -96,7 +87,6 @@ function searchAll(q: string): SearchResult[] {
     }
   });
 
-  // Sort by score descending
   results.sort((a, b) => b.score - a.score);
   return results;
 }
@@ -105,13 +95,16 @@ export default function SearchPage() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<SearchResult[]>([]);
   const [searched, setSearched] = useState(false);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const q = params.get("q") || "";
     setQuery(q);
     if (q) {
-      setResults(searchAll(q));
+      const r = searchAll(q);
+      setResults(r);
+      setCount(r.length);
       setSearched(true);
     }
   }, []);
@@ -121,7 +114,9 @@ export default function SearchPage() {
     const q = query.trim();
     if (q) {
       window.history.replaceState({}, "", `/search?q=${encodeURIComponent(q)}`);
-      setResults(searchAll(q));
+      const r = searchAll(q);
+      setResults(r);
+      setCount(r.length);
       setSearched(true);
     }
   }
@@ -160,7 +155,7 @@ export default function SearchPage() {
                 {query && (
                   <button
                     type="button"
-                    onClick={() => { setQuery(""); setResults([]); setSearched(false); }}
+                    onClick={() => { setQuery(""); setResults([]); setSearched(false); setCount(0); }}
                     className="p-2.5 text-ink-mute hover:text-navy transition-colors"
                     aria-label="Clear search"
                   >
@@ -169,7 +164,7 @@ export default function SearchPage() {
                 )}
                 <button
                   type="submit"
-                  className="px-5 py-3.5 bg-gradient-to-r from-teal-deep to-teal text-white font-semibold text-sm rounded-r-xl transition-all hover:brightness-110"
+                  className="px-5 py-3.5 bg-gradient-to-r from-teal-deep to-teal text-white font-semibold text-sm rounded-r-xl transition-all"
                 >
                   Search
                 </button>
@@ -186,7 +181,7 @@ export default function SearchPage() {
                 <Search className="mx-auto w-10 h-10 text-ink-mute/50" strokeWidth={2} />
                 <h2 className="mt-4 text-xl font-semibold text-ink">No results found</h2>
                 <p className="mt-2 text-ink-soft">
-                  We couldn't find anything matching &ldquo;{query}&rdquo;. Try a different word or phrase &mdash; for example, <em>symptoms, BRCA, OvaTrack, treatment, disparities, clinical trials</em>, or <em>founder</em>.
+                  We couldn't find anything matching &ldquo;{query}&rdquo;. Try a different word or phrase &mdash; for example, symptoms, BRCA, OvaTrack, treatment, disparities, clinical trials, or founder.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
                   {["symptoms", "BRCA", "OvaTrack", "treatment", "disparities", "clinical trials", "founder", "donate"].map((suggestion) => (
@@ -210,7 +205,7 @@ export default function SearchPage() {
             {searched && results.length > 0 && (
               <>
                 <p className="mt-6 text-sm text-ink-mute">
-                  {results.length} {results.length === 1 ? "result" : "results"} for &ldquo;{query}&rdquo;
+                  {count} {count === 1 ? "result" : "results"} for &ldquo;{query}&rdquo;
                 </p>
 
                 <div className="mt-8 space-y-6">
