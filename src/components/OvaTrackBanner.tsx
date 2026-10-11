@@ -33,7 +33,7 @@ export function OvaTrackBanner() {
               OT
             </span>
             <p className="text-white text-sm md:text-base lg:text-lg font-semibold leading-snug">
-              Meet OvaTrack &mdash; Know the Sign. Track the Symptom. Act Early.
+              Meet OvaTrack &mdash; Know the Signs. Track the Symptoms. Act Early.
             </p>
           </div>
 
