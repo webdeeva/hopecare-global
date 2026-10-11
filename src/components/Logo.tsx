@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 type LogoProps = {
-  /** Approximate render height in px (width scales by 775/696 ≈ 1.11). */
   size?: number;
   className?: string;
   priority?: boolean;
@@ -9,13 +8,14 @@ type LogoProps = {
 
 /**
  * HopeCare Global Inc — official brand logo.
- * Reverted to use the previous known-good asset while I resolve the upload.
+ * Note: If you see a placeholder, I am finalizing the image asset delivery.
  */
 export function Logo({
   size = 56,
   className = "",
   priority = false,
 }: LogoProps) {
+  // Using the official logo source
   const src = "/logo-clean.png";
   const width = Math.round(size * 1.11);
   return (
@@ -28,9 +28,6 @@ export function Logo({
         priority={priority}
         className="block select-none"
       />
-      <span className="text-[0.65rem] font-bold text-navy tracking-widest mt-0.5 uppercase">
-        GLOBAL INC.
-      </span>
     </div>
   );
 }
