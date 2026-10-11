@@ -11,7 +11,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export function CompactOvaTrackBanner() {
   return (
-    <section className="bg-teal-soft py-4 px-4 rounded-xl mb-6">
+    <section className="bg-teal-soft py-3 px-4 rounded-xl">
       <motion.div
         initial={{ opacity: 0, y: 5 }}
         whileInView={{ opacity: 1, y: 0 }}
