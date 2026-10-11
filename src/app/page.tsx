@@ -34,8 +34,10 @@ export default function Home() {
     <>
       {showAwareness && <AwarenessOverlay onClose={() => setShowAwareness(false)} />}
       <Navbar />
+      <OvaTrackBanner />
       <main className="flex-1">
         <Hero />
+        <OvaTrackSection />
         <Mission />
         <Stats />
         <Programs />
