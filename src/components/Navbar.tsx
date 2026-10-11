@@ -21,7 +21,7 @@ const links = [
     ],
   },
   { href: "/ovatrack", label: "OvaTrack App", route: true },
-  { href: "/press-releases", label: "Press Releases & Media", route: true },
+  { href: "/press-releases", label: "News & Press Releases", route: true },
   {
     label: "Our Work",
     submenu: [
