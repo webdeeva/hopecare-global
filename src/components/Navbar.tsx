@@ -31,6 +31,17 @@ const links = [
     ],
   },
   { href: "/#founder", label: "Founder" },
+  {
+    label: "Contact Us",
+    submenu: [
+      { href: "/contact?topic=General%20inquiry", label: "General Inquiries" },
+      { href: "/contact?topic=Press%20/%20media", label: "Media & Press" },
+      { href: "/contact?topic=Partnership", label: "Partnerships & Sponsorships" },
+      { href: "/donate", label: "Donations" },
+      { href: "/contact?topic=Volunteer", label: "Volunteer Opportunities" },
+      { href: "/contact?topic=OvaTrack%20Support", label: "OvaTrack App Support" },
+    ],
+  },
 ];
 
 export function Navbar() {
