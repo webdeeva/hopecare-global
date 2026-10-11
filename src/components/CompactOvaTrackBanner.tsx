@@ -19,7 +19,7 @@ export function CompactOvaTrackBanner() {
         className="flex flex-col sm:flex-row items-center justify-center gap-3 text-center"
       >
         <p className="text-navy text-sm md:text-base font-semibold">
-          Meet OvaTrack &mdash; Know the Signs. Track the Symptoms. Act Early.
+          Meet OvaTrack &mdash; <em>Know the Signs. Track the Symptoms. Act Early.</em>
         </p>
         <Link
           href="/ovatrack"
