@@ -79,6 +79,8 @@ export function Navbar() {
           <Logo size={108} priority />
         </a>
 
+        {/* spacer balances the tall logo so nav items center vertically */}
+
         <nav className="hidden lg:flex items-center gap-1">
           {links.map((l) => {
             if (l.submenu) {
