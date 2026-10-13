@@ -57,7 +57,7 @@ export function StoriesOfHope() {
           <div className="kicker text-teal-deep">Stories of Hope &amp; Impact</div>
           <div className="mt-4 h-px w-16 bg-gradient-to-r from-teal to-green" />
           <h2 className="font-display mt-6 text-4xl md:text-5xl font-bold text-navy leading-[1.05]">
-            Real lives. Real{\" "}
+            Real lives. Real{" "}
             <span className="text-gradient-brand">change</span>.
           </h2>
           <p className="mt-6 text-lg text-ink-soft leading-relaxed">
