@@ -34,8 +34,10 @@ const links = [
       { href: "/#mission", label: "Mission" },
       { href: "/#involved", label: "Join the Movement" },
       { href: "/#programs", label: "Programs" },
+      { href: "/#stories", label: "Stories of Hope & Impact" },
     ],
   },
+  { href: "/#stories", label: "Stories" },
   { href: "/#founder", label: "Founder" },
   {
     label: "Contact Us",
