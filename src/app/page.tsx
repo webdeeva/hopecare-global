@@ -45,6 +45,7 @@ export default function Home() {
         <HereditaryFocusCTA />
         <MythFact />
         <Marquee />
+        <StoriesOfHope />
         <Founder />
         <GetInvolved />
         <Newsletter />
