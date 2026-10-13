@@ -1,6 +1,6 @@
 "use client";
 
-import { Mail, Globe, Heart } from "lucide-react";
+import { Apple, Mail, Globe, Heart } from "lucide-react";
 import { Logo } from "./Logo";
 
 function InstagramIcon({ className = "" }: { className?: string }) {
@@ -86,6 +86,17 @@ const navGroups = [
     ],
   },
 ];
+
+function PlayGlyph() {
+  return (
+    <svg viewBox="0 0 512 512" className="w-6 h-6" aria-hidden>
+      <path fill="#00D2FF" d="M47 24C41 28 38 35 38 45v422c0 10 3 17 9 21l246-232L47 24z" />
+      <path fill="#00E676" d="M47 24l246 232 66-62L74 12c-11-6-21-6-27 0z" />
+      <path fill="#FFCE00" d="M451 233l-92-53-72 68 72 68 92-53c17-10 17-20 0-30z" />
+      <path fill="#FF3D00" d="M47 488l246-232 66 62-285 176c-11 6-21 6-27-6z" />
+    </svg>
+  );
+}
 
 export function Footer() {
   return (
@@ -205,8 +216,47 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Download OvaTrack badges */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <p className="kicker text-teal-soft text-center">Download OvaTrack</p>
+          <div className="mt-4 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="https://apps.apple.com/us/app/ovatrack/id6800895813"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-2xl px-5 py-3 text-white transition-transform duration-300 hover:-translate-y-0.5"
+              style={{ background: '#17365C' }}
+              aria-label="Download OvaTrack on the App Store"
+            >
+              <Apple className="w-7 h-7" strokeWidth={1.6} />
+              <span className="text-left leading-tight">
+                <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
+                  Download on the
+                </span>
+                <span className="block text-base font-semibold">App Store</span>
+              </span>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=org.hopecareglobal.ovatrack&pcampaignid=web_share"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 rounded-2xl px-5 py-3 text-white transition-transform duration-300 hover:-translate-y-0.5"
+              style={{ background: '#17365C' }}
+              aria-label="Download OvaTrack on Google Play"
+            >
+              <PlayGlyph />
+              <span className="text-left leading-tight">
+                <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
+                  Available on
+                </span>
+                <span className="block text-base font-semibold">Google Play</span>
+              </span>
+            </a>
+          </div>
+        </div>
+
         {/* Bottom bar */}
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+        <div className="mt-8 pt-8 border-t border-white/10 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
           <p className="text-sm text-cream/55">
             &copy; {new Date().getFullYear()} HopeCare Global, Inc. All rights reserved.
           </p>
