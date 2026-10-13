@@ -1,15 +1,13 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ArrowUpRight, Quote } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 type Story = {
   slug: string;
   tag: string;
   title: string;
   excerpt: string;
-  quote: string;
-  quoteAttribution: string;
   accent: string;
 };
 
@@ -19,10 +17,7 @@ const stories: Story[] = [
     tag: "Community Impact",
     title: "One Post, a Step Toward Care",
     excerpt:
-      "A single social-media post about ovarian cancer symptoms reaches a woman who had been dismissed for months. One share, one comment — and a life changes course.",
-    quote:
-      "I saw her post and thought, 'That's exactly what I've been feeling.' It was the first time someone made me feel like I wasn't crazy.",
-    quoteAttribution: "— Reader, via HopeCare Global",
+      "A woman in Europe saw our ovarian cancer awareness posts, sought medical attention and testing, and is now receiving treatment. Awareness encouraged action — and action connected her with care.",
     accent: "from-teal-deep to-teal",
   },
 ];
@@ -61,9 +56,8 @@ export function StoriesOfHope() {
             <span className="text-gradient-brand">change</span>.
           </h2>
           <p className="mt-6 text-lg text-ink-soft leading-relaxed">
-            Awareness isn&apos;t abstract — it&apos;s a woman who reads a post, recognizes
-            her symptoms, and walks into a clinic instead of waiting. These are the
-            stories behind the mission.
+            Personal stories that show how awareness can encourage action and
+            connect people with care.
           </p>
         </motion.div>
 
@@ -96,23 +90,12 @@ export function StoriesOfHope() {
                 {featured.excerpt}
               </p>
 
-              {/* Quote highlight */}
-              <div className="relative mt-8 pl-6 border-l-2 border-teal/30">
-                <Quote className="absolute -left-3.5 -top-1.5 w-5 h-5 text-teal bg-white" />
-                <p className="font-display text-xl md:text-2xl text-navy leading-[1.35] italic">
-                  &ldquo;{featured.quote}&rdquo;
-                </p>
-                <p className="mt-2 text-sm text-ink-mute">
-                  {featured.quoteAttribution}
-                </p>
-              </div>
-
               {/* CTA */}
               <a
                 href={`/stories/${featured.slug}`}
                 className="group relative mt-10 inline-flex items-center gap-2 bg-navy text-cream px-7 py-4 rounded-full font-semibold btn-lift self-start"
               >
-                Read Full Story
+                Read More
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </a>
             </div>
