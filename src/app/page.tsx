@@ -12,6 +12,7 @@ import { SymptomsCTA } from "@/components/SymptomsCTA";
 import { HereditaryFocusCTA } from "@/components/HereditaryFocusCTA";
 import { MythFact } from "@/components/MythFact";
 import { Marquee } from "@/components/Marquee";
+import { StoriesOfHope } from "@/components/StoriesOfHope";
 import { Founder } from "@/components/Founder";
 import { GetInvolved } from "@/components/GetInvolved";
 import { Newsletter } from "@/components/Newsletter";
