@@ -1191,5 +1191,26 @@
         "url": "https://www.cancer.gov/types/ovarian/risk-reducing-salpingectomy"
       }
     ]
+  },
+  "health-equity-access": {
+    "metaDescription": "Examining racial, ethnic, and socioeconomic disparities in ovarian cancer care -- from genetic testing access to treatment outcomes -- and what we can do to close the gap.",
+    "body": "## The Reality of Disparities\n\nOvarian cancer affects women of all backgrounds, but it does not affect them equally. Persistent disparities in incidence, diagnosis, treatment, and survival exist across racial, ethnic, and socioeconomic lines. At HopeCare Global, we believe awareness of these inequities is the first step toward meaningful change.\n\n## Disparities in Genetic Testing\n\nGenetic testing for BRCA and other hereditary cancer genes is a critical tool for prevention and personalized treatment. Yet significant gaps persist:\n\n- **Black and Hispanic women** are less likely to receive genetic testing compared to white women\n- When testing does occur, Black women are more likely to receive **Variant of Uncertain Significance (VUS)** results due to underrepresentation in genetic databases\n- **Geographic disparities** mean women in rural areas have far less access to genetic counseling and testing services\n- **Cost and insurance barriers** disproportionately affect low-income and uninsured women\n\n## Disparities in Diagnosis and Treatment\n\nWomen of color with ovarian cancer often face delays in diagnosis and lower rates of guideline-concordant care:\n\n- Black women are less likely to be diagnosed at an early stage\n- Black and Hispanic women are less likely to receive surgery by a gynecologic oncologist\n- Access to PARP inhibitors and other targeted therapies is lower among minority populations\n- Clinical trial enrollment remains overwhelmingly white, limiting our understanding of how treatments work across diverse populations\n\n## Disparities in Outcomes\n\nThe consequences of these inequities are stark:\n\n- Black women have significantly lower 5-year ovarian cancer survival rates than white women\n- Mortality disparities persist even after adjusting for stage at diagnosis, suggesting differences in treatment quality and access\n- Socioeconomic factors including income, education, and insurance status strongly influence outcomes\n\n## What Is Being Done\n\nProgress is being made. Organizations across the cancer care community are working to:\n\n- **Increase diverse representation** in genomic databases and clinical trials\n- **Expand access** to genetic testing through community-based programs and mobile health units\n- **Address implicit bias** in healthcare delivery through training and systemic change\n- **Reduce financial barriers** through patient navigation, financial assistance programs, and policy advocacy\n- **Build culturally competent care** models that respect and respond to diverse patient needs\n\n## What You Can Do\n\nIf you or a loved one is navigating ovarian cancer care:\n\n- **Ask about genetic testing** -- it is your right, regardless of your background\n- **Seek a gynecologic oncologist** -- they provide the highest-quality surgical care\n- **Ask about clinical trials** -- they are not just for some patients\n- **Share your story** -- raising awareness in underrepresented communities saves lives\n- **Connect with patient navigators** who can help you access resources and overcome barriers\n\n## Our Commitment\n\nHopeCare Global is committed to advancing health equity in ovarian cancer. We work to ensure that every woman -- regardless of her race, ethnicity, income, or zip code -- has access to the genetic testing, quality care, and life-saving treatments she deserves.\n\nBecause every life is equally valuable. And every woman deserves an equal chance.",
+    "sources": [
+      {
+        "claim": "Black women have lower 5-year ovarian cancer survival rates than white women",
+        "organization": "American Cancer Society",
+        "url": "https://www.cancer.org/research/cancer-facts-statistics/"
+      },
+      {
+        "claim": "Black and Hispanic women less likely to receive genetic testing for hereditary cancer",
+        "organization": "Journal of Clinical Oncology",
+        "url": "https://ascopubs.org/journal/jco"
+      },
+      {
+        "claim": "Black women less likely to receive guideline-concordant ovarian cancer care",
+        "organization": "American Society of Clinical Oncology",
+        "url": "https://ascopubs.org/doi/10.1200/GO.22.00369"
+      }
+    ]
   }
 }

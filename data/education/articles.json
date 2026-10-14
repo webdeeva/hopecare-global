@@ -517,13 +517,13 @@
   },
   {
     "n": 41,
-    "slug": "risk-management-brca",
-    "title": "Risk Management Options for BRCA Carriers",
-    "cluster": "risk",
-    "role": "supporting",
-    "excerpt": "From enhanced screening to risk-reducing surgery, explore the evidence-based options available to manage ovarian cancer risk for BRCA mutation carriers.",
-    "targetKeyword": "BRCA mutation risk management ovarian cancer",
-    "words": 425,
+    "slug": "health-equity-access",
+    "title": "Health Equity and Access in Ovarian Cancer Care",
+    "cluster": "equity",
+    "role": "pillar",
+    "excerpt": "Addressing the disparities in genetic testing, treatment access, and outcomes that persist across racial, ethnic, and socioeconomic lines in ovarian cancer care.",
+    "targetKeyword": "health equity ovarian cancer disparities",
+    "words": 502,
     "status": "draft"
   }
 ]
