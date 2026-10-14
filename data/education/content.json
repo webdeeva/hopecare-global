@@ -1233,5 +1233,26 @@
         "claim": "Genetic testing recommended for women with personal or family history of ovarian cancer"
       }
     ]
+  },
+  "genetic-testing-explained": {
+    "metaDescription": "Everything you need to know about genetic testing for ovarian cancer -- how it works, what results mean, the role of genetic counseling, and who should consider testing.",
+    "body": "## Why Genetic Testing Matters in Ovarian Cancer\n\nGenetic testing has become a cornerstone of ovarian cancer care. It can reveal inherited mutations that increase cancer risk, guide treatment decisions, and help family members understand their own risk. For women already diagnosed with ovarian cancer, test results can determine eligibility for targeted therapies that may improve outcomes.\n\n## How Genetic Testing Works\n\nGenetic testing for hereditary cancer risk typically involves a blood or saliva sample. The sample is sent to a certified laboratory that analyzes DNA for mutations in genes associated with cancer risk.\n\n**What genes are tested?** While BRCA1 and BRCA2 are the most well-known, multi-gene panel testing now examines dozens of genes linked to ovarian cancer risk, including:\n\n- **BRCA1, BRCA2** -- the most common hereditary ovarian cancer genes\n- **RAD51C, RAD51D, BRIP1** -- newer genes linked to ovarian cancer risk\n- **PALB2** -- associated with both breast and ovarian cancer\n- **Lynch syndrome genes (MLH1, MSH2, MSH6, PMS2)** -- increase risk for ovarian, uterine, and colorectal cancers\n- **TP53** -- associated with Li-Fraumeni syndrome\n\n## Understanding Your Results\n\nTest results fall into three categories:\n\n**Positive** -- A mutation was found. This means you have an increased risk for ovarian and potentially other cancers. Your healthcare team will discuss risk management strategies tailored to your specific mutation.\n\n**Negative** -- No mutation was detected in the genes tested. This does not eliminate all cancer risk, but it significantly reduces the chance that a hereditary factor is involved.\n\n**Variant of Uncertain Significance (VUS)** -- A genetic change was found, but its impact on cancer risk is not yet known. Most VUS results are later reclassified as benign. Ongoing research helps clarify these findings over time.\n\n## The Role of Genetic Counseling\n\nGenetic counseling before and after testing is essential. A certified genetic counselor helps you:\n\n- Understand what testing can and cannot tell you\n- Choose the right test for your personal and family history\n- Interpret results in context\n- Discuss implications for family members\n- Make informed decisions about next steps\n\n## Insurance and Cost Considerations\n\nThe cost of genetic testing has decreased significantly. Many insurance plans cover testing for individuals who meet medical criteria, and patient assistance programs are available for those who qualify. The Genetic Information Nondiscrimination Act (GINA) protects against discrimination in health insurance and employment based on genetic information.\n\n## Who Should Be Tested\n\nThe Society of Gynecologic Oncology and the National Comprehensive Cancer Network recommend genetic testing for:\n\n- Anyone diagnosed with epithelial ovarian cancer (at any age)\n- Women with a significant family history of breast or ovarian cancer\n- Individuals with a known mutation in their family\n- Women of Ashkenazi Jewish descent with breast or ovarian cancer\n\nAt HopeCare Global, we encourage every woman diagnosed with ovarian cancer to discuss genetic testing with her care team. It is one of the most impactful tools we have for personalizing care and protecting family members.",
+    "sources": [
+      {
+        "organization": "American College of Obstetricians and Gynecologists",
+        "url": "https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/03/hereditary-cancer-syndromes-and-risk-assessment",
+        "claim": "Multi-gene panel testing examines multiple cancer risk genes beyond BRCA1 and BRCA2"
+      },
+      {
+        "organization": "National Society of Genetic Counselors",
+        "url": "https://www.nsgc.org/About/FAQs",
+        "claim": "Genetic counseling recommended before and after testing"
+      },
+      {
+        "organization": "National Human Genome Research Institute",
+        "url": "https://www.genome.gov/Genetic-Discrimination",
+        "claim": "GINA protects against genetic discrimination in health insurance and employment"
+      }
+    ]
   }
 }
