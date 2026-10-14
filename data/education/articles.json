@@ -547,5 +547,16 @@
     "targetKeyword": "genetic testing ovarian cancer BRCA",
     "words": 493,
     "status": "draft"
+  },
+  {
+    "n": 44,
+    "slug": "parp-inhibitors-treatment",
+    "title": "PARP Inhibitors: A Breakthrough in Ovarian Cancer Treatment",
+    "cluster": "living",
+    "role": "supporting",
+    "excerpt": "How PARP inhibitors are transforming treatment for ovarian cancer patients, especially those with BRCA mutations, and what this means for long-term outcomes.",
+    "targetKeyword": "PARP inhibitors ovarian cancer BRCA treatment",
+    "words": 453,
+    "status": "draft"
   }
 ]

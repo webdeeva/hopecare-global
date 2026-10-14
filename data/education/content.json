@@ -1254,5 +1254,26 @@
         "claim": "GINA protects against genetic discrimination in health insurance and employment"
       }
     ]
+  },
+  "parp-inhibitors-treatment": {
+    "metaDescription": "Learn about PARP inhibitors, a breakthrough targeted therapy for ovarian cancer, especially effective for patients with BRCA mutations. Understand how they work, who benefits, and outcomes.",
+    "body": "## A New Era in Ovarian Cancer Treatment\n\nFor decades, the standard treatment for ovarian cancer followed a predictable pattern -- surgery followed by platinum-based chemotherapy. While effective for many, recurrence was common and each subsequent round brought diminishing returns. PARP inhibitors have changed that trajectory.\n\n## What Are PARP Inhibitors?\n\nPARP (Poly ADP-ribose polymerase) inhibitors are a class of targeted therapy that exploits a weakness in cancer cells with defective DNA repair mechanisms. By blocking the PARP enzyme, these drugs prevent cancer cells from repairing their DNA, leading to cell death.\n\n**How they work:** In healthy cells, two major DNA repair pathways exist -- BRCA-dependent repair and PARP-dependent repair. In cancer cells with BRCA mutations, the first pathway is already broken. PARP inhibitors disable the second pathway, leaving cancer cells with no way to repair damage. This concept, known as \"synthetic lethality,\" selectively kills cancer cells while sparing healthy ones.\n\n## Who Benefits Most?\n\nPARP inhibitors are most effective in patients whose tumors have a BRCA mutation or another defect in the homologous recombination repair (HRR) pathway. Testing for these biomarkers is now standard of care for anyone diagnosed with ovarian cancer.\n\nPatients who benefit include:\n\n- Those with **BRCA1 or BRCA2 mutations** (germline or somatic)\n- Those with **HRD-positive tumors** (homologous recombination deficiency)\n- Women who have responded well to platinum-based chemotherapy are particularly good candidates for PARP inhibitor maintenance therapy\n\n## Approved PARP Inhibitors\n\nSeveral PARP inhibitors are now FDA-approved for ovarian cancer:\n\n- **Olaparib (Lynparza)** -- the first approved PARP inhibitor, used as maintenance therapy and for advanced disease\n- **Niraparib (Zejula)** -- approved as maintenance therapy regardless of BRCA status\n- **Rucaparib (Rubraca)** -- approved for BRCA-mutated advanced ovarian cancer\n- **Talazoparib (Talzenna)** -- used in combination with other agents in certain settings\n\n## Treatment Outcomes\n\nPARP inhibitor maintenance therapy has dramatically improved progression-free survival in women with BRCA-mutated ovarian cancer. In landmark clinical trials, olaparib reduced the risk of disease progression by 70% in women with newly diagnosed advanced ovarian cancer and a BRCA mutation. Many patients are living years longer without recurrence.\n\n## Side Effects and Quality of Life\n\nPARP inhibitors are generally well-tolerated, though they can cause fatigue, nausea, anemia, and low blood counts. Most side effects are manageable with supportive care and dose adjustments. Long-term use requires monitoring for rare but serious effects such as myelodysplastic syndrome.\n\n## The Future\n\nResearchers are investigating PARP inhibitors in combination with immunotherapy, chemotherapy, and other targeted agents. Ongoing studies also explore their role in earlier-stage disease and in other cancer types.\n\nPARP inhibitors represent exactly the kind of progress we strive for at HopeCare Global -- science translating into longer, better lives for women facing ovarian cancer.",
+    "sources": [
+      {
+        "organization": "FDA",
+        "url": "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-olaparib-maintenance-treatment-brca-mutated-ovarian-cancer",
+        "claim": "PARP inhibitors exploit synthetic lethality in BRCA-mutated cancer cells"
+      },
+      {
+        "organization": "New England Journal of Medicine (SOLO-1 trial)",
+        "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1810858",
+        "claim": "Olaparib reduced risk of progression risk by 70% in BRCA-mutated advanced ovarian cancer"
+      },
+      {
+        "organization": "National Comprehensive Cancer Network",
+        "url": "https://www.nccn.org/guidelines/category_1",
+        "claim": "Multiple PARP inhibitors approved for ovarian cancer treatment and maintenance therapy"
+      }
+    ]
   }
 }
