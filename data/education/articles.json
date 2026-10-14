@@ -525,5 +525,16 @@
     "targetKeyword": "health equity ovarian cancer disparities",
     "words": 502,
     "status": "draft"
+  },
+  {
+    "n": 42,
+    "slug": "understanding-brca",
+    "title": "Understanding BRCA: The Basics",
+    "cluster": "risk",
+    "role": "pillar",
+    "excerpt": "Learn what BRCA1 and BRCA2 genes are, how mutations affect ovarian cancer risk, and why knowing your genetic status can be a lifesaving step.",
+    "targetKeyword": "BRCA gene mutation ovarian cancer risk",
+    "words": 328,
+    "status": "draft"
   }
 ]
