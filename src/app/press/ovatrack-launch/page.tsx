@@ -4,8 +4,8 @@ import s from "../press.module.css";
 import { serif, sans } from "../fonts";
 
 export const metadata: Metadata = {
-  title: "Dr. Petrina N. Harrison Launches OvaTrack | HopeCare Global Inc",
-  description: "Dr. Petrina N. Harrison, DNP, APRN, AGCNS-BC, CIC, a board-certified clinical nurse specialist and ovarian cancer researcher, has launched OvaTrack, a free mobile app she created to help women recognize, record, and communicate possible ovarian cancer symptoms.",
+  title: "Dr. Petrina N. Harrison Launches OvaTrack to Help Women Track Possible Ovarian Cancer Symptoms | HopeCare Global Inc",
+  description: "New York, NY, October 06, 2026 --(PR.com)-- Dr. Petrina N. Harrison, DNP, APRN, AGCNS-BC, CIC, a board-certified clinical nurse specialist and ovarian cancer researcher, has launched OvaTrack, a free mobile app she created to help women recognize, record, and communicate possible ovarian cancer symptoms.",
 };
 
 export default function OvaTrackLaunchPage() {
@@ -18,7 +18,7 @@ export default function OvaTrackLaunchPage() {
         </p>
 
         <p>
-          <span style={{ color: 'var(--muted)', fontWeight: 'bold' }}>New York, NY, October 06, 2026 —</span> Dr. Petrina N. Harrison, DNP, APRN, AGCNS-BC, CIC, a board-certified clinical nurse specialist and ovarian cancer researcher, has launched <strong>OvaTrack</strong>, a free mobile app she created to help women recognize, record, and communicate possible ovarian cancer symptoms. HopeCare Global Inc., the 501(c)(3) nonprofit she founded and leads, is launching and supporting the app. OvaTrack is available now on the Apple App Store and Google Play.
+          <span style={{ color: 'var(--muted)', fontWeight: 'bold' }}>New York, NY, October 06, 2026 --(PR.com)--</span> Dr. Petrina N. Harrison, DNP, APRN, AGCNS-BC, CIC, a board-certified clinical nurse specialist and ovarian cancer researcher, has launched OvaTrack, a free mobile app she created to help women recognize, record, and communicate possible ovarian cancer symptoms. HopeCare Global Inc., the 501(c)(3) nonprofit she founded and leads, is launching and supporting the app. OvaTrack is available now on the Apple App Store and Google Play.
         </p>
         <p>
           Harrison brings more than two decades of nursing experience to a challenge that shaped her doctoral work: helping women and healthcare professionals recognize symptoms that may otherwise be overlooked. OvaTrack gives users a way to document changes over time and bring a clear record to a licensed healthcare professional.
@@ -61,6 +61,11 @@ export default function OvaTrackLaunchPage() {
         </p>
 
         <section style={{ marginTop: '2rem', borderTop: '1px solid var(--rule)', paddingTop: '1rem' }}>
+          <h2 style={{ color: 'var(--accent)', fontSize: '1.05rem', margin: '1.6rem 0 .3rem' }}>Availability</h2>
+          <p>
+            Get it here: <a href="https://hopecareglobal.org/ovatrack">hopecareglobal.org/ovatrack</a>
+          </p>
+
           <h2 style={{ color: 'var(--accent)', fontSize: '1.05rem', margin: '1.6rem 0 .3rem' }}>Media Contact</h2>
           <address style={{ fontStyle: 'normal' }}>
             HopeCare Global Media Relations<br />
