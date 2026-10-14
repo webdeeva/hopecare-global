@@ -20,7 +20,7 @@ const releases = [
       "A bipartisan, bicameral bill introduced in Congress to expand insurance coverage for genetic testing, improve access to gynecologic oncology care in underserved communities, and reauthorize Johanna\u2019s Law. HopeCare Global responds with full support.",
   },
   {
-    href: "/press/ovatrack-launch",
+    href: "https://www.pr.com/press-release/980397",
     date: "2026-10-06",
     label: "October 6, 2026",
     title: "Dr. Petrina N. Harrison Launches OvaTrack to Help Women Track Possible Ovarian Cancer Symptoms",
