@@ -1,9 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40">
-  <rect width="135" height="40" rx="6" fill="#fff" stroke="#000" stroke-width="1px"/>
-  <path fill="#4285F4" d="M12 8l4 3.5-4 3.5z"/>
-  <path fill="#34A853" d="M12 15l4 3.5L12 22z"/>
-  <path fill="#FBBC05" d="M6 15l4-3.5v7z"/>
-  <path fill="#EA4335" d="M12 15l-6-7.5h8z"/>
-  <text x="35" y="18" font-family="Roboto,Arial,sans-serif" font-size="10" fill="#000">Get it on</text>
-  <text x="35" y="32" font-family="Roboto,Arial,sans-serif" font-size="14" font-weight="bold" fill="#000">Google Play</text>
+  <title>Get it on Google Play</title>
+  <rect width="135" height="40" rx="6.5" fill="#ffffff" stroke="#a6a6a6" stroke-width="1"/>
+  <!-- Official Google Play triangle (correct geometry + official brand colors) -->
+  <g transform="translate(8,8) scale(0.05)">
+    <path fill="#4285F4" d="M47 24C41 28 38 35 38 45v422c0 10 3 17 9 21l246-232L47 24z"/>
+    <path fill="#34A853" d="M47 24l246 232 66-62L74 12c-11-6-21-6-27 0z"/>
+    <path fill="#FBBC04" d="M451 233l-92-53-72 68 72 68 92-53c17-10 17-20 0-30z"/>
+    <path fill="#EA4335" d="M47 488l246-232 66 62-285 176c-11 6-21 6-27-6z"/>
+  </g>
+  <text x="38" y="17" font-family="Roboto,'Helvetica Neue',Arial,sans-serif" font-size="8" letter-spacing="1" fill="#000000">GET IT ON</text>
+  <text x="38" y="31" font-family="Roboto,'Helvetica Neue',Arial,sans-serif" font-size="14" font-weight="700" fill="#000000">Google Play</text>
 </svg>
