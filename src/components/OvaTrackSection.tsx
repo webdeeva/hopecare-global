@@ -24,44 +24,25 @@ function PlayGlyph() {
 }
 
 function StoreBadges() {
-  const badge =
-    "group inline-flex items-center gap-3 rounded-2xl px-5 py-3 text-white transition-transform duration-300 hover:-translate-y-0.5";
   return (
     <div className="flex flex-wrap items-center gap-4 mt-7">
-      {/* Apple App Store */}
       <a
         href="https://apps.apple.com/us/app/ovatrack/id6800895813"
         target="_blank"
         rel="noopener noreferrer"
-        className={badge}
-        style={{ background: "#0a2540" }}
+        className="transition-transform duration-300 hover:opacity-90"
         aria-label="Download OvaTrack on the App Store"
       >
-        <Apple className="w-7 h-7" strokeWidth={1.6} />
-        <span className="text-left leading-tight">
-          <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Download on the
-          </span>
-          <span className="block text-base font-semibold">App Store</span>
-        </span>
+        <img src="/assets/app-store-badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
       </a>
-
-      {/* Google Play */}
       <a
         href="https://play.google.com/store/apps/details?id=org.hopecareglobal.ovatrack&pcampaignid=web_share"
         target="_blank"
         rel="noopener noreferrer"
-        className={badge}
-        style={{ background: "#0a2540" }}
+        className="transition-transform duration-300 hover:opacity-90"
         aria-label="Download OvaTrack on Google Play"
       >
-        <PlayGlyph />
-        <span className="text-left leading-tight">
-          <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Available on
-          </span>
-          <span className="block text-base font-semibold">Google Play</span>
-        </span>
+        <img src="/assets/google-play-badge.svg" alt="Get it on Google Play" className="h-14 w-auto" />
       </a>
     </div>
   );
