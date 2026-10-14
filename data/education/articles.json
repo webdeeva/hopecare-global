@@ -536,8 +536,9 @@
     "excerpt": "Learn what BRCA1 and BRCA2 genes are, how mutations affect ovarian cancer risk, and why knowing your genetic status can be a lifesaving step.",
     "targetKeyword": "BRCA gene mutation ovarian cancer risk",
     "words": 328,
-    "status": "draft",
-    "heroImage": "/education/understanding-brca.png"
+    "status": "published",
+    "heroImage": "/education/understanding-brca.png",
+    "publishedAt": "2026-10-14"
   },
   {
     "n": 43,
