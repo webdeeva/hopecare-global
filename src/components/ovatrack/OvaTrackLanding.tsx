@@ -94,54 +94,27 @@ function PhoneFrame({
 /* ───────── Store badges ───────── */
 
 function StoreBadges() {
-  const badge =
-    "group inline-flex items-center gap-3 rounded-2xl px-5 py-3 text-white transition-transform duration-300 hover:-translate-y-0.5";
   return (
     <div className="flex flex-row items-center gap-4">
       <a
         href="https://apps.apple.com/us/app/ovatrack/id6800895813"
         target="_blank"
         rel="noopener noreferrer"
-        className={badge}
-        style={{ background: C.navy }}
+        className="transition-transform duration-300 hover:opacity-90"
         aria-label="Download OvaTrack on the App Store"
       >
-        <Apple className="w-7 h-7" strokeWidth={1.6} />
-        <span className="text-left leading-tight">
-          <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Download on the
-          </span>
-          <span className="block text-base font-semibold">App Store</span>
-        </span>
+        <img src="https://hopecareglobal.org/assets/app-store-badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
       </a>
       <a
         href="https://play.google.com/store/apps/details?id=org.hopecareglobal.ovatrack&pcampaignid=web_share"
         target="_blank"
         rel="noopener noreferrer"
-        className={badge}
-        style={{ background: C.navy }}
+        className="transition-transform duration-300 hover:opacity-90"
         aria-label="Download OvaTrack on Google Play"
       >
-        <PlayGlyph />
-        <span className="text-left leading-tight">
-          <span className="block text-[0.62rem] uppercase tracking-wider opacity-70">
-            Available on
-          </span>
-          <span className="block text-base font-semibold">Google Play</span>
-        </span>
+        <img src="https://hopecareglobal.org/assets/google-play-badge.svg" alt="Get it on Google Play" className="h-14 w-auto" />
       </a>
     </div>
-  );
-}
-
-function PlayGlyph() {
-  return (
-    <svg viewBox="0 0 512 512" className="w-6 h-6" aria-hidden>
-      <path fill="#00D2FF" d="M47 24C41 28 38 35 38 45v422c0 10 3 17 9 21l246-232L47 24z" />
-      <path fill="#00E676" d="M47 24l246 232 66-62L74 12c-11-6-21-6-27 0z" />
-      <path fill="#FFCE00" d="M451 233l-92-53-72 68 72 68 92-53c17-10 17-20 0-30z" />
-      <path fill="#FF3D00" d="M47 488l246-232 66 62-285 176c-11 6-21 6-27-6z" />
-    </svg>
   );
 }
 
