@@ -8,7 +8,6 @@ import {
   Lock,
   Heart,
   FileText,
-  Bell,
   Sparkles,
   Check,
   ArrowUpRight,
@@ -17,7 +16,6 @@ import {
   CalendarCheck,
   EyeOff,
   Stethoscope,
-  Apple,
 } from "lucide-react";
 
 /* ───────────────────────────────────────────────────────────
