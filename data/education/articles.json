@@ -514,5 +514,16 @@
     "status": "published",
     "heroImage": "/education/ovatrack-launch.png",
     "publishedAt": "2026-10-08"
+  },
+  {
+    "n": 41,
+    "slug": "risk-management-brca",
+    "title": "Risk Management Options for BRCA Carriers",
+    "cluster": "risk",
+    "role": "supporting",
+    "excerpt": "From enhanced screening to risk-reducing surgery, explore the evidence-based options available to manage ovarian cancer risk for BRCA mutation carriers.",
+    "targetKeyword": "BRCA mutation risk management ovarian cancer",
+    "words": 425,
+    "status": "draft"
   }
 ]
