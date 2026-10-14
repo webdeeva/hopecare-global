@@ -1,5 +1,6 @@
-<svg viewBox="0 0 135 40" xmlns="http://www.w3.org/2000/svg" width="135" height="40">
+<svg xmlns="http://www.w3.org/2000/svg" width="135" height="40" viewBox="0 0 135 40">
   <rect width="135" height="40" rx="6" fill="#000"/>
-  <text x="45" y="15" font-family="Arial" font-size="10" fill="#fff">Download on the</text>
-  <text x="45" y="30" font-family="Arial" font-size="14" font-weight="bold" fill="#fff">App Store</text>
+  <path fill="#fff" d="M38 12h2.5l1.5 2.5 1.5-2.5h2.5l-2.5 4.5 2.5 4.5h-2.5l-1.5-2.5-1.5 2.5h-2.5l2.5-4.5z"/>
+  <text x="45" y="18" font-family="Arial,sans-serif" font-size="10" fill="#fff">Download on the</text>
+  <text x="45" y="32" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#fff">App Store</text>
 </svg>
