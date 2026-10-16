@@ -227,7 +227,7 @@ export function Footer() {
               className="transition-transform duration-300 hover:opacity-90"
               aria-label="Download OvaTrack on the App Store"
             >
-              <img src="https://hopecareglobal.org/assets/app-store-badge.svg" alt="Download on the App Store" className="h-14 w-auto" />
+              <img src="https://hopecareglobal.org/assets/app-store-badge.svg" alt="Download on the App Store" className="h-14 w-[160px] object-contain" />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=org.hopecareglobal.ovatrack&pcampaignid=web_share"
@@ -236,7 +236,7 @@ export function Footer() {
               className="transition-transform duration-300 hover:opacity-90"
               aria-label="Download OvaTrack on Google Play"
             >
-              <img src="https://hopecareglobal.org/assets/google-play-badge.svg" alt="Get it on Google Play" className="h-14 w-auto" />
+              <img src="https://hopecareglobal.org/assets/google-play-badge.svg" alt="Get it on Google Play" className="h-14 w-[160px] object-contain" />
             </a>
           </div>
         </div>
