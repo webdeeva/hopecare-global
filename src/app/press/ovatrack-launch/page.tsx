@@ -65,6 +65,16 @@ export default function OvaTrackLaunchPage() {
           <p>
             Get it here: <a href="https://hopecareglobal.org/ovatrack">hopecareglobal.org/ovatrack</a>
           </p>
+          <p>
+            <a
+              href="https://petrinaharrison.substack.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: 'inline-block', marginTop: '8px', padding: '11px 20px', background: '#FF6719', color: '#fff', borderRadius: '4px', textDecoration: 'none', fontFamily: 'Helvetica, Arial, sans-serif', fontWeight: 600, fontSize: '0.95rem' }}
+            >
+              Subscribe on Substack
+            </a>
+          </p>
 
           <h2 style={{ color: 'var(--accent)', fontSize: '1.05rem', margin: '1.6rem 0 .3rem' }}>Media Contact</h2>
           <address style={{ fontStyle: 'normal' }}>
