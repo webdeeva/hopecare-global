@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 // Newest first. Add future releases to the top of this list.
 const releases = [
   {
+    href: "/press/ovatrack-why-i-created",
+    date: "2026-10-16",
+    label: "October 16, 2026",
+    title: "Why I Created OvaTrack: Turning Ovarian Cancer Awareness Into Action",
+    summary: "Dr. Petrina Harrison shares the purpose behind OvaTrack and how symptom tracking can help women prepare for informed healthcare conversations. Read on Medium or Substack.",
+  },
+  {
     href: "/press/ovatrack-launch",
     date: "2026-10-06",
     label: "October 6, 2026",
