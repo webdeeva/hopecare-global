@@ -586,7 +586,8 @@
     "excerpt": "A summary of the 2005 review on ovarian cancer screening methods, examining the efficacy of CA-125 and ultrasound, and the clinical evolution of early detection.",
     "targetKeyword": "ovarian cancer screening history",
     "words": 201,
-    "status": "draft",
-    "heroImage": "/education/screening-detection-ovarian-cancer-2005.png"
+    "status": "published",
+    "heroImage": "/education/screening-detection-ovarian-cancer-2005.png",
+    "publishedAt": "2026-10-17"
   }
 ]
