@@ -576,5 +576,16 @@
     "words": 425,
     "status": "draft",
     "heroImage": "/education/risk-management-brca.png"
+  },
+  {
+    "n": 46,
+    "slug": "screening-detection-ovarian-cancer-2005",
+    "title": "Screening and Detection of Ovarian Cancer: A 2005 Perspective",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "A summary of the 2005 review on ovarian cancer screening methods, examining the efficacy of CA-125 and ultrasound, and the clinical evolution of early detection.",
+    "targetKeyword": "ovarian cancer screening history",
+    "words": 201,
+    "status": "draft"
   }
 ]
