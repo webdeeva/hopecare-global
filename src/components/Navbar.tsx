@@ -147,11 +147,11 @@ export function Navbar() {
             )}
           </div>
           <a
-            href="/#symptoms"
-            className="hidden sm:inline-flex items-center gap-2 btn-lift bg-gradient-to-r from-teal-deep via-teal to-green text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(15,139,158,0.5)]"
+            href="/ovatrack"
+            className="hidden sm:inline-flex items-center gap-2 btn-lift bg-teal-soft text-navy px-5 py-2.5 rounded-full text-sm font-semibold border border-teal/20"
           >
             <Activity className="w-4 h-4" strokeWidth={2.5} />
-            Know the Signs
+            Download OvaTrack
           </a>
           <Link
             href="/donate"
