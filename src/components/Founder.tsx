@@ -26,7 +26,7 @@ export function Founder() {
           <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-[0_40px_80px_-30px_rgba(10,37,64,0.45)] ring-1 ring-navy/10">
             {/* Real portrait */}
             <Image
-              src="/founder-updated.png"
+              src="/founder.png"
               alt="Dr. Petrina Harrison — Founder & Executive Director, HopeCare Global Inc"
               fill
               sizes="(min-width: 1024px) 40vw, 90vw"
