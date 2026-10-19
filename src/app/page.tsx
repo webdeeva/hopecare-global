@@ -34,6 +34,7 @@ export default function Home() {
   return (
     <>
       {showAwareness && <AwarenessOverlay onClose={() => setShowAwareness(false)} />}
+      <PressBanner />
       <Navbar />
       <main className="flex-1">
         <Hero />
