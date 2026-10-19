@@ -10,9 +10,9 @@ import { ArrowUpRight } from "lucide-react";
 
 export function PressBanner() {
   return (
-    <section className="relative isolate overflow-hidden bg-teal-soft py-4">
+    <section className="relative isolate block bg-teal-soft py-3">
       <div className="container-wide">
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-center">
           <p className="text-navy text-sm md:text-base font-semibold">
             Bipartisan legislation introduced to modernize ovarian cancer prevention and care:
           </p>
