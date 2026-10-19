@@ -17,7 +17,7 @@ export function PressBanner() {
             Bipartisan legislation introduced to modernize ovarian cancer prevention and care:
           </p>
           <Link
-            href="https://lnkd.in/gKcJeBDH"
+            href="https://www.slotkin.senate.gov/2026/09/29/slotkin-britt-delauro-bacon-introduce-bipartisan-bicameral-legislation-to-modernize-ovarian-cancer-prevention-and-care/"
             target="_blank"
             rel="noopener noreferrer"
             className="group shrink-0 inline-flex items-center gap-2 bg-navy text-white px-5 py-2 rounded-full font-semibold text-sm transition-all hover:bg-navy-deep hover:shadow-lg"
