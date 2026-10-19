@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
+import { PressBanner } from "@/components/PressBanner";
 
 import { Hero } from "@/components/Hero";
 import { OvaTrackSection } from "@/components/OvaTrackSection";
