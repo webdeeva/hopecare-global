@@ -14,7 +14,7 @@ export function PressBanner() {
       <div className="container-wide">
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 text-center">
           <p className="text-navy text-sm md:text-base font-semibold">
-            Read about our latest feature in the news:
+            Read about the new bipartisan legislation to modernize ovarian cancer care:
           </p>
           <Link
             href="https://lnkd.in/gKcJeBDH"
