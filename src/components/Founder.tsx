@@ -95,6 +95,7 @@ export function Founder() {
               { Icon: BadgeCheck, label: "Infection Control" },
               { Icon: BadgeCheck, label: "ANA Member" },
               { Icon: BadgeCheck, label: "OCRA Lead Advocate" },
+              { Icon: BadgeCheck, label: "ONS Member" },
               { Icon: BadgeCheck, label: "ACOG Member" },
             ].map(({ Icon, label }) => (
               <span
