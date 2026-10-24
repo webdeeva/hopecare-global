@@ -91,8 +91,8 @@ export function Founder() {
           <div className="mt-8 flex flex-wrap gap-2">
             {[
               { Icon: Stethoscope, label: "Clinical Practice" },
-              { Icon: GraduationCap, label: "Nursing Education" },
-              { Icon: BadgeCheck, label: "Infection Control" },
+              { Icon: GraduationCap, label: "Community Leader" },
+              { Icon: BadgeCheck, label: "Ovarian Cancer Advocate" },
               { Icon: BadgeCheck, label: "ANA Member" },
               { Icon: BadgeCheck, label: "OCRA Lead Advocate" },
               { Icon: BadgeCheck, label: "ONS Member" },
