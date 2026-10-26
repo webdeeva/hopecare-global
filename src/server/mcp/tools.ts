@@ -46,6 +46,19 @@ async function loadArticles(): Promise<Article[]> {
 async function loadContent(): Promise<ContentMap> {
   return (await getJson<ContentMap>(CONTENT_PATH)) || {};
 }
+// Binary files must go through upload_image; write_file would commit them as text.
+const BINARY_EXT = /\.(png|jpe?g|gif|webp|avif|ico|pdf|mp4|mov|webm|mp3|wav|woff2?|ttf|otf)$/i;
+
+// Detect real image bytes so we never commit a text placeholder under an image name.
+function sniffImage(buf: Buffer): string | null {
+  if (buf.length < 12) return null;
+  if (buf[0] === 0x89 && buf.toString("ascii", 1, 4) === "PNG") return "png";
+  if (buf[0] === 0xff && buf[1] === 0xd8 && buf[2] === 0xff) return "jpg";
+  if (buf.toString("ascii", 0, 3) === "GIF") return "gif";
+  if (buf.toString("ascii", 0, 4) === "RIFF" && buf.toString("ascii", 8, 12) === "WEBP") return "webp";
+  return null;
+}
+
 function jsonFile(path: string, value: unknown): FileChange {
   return { path, content: JSON.stringify(value, null, 2) + "\n" };
 }
@@ -193,6 +206,21 @@ export const TOOLS = [
         message: { type: "string", description: "Commit message" },
       },
       required: ["path", "content", "message"],
+    },
+  },
+  {
+    name: "upload_image",
+    description:
+      "Upload a photo or image (e.g. a portrait or flyer someone sent) into public/ (commits + deploys). Pass EITHER `url` (a public/presigned link to the image) OR `base64` (raw base64 or a data: URI). The bytes are verified as a real PNG/JPEG/GIF/WebP and the file extension is fixed to match. Returns the public src (e.g. /images/founder.jpg) to use in components. Never use write_file for images.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        path: { type: "string", description: "Destination under public/, e.g. public/images/founder.jpg" },
+        url: { type: "string" },
+        base64: { type: "string" },
+        message: { type: "string", description: "Commit message" },
+      },
+      required: ["path"],
     },
   },
   {
@@ -380,8 +408,35 @@ export async function callTool(name: string, args: Args): Promise<unknown> {
     case "write_file": {
       const path = String(args.path).replace(/^\/+/, "");
       if (!pathAllowed(path)) throw new Error(`Path not allowed: ${path} (must be under data/, public/, or src/)`);
+      if (BINARY_EXT.test(path))
+        throw new Error(`write_file only writes text and would corrupt ${path}. Use upload_image (with a url or base64) for images.`);
       const commit = await commitFiles([{ path, content: String(args.content) }], String(args.message || `Update ${path}`));
       return { path, commit: commit.url };
+    }
+
+    case "upload_image": {
+      let path = String(args.path).replace(/^\/+/, "");
+      if (!path.startsWith("public/")) throw new Error(`Images must go under public/ (got ${path})`);
+      let buf: Buffer;
+      if (args.url) {
+        const res = await fetch(String(args.url));
+        if (!res.ok) throw new Error(`Could not download image (${res.status}) from ${args.url}`);
+        buf = Buffer.from(await res.arrayBuffer());
+      } else if (args.base64) {
+        buf = Buffer.from(String(args.base64).replace(/^data:[^,]*,/, "").replace(/\s+/g, ""), "base64");
+      } else {
+        throw new Error("Provide either url or base64");
+      }
+      const kind = sniffImage(buf);
+      if (!kind) throw new Error(`That is not a valid PNG/JPEG/GIF/WebP image (${buf.length} bytes). Nothing was committed.`);
+      if (buf.length > 8 * 1024 * 1024) throw new Error(`Image is ${(buf.length / 1048576).toFixed(1)} MB; keep it under 8 MB.`);
+      const ext = kind === "jpg" ? /\.jpe?g$/i : new RegExp(`\\.${kind}$`, "i");
+      if (!ext.test(path)) path = path.replace(/\.[a-z0-9]+$/i, "") + "." + kind;
+      const commit = await commitFiles(
+        [{ path, content: buf.toString("base64"), encoding: "base64" }],
+        String(args.message || `Upload image ${path}`)
+      );
+      return { path, src: "/" + path.replace(/^public\//, ""), bytes: buf.length, type: kind, commit: commit.url };
     }
 
     case "replace_text": {
