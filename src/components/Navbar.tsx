@@ -20,27 +20,25 @@ const links = [
     ],
   },
   {
+    label: "Our Work",
+    submenu: [
+      { href: "/#mission", label: "Mission" },
+      { href: "/#programs", label: "Programs" },
+      { href: "/#stories", label: "Stories of Hope & Impact" },
+      { href: "/#founder", label: "Meet the Founder" },
+      { href: "/#involved", label: "Join the Movement" },
+    ],
+  },
+  {
     label: "Podcast",
     submenu: [
       { href: "/#podcast", label: "All Episodes" },
       { href: "/podcast/latest", label: "Latest Release" },
     ],
   },
-  { href: "/ovatrack", label: "OvaTrack App", route: true },
-  { href: "/press-releases", label: "News and Press Releases", route: true },
+  { href: "/press-releases", label: "News & Press", route: true },
   {
-    label: "Our Work",
-    submenu: [
-      { href: "/#mission", label: "Mission" },
-      { href: "/#involved", label: "Join the Movement" },
-      { href: "/#programs", label: "Programs" },
-      { href: "/#stories", label: "Stories of Hope & Impact" },
-    ],
-  },
-  { href: "/#stories", label: "Stories" },
-  { href: "/#founder", label: "Founder" },
-  {
-    label: "Contact Us",
+    label: "Contact",
     submenu: [
       { href: "/contact?topic=General%20inquiry", label: "General Inquiries" },
       { href: "/contact?topic=Press%20/%20media", label: "Media & Press" },
@@ -77,22 +75,20 @@ export function Navbar() {
       }`}
     >
       <div className="container-wide flex items-center justify-between h-28">
-        <a href="#top" aria-label="HopeCare Global Inc — home" className="block">
+        <a href="/" aria-label="HopeCare Global Inc — home" className="block shrink-0">
           <Logo size={108} priority />
         </a>
 
-        {/* spacer balances the tall logo so nav items center vertically */}
-
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden xl:flex items-center gap-1">
           {links.map((l) => {
             if (l.submenu) {
               return (
                 <div key={l.label} className="relative group">
-                  <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-ink-soft hover:text-teal-deep transition-colors">
+                  <button className="flex items-center gap-1 px-3 py-2 text-sm font-medium whitespace-nowrap text-ink-soft hover:text-teal-deep transition-colors">
                     {l.label}
                     <ChevronDown className="w-4 h-4" />
                   </button>
-                  <div className="absolute top-full left-0 w-56 bg-cream border border-navy/5 shadow-xl rounded-lg py-2 opacity-0 group-hover:opacity-100 transition-pointer-events-none group-hover:pointer-events-auto">
+                  <div className="absolute top-full left-0 w-56 bg-cream border border-navy/5 shadow-xl rounded-lg py-2 opacity-0 pointer-events-none transition-opacity group-hover:opacity-100 group-hover:pointer-events-auto group-focus-within:opacity-100 group-focus-within:pointer-events-auto">
                     {l.submenu.map((sub) => (
                       <Link key={sub.href} href={sub.href} className="block px-4 py-2 text-sm text-ink hover:text-teal-deep hover:bg-cream-deep/50">
                         {sub.label}
@@ -103,7 +99,7 @@ export function Navbar() {
               );
             }
             const className =
-              "px-4 py-2 text-sm font-medium text-ink-soft hover:text-teal-deep transition-colors relative group";
+              "px-3 py-2 text-sm font-medium whitespace-nowrap text-ink-soft hover:text-teal-deep transition-colors relative group";
             return (
               <a key={l.href} href={l.href} className={className}>
                 {l.label}
@@ -112,13 +108,13 @@ export function Navbar() {
           })}
         </nav>
 
-        <div className="flex items-center gap-3">
-          <div className="hidden sm:flex items-center gap-2 mr-2">
+        <div className="flex items-center gap-2 shrink-0">
+          <div className="hidden sm:flex items-center gap-1">
             <Globe className="w-4 h-4 text-navy" />
-            <select className="bg-transparent text-sm font-medium text-navy cursor-pointer">
-                <option value="en">English</option>
-                <option value="es">Español</option>
-                <option value="fr">Français</option>
+            <select aria-label="Language" className="bg-transparent text-sm font-medium text-navy cursor-pointer">
+                <option value="en">EN</option>
+                <option value="es">ES</option>
+                <option value="fr">FR</option>
             </select>
           </div>
           <div className="relative hidden sm:block">
@@ -148,21 +144,21 @@ export function Navbar() {
           </div>
           <a
             href="/ovatrack"
-            className="hidden sm:inline-flex items-center gap-2 btn-lift bg-teal-soft text-navy px-5 py-2.5 rounded-full text-sm font-semibold border border-teal/20"
+            className="hidden md:inline-flex items-center gap-2 btn-lift bg-teal-soft text-navy px-4 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap border border-teal/20"
           >
             <Activity className="w-4 h-4" strokeWidth={2.5} />
-            Download OvaTrack
+            Get OvaTrack
           </a>
           <Link
             href="/donate"
-            className="hidden sm:inline-flex items-center gap-2 btn-lift bg-navy text-cream px-5 py-2.5 rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(10,37,64,0.4)] hover:bg-navy-deep"
+            className="hidden sm:inline-flex items-center gap-2 btn-lift bg-navy text-cream px-4 py-2.5 whitespace-nowrap rounded-full text-sm font-semibold shadow-[0_8px_24px_-8px_rgba(10,37,64,0.4)] hover:bg-navy-deep"
           >
             <Heart className="w-4 h-4" strokeWidth={2.5} />
             Donate
           </Link>
           <button
             onClick={() => setOpen((o) => !o)}
-            className="lg:hidden p-2 -mr-2 text-navy"
+            className="xl:hidden p-2 -mr-2 text-navy"
             aria-label={open ? "Close menu" : "Open menu"}
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -177,7 +173,7 @@ export function Navbar() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.35, ease: [0.2, 0.8, 0.2, 1] }}
-            className="lg:hidden overflow-hidden bg-cream/95 backdrop-blur-xl border-t border-navy/5"
+            className="xl:hidden overflow-hidden bg-cream/95 backdrop-blur-xl border-t border-navy/5"
           >
             <nav className="container-wide flex flex-col py-6 gap-1">
               {links.map((l) => {
@@ -212,6 +208,16 @@ export function Navbar() {
                   </a>
                 );
               })}
+              <div className="flex flex-col sm:flex-row gap-3 pt-5">
+                <a href="/ovatrack" onClick={() => setOpen(false)} className="inline-flex justify-center items-center gap-2 bg-teal-soft text-navy px-5 py-3 rounded-full font-semibold border border-teal/20">
+                  <Activity className="w-4 h-4" strokeWidth={2.5} />
+                  Get OvaTrack
+                </a>
+                <Link href="/donate" onClick={() => setOpen(false)} className="inline-flex justify-center items-center gap-2 bg-navy text-cream px-5 py-3 rounded-full font-semibold">
+                  <Heart className="w-4 h-4" strokeWidth={2.5} />
+                  Donate
+                </Link>
+              </div>
             </nav>
           </motion.div>
         )}
