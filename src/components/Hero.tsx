@@ -15,7 +15,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative isolate overflow-hidden bg-cream pt-32 md:pt-28"
+      className="relative isolate overflow-hidden bg-cream pt-36 md:pt-36"
     >
       {/* Soft ambient bloom (low-key, just adds depth) */}
       <div
@@ -29,7 +29,7 @@ export function Hero() {
         <TopRail />
       </div>
 
-      <div className="container-wide mt-3">
+      <div className="container-wide mt-6">
         <CompactOvaTrackBanner />
       </div>
 
