@@ -6,7 +6,8 @@ import { Mail, Quote, BadgeCheck, Stethoscope, GraduationCap } from "lucide-reac
 
 export function Founder() {
   return (
-    <section id="founder" className="relative py-28 md:py-36 bg-cream overflow-hidden">
+    <section id="founder" className="relative pt-12 pb-28 md:pb-36 bg-cream overflow-hidden">
+      <h2 className="text-center text-4xl font-bold text-navy mb-12">Founder</h2>
       {/* Soft accent */}
       <div
         className="absolute top-1/3 -left-40 w-[34rem] h-[34rem] rounded-full blur-3xl opacity-25"
