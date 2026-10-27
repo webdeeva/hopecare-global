@@ -37,6 +37,7 @@ const links = [
     ],
   },
   { href: "/press-releases", label: "News & Press", route: true },
+  { href: "/#founder", label: "Founder" },
   {
     label: "Contact",
     submenu: [
