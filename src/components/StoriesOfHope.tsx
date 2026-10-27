@@ -200,5 +200,9 @@ export function StoriesOfHope() {
         </motion.div>
       </div>
     </section>
+
+    <section id="founder-title" className="bg-cream pt-12 text-center">
+      <h2 className="text-4xl font-bold text-navy">Founder</h2>
+    </section>
   );
 }
