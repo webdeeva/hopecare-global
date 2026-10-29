@@ -12,6 +12,14 @@ export const metadata: Metadata = {
 // Newest first. Add future releases to the top of this list.
 const releases = [
   {
+    href: "https://www.nccn.org/patients/guidelines/content/PDF/ovarian-patient.pdf",
+    date: "2026-10-29",
+    label: "October 29, 2026",
+    title: "New Resource: NCCN Ovarian Cancer Patient Guidelines",
+    summary:
+      "Essential information for patients and families on understanding ovarian cancer diagnosis, treatment options, and care, now available via the National Comprehensive Cancer Network.",
+  },
+  {
     href: "/press/ovatrack-why-i-created",
     date: "2026-10-16",
     label: "October 16, 2026",
