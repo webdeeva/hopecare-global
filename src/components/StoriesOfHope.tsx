@@ -200,8 +200,5 @@ export function StoriesOfHope() {
         </motion.div>
       </div>
     </section>
-
-      </div>
-    </section>
   );
 }
