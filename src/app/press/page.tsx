@@ -66,7 +66,13 @@ export default function PressPage() {
         {releases.map((r) => (
           <article key={r.href} className={s.item}>
             <time dateTime={r.date}>{r.label}</time>
-            <h2 className={s.itemTitle}><Link href={r.href}>{r.title}</Link></h2>
+            <h2 className={s.itemTitle}>
+              {r.href.startsWith('http') ? (
+                <a href={r.href} target="_blank" rel="noopener noreferrer">{r.title}</a>
+              ) : (
+                <Link href={r.href}>{r.title}</Link>
+              )}
+            </h2>
             <p>{r.summary}</p>
           </article>
         ))}
