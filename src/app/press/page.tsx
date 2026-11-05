@@ -12,6 +12,14 @@ export const metadata: Metadata = {
 // Newest first. Add future releases to the top of this list.
 const releases = [
   {
+    href: "https://doi.org/10.1891/JDNP-2026-0001",
+    date: "2026-11-05",
+    label: "November 5, 2026",
+    title: "New Publication: A Clinical Decision Support Model for Early Ovarian Cancer Detection in Rural Practice",
+    summary:
+      "Dr. Petrina Harrison's latest work, published in the Journal of Doctoral Nursing Practice, detailing a new clinical decision support model to aid in the early detection of ovarian cancer within rural clinical settings.",
+  },
+  {
     href: "https://www.nccn.org/patients/guidelines/content/PDF/ovarian-patient.pdf",
     date: "2026-10-29",
     label: "October 29, 2026",
