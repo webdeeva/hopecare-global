@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { PressBanner } from "@/components/PressBanner";
+import { NewsFlash } from "@/components/NewsFlash";
 
 import { Hero } from "@/components/Hero";
 import { OvaTrackSection } from "@/components/OvaTrackSection";
