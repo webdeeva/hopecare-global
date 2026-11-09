@@ -599,7 +599,8 @@
     "excerpt": "HopeCare Global reviews new FDA ovarian cancer treatment discussions and a federal women’s preventive care funding opportunity.",
     "targetKeyword": "ovarian cancer federal initiatives",
     "words": 876,
-    "status": "draft",
-    "heroImage": "/education/federal-ovarian-cancer-womens-health-update.png"
+    "status": "published",
+    "heroImage": "/education/federal-ovarian-cancer-womens-health-update.png",
+    "publishedAt": "2026-11-09"
   }
 ]
