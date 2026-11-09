@@ -589,5 +589,16 @@
     "status": "published",
     "heroImage": "/education/screening-detection-ovarian-cancer-2005.png",
     "publishedAt": "2026-10-17"
+  },
+  {
+    "n": 47,
+    "slug": "federal-ovarian-cancer-womens-health-update",
+    "title": "New Federal Developments May Shape Ovarian Cancer Treatment and Women’s Preventive Care",
+    "cluster": "equity",
+    "role": "supporting",
+    "excerpt": "HopeCare Global reviews new FDA ovarian cancer treatment discussions and a federal women’s preventive care funding opportunity.",
+    "targetKeyword": "ovarian cancer federal initiatives",
+    "words": 876,
+    "status": "draft"
   }
 ]
