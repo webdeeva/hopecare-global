@@ -602,5 +602,16 @@
     "status": "published",
     "heroImage": "/education/federal-ovarian-cancer-womens-health-update.png",
     "publishedAt": "2026-11-09"
+  },
+  {
+    "n": 48,
+    "slug": "ovarian-cancer-screening-guidelines-cdc",
+    "title": "Ovarian Cancer Screening: CDC Guidelines & Considerations",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "Learn about the current guidelines and considerations for ovarian cancer screening as recommended by public health authorities.",
+    "targetKeyword": "ovarian cancer screening guidelines",
+    "words": 162,
+    "status": "draft"
   }
 ]
