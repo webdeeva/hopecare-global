@@ -99,6 +99,7 @@ export function Founder() {
               { Icon: BadgeCheck, label: "ONS Member" },
               { Icon: BadgeCheck, label: "ACOG Member" },
               { Icon: BadgeCheck, label: "GNSA Lead Advocate" },
+              { Icon: BadgeCheck, label: "NACNS Member" },
             ].map(({ Icon, label }) => (
               <span
                 key={label}
