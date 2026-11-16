@@ -64,9 +64,9 @@ export function SymptomsCTA() {
             <span className="text-gradient-light">Knowing them is power.</span>
           </h2>
           <p className="mt-6 text-lg text-white/70 leading-relaxed">
-            Because there is no standard screening test for ovarian cancer, early detection relies entirely on symptom awareness. What matters most is identifying symptoms that are{" "}
+            There is no reliable routine screening test for ovarian cancer in people at average risk without symptoms. Knowing what is normal for you and discussing unusual changes with a clinician can support timely evaluation. What matters most is identifying symptoms that are{" "}
             <strong className="text-white font-semibold">
-              new, persistent, and last more than a few weeks
+              new, persistent, and last more than two weeks
             </strong>
             .
           </p>
