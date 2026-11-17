@@ -614,5 +614,16 @@
     "words": 162,
     "status": "draft",
     "heroImage": "/education/ovarian-cancer-screening-guidelines-cdc.png"
+  },
+  {
+    "n": 49,
+    "slug": "nccn-ovarian-cancer-guidelines-patient-resource",
+    "title": "NCCN Ovarian Cancer Guidelines: A Patient Resource",
+    "cluster": "diagnosis",
+    "role": "supporting",
+    "excerpt": "An essential resource for patients. Access the National Comprehensive Cancer Network (NCCN) patient guidelines to better understand ovarian cancer diagnosis and treatment options.",
+    "targetKeyword": "NCCN Ovarian Cancer Guidelines: A Patient Resource",
+    "words": 133,
+    "status": "draft"
   }
 ]

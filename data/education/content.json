@@ -1302,5 +1302,10 @@
         "claim": "Screening for ovarian cancer depends on individual risk and clinical guidelines."
       }
     ]
+  },
+  "nccn-ovarian-cancer-guidelines-patient-resource": {
+    "metaDescription": "Access the NCCN patient guidelines for ovarian cancer. A comprehensive resource to help patients understand diagnosis, treatment, and care.",
+    "body": "## Understanding Ovarian Cancer\n\nThe National Comprehensive Cancer Network (NCCN) provides essential guidelines for patients navigating an ovarian cancer diagnosis. Understanding these guidelines is a crucial step in advocating for your own care and making informed decisions alongside your medical team.\n\nYou can access the full NCCN patient guide here: [NCCN Ovarian Cancer Patient Guidelines](https://www.nccn.org/patients/guidelines/content/PDF/ovarian-patient.pdf)\n\n### Key Takeaways\n- **Empowerment through Knowledge:** Understanding the standard of care helps you ask the right questions during appointments.\n- **Guideline-Directed Care:** Discussions with your gynecologic oncologist should be grounded in evidence-based practices like those outlined by the NCCN.\n- **Collaboration:** Use these resources to foster open communication with your healthcare providers.\n\n*Disclaimer: This information is for educational purposes and should not replace professional medical advice. Always consult with your healthcare team regarding your specific clinical situation.*",
+    "sources": []
   }
 }
