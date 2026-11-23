@@ -626,5 +626,16 @@
     "words": 133,
     "status": "draft",
     "heroImage": "/education/nccn-ovarian-cancer-guidelines-patient-resource.png"
+  },
+  {
+    "n": 50,
+    "slug": "postmenopausal-ovary-active-research",
+    "title": "The Ovary Doesn't Retire After Menopause: New Research Insights",
+    "cluster": "living",
+    "role": "supporting",
+    "excerpt": "A groundbreaking study from Northwestern University and the Buck Institute reveals that the postmenopausal ovary remains biologically active, challenging long-standing myths about ovarian health.",
+    "targetKeyword": "postmenopausal ovary research",
+    "words": 379,
+    "status": "draft"
   }
 ]
